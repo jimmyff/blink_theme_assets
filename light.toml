@@ -1,0 +1,159 @@
+[metadata]
+name = "Jotter Light"
+author = "Jimmy"
+
+[scopes]
+# Global default (fallback for all scopes)
+"*" = { fg = "$black" }
+
+# Highlight.js scopes - General code
+"keyword" = { fg = "$purple" }
+"built_in" = { fg = "$blue" }
+"type" = { fg = "$yellow" }
+"literal" = { fg = "$gold" }
+"number" = { fg = "$gold" }
+"operator" = { fg = "$black" }
+"punctuation" = { fg = "$black" }
+"property" = { fg = "$blue" }
+"regexp" = { fg = "$green" }
+"string" = { fg = "$green" }
+"char.escape" = { fg = "$gold" }
+"subst" = { fg = "$black" }
+"symbol" = { fg = "$purple" }
+"variable" = { fg = "$black" }
+"variable.language" = { fg = "$red" }
+"variable.constant" = { fg = "$gold" }
+"comment" = { fg = "$dark-gray", modifiers = ["italic"] }
+"doctag" = { fg = "$blue", modifiers = ["italic"] }
+
+# Highlight.js scopes - Titles and names
+"title" = { fg = "$yellow" }
+"title.class" = { fg = "$yellow" }
+"title.class.inherited" = { fg = "$yellow" }
+"title.function" = { fg = "$blue" }
+"title.function.invoke" = { fg = "$blue" }
+"params" = { fg = "$red" }
+
+# Highlight.js scopes - Tags and attributes
+"tag" = { fg = "$purple" }
+"name" = { fg = "$purple" }
+"attr" = { fg = "$yellow" }
+"attribute" = { fg = "$yellow" }
+
+# Highlight.js scopes - Markdown/text markup
+"section" = { fg = "$red", modifiers = ["bold"] }
+"bullet" = { fg = "$red" }
+"code" = { fg = "$green" }
+"emphasis" = { fg = "$purple", modifiers = ["italic"] }
+"strong" = { fg = "$gold", modifiers = ["bold"] }
+"formula" = { fg = "$blue" }
+"link" = { fg = "$blue", underline = { style = "line" } }
+"quote" = { fg = "$yellow" }
+
+# Highlight.js scopes - Diff
+"addition" = { fg = "$green" }
+"deletion" = { fg = "$red" }
+
+# Highlight.js scopes - Meta
+"meta" = { fg = "$blue" }
+"meta.prompt" = { fg = "$purple" }
+
+# Diagnostic scopes
+"info" = { fg = "$blue", modifiers = ["bold"] }
+"hint" = { fg = "$green", modifiers = ["bold"] }
+"warning" = { fg = "$yellow", modifiers = ["bold"] }
+"error" = { fg = "$red", modifiers = ["bold"] }
+
+# UI scopes (use same scope system as syntax)
+
+# Editor surface
+"ui.editor.background" = { bg = "$white" }
+"ui.editor.foreground" = { fg = "$black" }
+"ui.editor.cursor" = { bg = "$black" }
+"ui.editor.cursor.primary" = { bg = "$black" }
+"ui.editor.selection" = { bg = "$gray" }
+"ui.editor.gutter" = { bg = "$white" }
+"ui.editor.gutter.selected" = { bg = "$light-white" }
+"ui.editor.linenr" = { fg = "$linenr" }
+"ui.editor.linenr.selected" = { fg = "$black" }
+
+"ui.editor.scrollbar.track" = { bg = "$light-white" }
+"ui.editor.scrollbar.thumb" = { fg = "$linenr" }
+"ui.editor.scrollbar.thumb.hover" = { fg = "$dark-gray" }
+
+# Application chrome
+"ui.chrome.background" = { bg = "$light-white" }
+"ui.chrome.foreground" = { fg = "$black" }
+
+"ui.chrome.appbar.background" = { bg = "$white" }
+"ui.chrome.appbar.foreground" = { fg = "$black" }
+"ui.chrome.appbar.title" = { fg = "$black", modifiers = ["bold"] }
+
+"ui.chrome.statusbar.background" = { bg = "$white" }
+"ui.chrome.statusbar.foreground" = { fg = "$black" }
+
+"ui.chrome.tabbar.background" = { bg = "$light-white" }
+"ui.chrome.tabbar.foreground" = { fg = "$dark-gray" }
+"ui.chrome.tabbar.active" = { bg = "$white", fg = "$black", modifiers = ["bold"] }
+"ui.chrome.tabbar.inactive" = { fg = "$dark-gray" }
+"ui.chrome.tabbar.border" = { fg = "$linenr" }
+"ui.chrome.tabbar.modified" = { fg = "$yellow" }
+
+"ui.chrome.menu" = { bg = "$white", fg = "$black" }
+"ui.chrome.menu.item" = { fg = "$black" }
+"ui.chrome.menu.item.selected" = { bg = "$gray", fg = "$black" }
+"ui.chrome.menu.item.hover" = { bg = "$light-white" }
+"ui.chrome.menu.separator" = { fg = "$linenr" }
+
+# Panels & sidebars
+"ui.panel.background" = { bg = "$light-white" }
+"ui.panel.foreground" = { fg = "$black" }
+"ui.panel.border" = { fg = "$linenr" }
+"ui.panel.title" = { fg = "$black", modifiers = ["bold"] }
+"ui.panel.sidebar.selected" = { bg = "$gray", fg = "$black" }
+"ui.panel.sidebar.hover" = { bg = "$white" }
+
+# Interactive widgets
+"ui.widget.button.background" = { bg = "$gray" }
+"ui.widget.button.foreground" = { fg = "$black" }
+"ui.widget.button.hover" = { bg = "$linenr" }
+"ui.widget.button.active" = { bg = "$blue", fg = "$white" }
+
+"ui.widget.input.background" = { bg = "$white" }
+"ui.widget.input.foreground" = { fg = "$black" }
+"ui.widget.input.border" = { fg = "$linenr" }
+"ui.widget.input.focus" = { fg = "$blue" }
+
+"ui.widget.list.selected" = { bg = "$gray", fg = "$black" }
+"ui.widget.list.hover" = { bg = "$light-white" }
+
+# Text display elements
+"ui.text.label" = { fg = "$black" }
+"ui.text.path" = { fg = "$dark-gray" }
+"ui.text.filename" = { fg = "$black", modifiers = ["bold"] }
+"ui.text.position" = { fg = "$dark-gray" }
+"ui.text.muted" = { fg = "$dark-gray" }
+"ui.text.error" = { fg = "$red", modifiers = ["bold"] }
+"ui.text.warning" = { fg = "$yellow", modifiers = ["bold"] }
+"ui.text.info" = { fg = "$blue" }
+"ui.text.success" = { fg = "$green" }
+
+# Borders & separators
+"ui.border.default" = { fg = "$linenr" }
+"ui.border.focus" = { fg = "$blue" }
+"ui.border.active" = { fg = "$cyan" }
+
+[palette]
+yellow = "#986801"
+blue = "#0074D9"
+red = "#C03020"
+purple = "#8E44AD"
+green = "#2A7F3D"
+gold = "#B36B00"
+cyan = "#0088A0"
+black = "#2C3E50"
+white = "#FAFAFA"
+light-white = "#F5F5F5"
+gray = "#E8E8E8"
+dark-gray = "#7F8C8D"
+linenr = "#D0D0D0"
