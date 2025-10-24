@@ -105,6 +105,14 @@ author = "Jimmy"
 "ui.chrome.menu.item.hover" = { bg = "$light-white" }
 "ui.chrome.menu.separator" = { fg = "$linenr" }
 
+# Navigation (bottom nav, tabs, etc)
+"ui.chrome.navigation" = { bg = "$white", fg = "$black" }
+"ui.chrome.navigation.bar.active" = { fg = "$blue", modifiers = ["bold"] }
+"ui.chrome.navigation.bar.inactive" = { fg = "$dark-gray" }
+"ui.chrome.navigation.datetab.active" = { bg = "$gray", fg = "$black", modifiers = ["bold"] }
+"ui.chrome.navigation.datetab.inactive" = { fg = "$black" }
+"ui.chrome.navigation.datetab.empty" = { fg = "$dark-gray" }
+
 # Panels & sidebars
 "ui.panel.background" = { bg = "$light-white" }
 "ui.panel.foreground" = { fg = "$black" }
@@ -142,6 +150,15 @@ author = "Jimmy"
 "ui.border.default" = { fg = "$linenr" }
 "ui.border.focus" = { fg = "$blue" }
 "ui.border.active" = { fg = "$cyan" }
+
+# List items
+"ui.list.background" = { bg = "$white" }
+"ui.list.background.alternate" = { bg = "$light-white" }
+"ui.list.text.primary" = { fg = "$black" }
+"ui.list.text.muted" = { fg = "$dark-gray" }
+"ui.list.icon" = { fg = "$black" }
+"ui.list.selected" = { bg = "$gray", fg = "$black" }
+"ui.list.hover" = { bg = "$light-white" }
 
 [palette]
 yellow = "#986801"

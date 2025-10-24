@@ -107,6 +107,14 @@ author = "Jimmy"
 "ui.chrome.menu.item.hover" = { bg = "$background" }
 "ui.chrome.menu.separator" = { fg = "$background-alt" }
 
+# Navigation (bottom nav, tabs, etc)
+"ui.chrome.navigation" = { bg = "$chrome-background", fg = "$foreground-alt" }
+"ui.chrome.navigation.bar.active" = { fg = "$cyan-intense", modifiers = ["bold"] }
+"ui.chrome.navigation.bar.inactive" = { fg = "$foreground-dim" }
+"ui.chrome.navigation.datetab.active" = { bg = "$selection-background", fg = "$foreground", modifiers = ["bold"] }
+"ui.chrome.navigation.datetab.inactive" = { fg = "$foreground-alt" }
+"ui.chrome.navigation.datetab.empty" = { fg = "$foreground-dim" }
+
 # Panels & sidebars
 "ui.panel.background" = { bg = "$background-alt" }
 "ui.panel.foreground" = { fg = "$foreground-alt" }
@@ -146,6 +154,15 @@ author = "Jimmy"
 "ui.border.default" = { fg = "$blue-faint" }
 "ui.border.focus" = { fg = "$cyan-intense" }
 "ui.border.active" = { fg = "$cyan-intense" }
+
+# List items
+"ui.list.background" = { bg = "$background" }
+"ui.list.background.alternate" = { bg = "$background-dim" }
+"ui.list.text.primary" = { fg = "$foreground" }
+"ui.list.text.muted" = { fg = "$foreground-dim" }
+"ui.list.icon" = { fg = "$foreground-alt" }
+"ui.list.selected" = { bg = "$selection-background", fg = "$selection-foreground" }
+"ui.list.hover" = { bg = "$background-alt" }
 
 [palette]
 
