@@ -6,163 +6,190 @@ author = "Jimmy"
 # Global default (fallback for all scopes)
 "*" = { fg = "$foreground" }
 
+# ==== SYNTAX HIGHLIGHTING ====
+# All syntax scopes now prefixed with "syntax."
+
 # Highlight.js scopes - General code
-"keyword" = { fg = "$magenta" }
-"built_in" = { fg = "$blue" }
-"type" = { fg = "$yellow" }
-"literal" = { fg = "$fg-clay" }
-"number" = { fg = "$fg-clay" }
-"operator" = { fg = "$foreground-alt" }
-"punctuation" = { fg = "$foreground-alt" }
-"property" = { fg = "$blue" }
-"regexp" = { fg = "$green" }
-"string" = { fg = "$green" }
-"char.escape" = { fg = "$fg-clay" }
-"subst" = { fg = "$foreground-alt" }
-"symbol" = { fg = "$magenta" }
-"variable" = { fg = "$foreground-alt" }
-"variable.language" = { fg = "$red" }
-"variable.constant" = { fg = "$fg-clay" }
-"comment" = { fg = "$foreground-dim", modifiers = ["italic"] }
-"doctag" = { fg = "$blue", modifiers = ["italic"] }
+"syntax.keyword" = { fg = "$magenta" }
+"syntax.built_in" = { fg = "$blue" }
+"syntax.type" = { fg = "$yellow" }
+"syntax.literal" = { fg = "$fg-clay" }
+"syntax.number" = { fg = "$fg-clay" }
+"syntax.operator" = { fg = "$foreground-alt" }
+"syntax.punctuation" = { fg = "$foreground-alt" }
+"syntax.property" = { fg = "$blue" }
+"syntax.regexp" = { fg = "$green" }
+"syntax.string" = { fg = "$green" }
+"syntax.char.escape" = { fg = "$fg-clay" }
+"syntax.subst" = { fg = "$foreground-alt" }
+"syntax.symbol" = { fg = "$magenta" }
+"syntax.variable" = { fg = "$foreground-alt" }
+"syntax.variable.language" = { fg = "$red" }
+"syntax.variable.constant" = { fg = "$fg-clay" }
+"syntax.comment" = { fg = "$foreground-dim", modifiers = ["italic"] }
+"syntax.doctag" = { fg = "$blue", modifiers = ["italic"] }
 
 # Highlight.js scopes - Titles and names
-"title" = { fg = "$yellow" }
-"title.class" = { fg = "$yellow" }
-"title.class.inherited" = { fg = "$yellow" }
-"title.function" = { fg = "$blue" }
-"title.function.invoke" = { fg = "$blue" }
-"params" = { fg = "$red" }
+"syntax.title" = { fg = "$yellow" }
+"syntax.title.class" = { fg = "$yellow" }
+"syntax.title.class.inherited" = { fg = "$yellow" }
+"syntax.title.function" = { fg = "$blue" }
+"syntax.title.function.invoke" = { fg = "$blue" }
+"syntax.params" = { fg = "$red" }
 
 # Highlight.js scopes - Tags and attributes
-"tag" = { fg = "$magenta" }
-"name" = { fg = "$magenta" }
-"attr" = { fg = "$fg-sage" }
-"attribute" = { fg = "$fg-sage" }
+"syntax.tag" = { fg = "$magenta" }
+"syntax.name" = { fg = "$magenta" }
+"syntax.attr" = { fg = "$fg-sage" }
+"syntax.attribute" = { fg = "$fg-sage" }
 
 # Highlight.js scopes - Markdown/text markup
-"section" = { fg = "$yellow", modifiers = ["bold"] }
-"bullet" = { fg = "$red" }
-"code" = { fg = "$green" }
-"emphasis" = { fg = "$magenta", modifiers = ["italic"] }
-"strong" = { fg = "$cyan", modifiers = ["bold"] }
-"formula" = { fg = "$blue" }
-"link" = { fg = "$blue", underline = { style = "line" } }
-"quote" = { fg = "$fg-lavender" }
+"syntax.section" = { fg = "$yellow", modifiers = ["bold"] }
+"syntax.bullet" = { fg = "$red" }
+"syntax.code" = { fg = "$green" }
+"syntax.emphasis" = { fg = "$magenta", modifiers = ["italic"] }
+"syntax.strong" = { fg = "$cyan", modifiers = ["bold"] }
+"syntax.formula" = { fg = "$blue" }
+"syntax.link" = { fg = "$blue", underline = { style = "line" } }
+"syntax.quote" = { fg = "$fg-lavender" }
 
 # Highlight.js scopes - Diff
-"addition" = { fg = "$green" }
-"deletion" = { fg = "$red" }
+"syntax.addition" = { fg = "$green" }
+"syntax.deletion" = { fg = "$red" }
 
 # Highlight.js scopes - Meta
-"meta" = { fg = "$blue" }
-"meta.prompt" = { fg = "$magenta" }
+"syntax.meta" = { fg = "$blue" }
+"syntax.meta.prompt" = { fg = "$magenta" }
 
 # Diagnostic scopes
-"info" = { fg = "$blue", modifiers = ["bold"] }
-"hint" = { fg = "$green", modifiers = ["bold"] }
-"warning" = { fg = "$yellow", modifiers = ["bold"] }
-"error" = { fg = "$red", modifiers = ["bold"] }
+"syntax.info" = { fg = "$blue", modifiers = ["bold"] }
+"syntax.hint" = { fg = "$green", modifiers = ["bold"] }
+"syntax.warning" = { fg = "$yellow", modifiers = ["bold"] }
+"syntax.error" = { fg = "$red", modifiers = ["bold"] }
 
-# UI scopes (use same scope system as syntax)
+# ==== UI SCOPES ====
+# Class-based structure with semantic suffixes and :state notation
+
+# Root UI text default
+"ui.text" = { fg = "$foreground" }
 
 # Editor surface
 "ui.editor.background" = { bg = "$background" }
-"ui.editor.foreground" = { fg = "$foreground" }
-"ui.editor.cursor" = { bg = "$cursor", fg = "$cursor-fg" }
-"ui.editor.cursor.primary" = { bg = "$cursor" }
-"ui.editor.selection" = { bg = "$selection-background", fg = "$selection-foreground" }
-"ui.editor.gutter" = { bg = "$background-alt" }
-"ui.editor.gutter.selected" = { bg = "$background-alt" }
-"ui.editor.linenr" = { fg = "$foreground-dim" }
-"ui.editor.linenr.selected" = { fg = "$foreground" }
+"ui.editor.text" = { fg = "$foreground" }
+
+"ui.editor.cursor.background" = { bg = "$cursor", fg = "$cursor-fg" }
+
+"ui.editor.selection.background" = { bg = "$selection-background" }
+"ui.editor.selection.text" = { fg = "$selection-foreground" }
+
+"ui.editor.gutter.background" = { bg = "$background-alt" }
+"ui.editor.gutter.background:selected" = { bg = "$background-alt" }
+"ui.editor.gutter.text" = { fg = "$foreground-dim" }
+"ui.editor.gutter.text:selected" = { fg = "$foreground" }
 
 "ui.editor.scrollbar.track" = { bg = "$background-alt" }
 "ui.editor.scrollbar.thumb" = { fg = "$foreground-dim" }
-"ui.editor.scrollbar.thumb.hover" = { fg = "$foreground-alt" }
+"ui.editor.scrollbar.thumb:hover" = { fg = "$foreground-alt" }
 
 # Application chrome
 "ui.chrome.background" = { bg = "$chrome-background" }
-"ui.chrome.foreground" = { fg = "$foreground-alt" }
+"ui.chrome.text" = { fg = "$foreground-alt" }
 
+# App bar (top)
 "ui.chrome.appbar.background" = { bg = "$chrome-background" }
-"ui.chrome.appbar.foreground" = { fg = "$foreground" }
-"ui.chrome.appbar.title" = { fg = "$foreground", modifiers = ["bold"] }
+"ui.chrome.appbar.text" = { fg = "$foreground" }
+"ui.chrome.appbar.title.text" = { fg = "$foreground", modifiers = ["bold"] }
 
+# Status bar (bottom)
 "ui.chrome.statusbar.background" = { bg = "$chrome-background" }
-"ui.chrome.statusbar.foreground" = { fg = "$foreground-alt" }
+"ui.chrome.statusbar.text" = { fg = "$foreground-alt" }
 
-"ui.chrome.tabbar.background" = { bg = "$chrome-background-dim" }
-"ui.chrome.tabbar.foreground" = { fg = "$foreground-dim" }
-"ui.chrome.tabbar.active" = { bg = "$background-bright", fg = "$foreground", modifiers = [
-  "bold",
-] }
-"ui.chrome.tabbar.inactive" = { bg = "$chrome-background-dim", fg = "$foreground-dim" }
-"ui.chrome.tabbar.border" = { fg = "$background-alt" }
-"ui.chrome.tabbar.modified" = { fg = "$yellow" }
+# Document tabs (tab bar for open files)
+"ui.chrome.tab.background" = { bg = "$chrome-background-dim" }
+"ui.chrome.tab.text" = { fg = "$foreground-dim" }
+"ui.chrome.tab.border" = { fg = "$background-alt" }
 
-"ui.chrome.menu" = { bg = "$background-bright", fg = "$foreground" }
-"ui.chrome.menu.item" = { fg = "$foreground-alt" }
-"ui.chrome.menu.item.selected" = { bg = "$selection-background", fg = "$foreground" }
-"ui.chrome.menu.item.hover" = { bg = "$background" }
+"ui.chrome.tab.item.background:active" = { bg = "$background-bright" }
+"ui.chrome.tab.item.text:active" = { fg = "$foreground", modifiers = ["bold"] }
+"ui.chrome.tab.item.text:inactive" = { fg = "$foreground-dim" }
+"ui.chrome.tab.item.text:modified" = { fg = "$yellow" }
+
+# Menus and dropdowns
+"ui.chrome.menu.background" = { bg = "$background-bright" }
+"ui.chrome.menu.text" = { fg = "$foreground" }
+"ui.chrome.menu.item.text" = { fg = "$foreground-alt" }
+"ui.chrome.menu.item.background:selected" = { bg = "$selection-background" }
+"ui.chrome.menu.item.text:selected" = { fg = "$foreground" }
+"ui.chrome.menu.item.background:hover" = { bg = "$background" }
 "ui.chrome.menu.separator" = { fg = "$background-alt" }
 
-# Navigation (bottom nav, tabs, etc)
-"ui.chrome.navigation" = { bg = "$chrome-background", fg = "$foreground-alt" }
-"ui.chrome.navigation.bar.active" = { fg = "$cyan-intense", modifiers = ["bold"] }
-"ui.chrome.navigation.bar.inactive" = { fg = "$foreground-dim" }
-"ui.chrome.navigation.datetab.active" = { bg = "$selection-background", fg = "$foreground", modifiers = ["bold"] }
-"ui.chrome.navigation.datetab.inactive" = { fg = "$foreground-alt" }
-"ui.chrome.navigation.datetab.empty" = { fg = "$foreground-dim" }
+# Navigation bars (bottom nav, toolbars)
+"ui.chrome.navbar.background" = { bg = "$chrome-background" }
+"ui.chrome.navbar.text" = { fg = "$foreground-alt" }
+
+"ui.chrome.navbar.item.background" = { bg = "$chrome-background" }
+"ui.chrome.navbar.item.background:active" = { bg = "$selection-background" }
+"ui.chrome.navbar.item.text:active" = { fg = "$foreground", modifiers = ["bold"] }
+"ui.chrome.navbar.item.text:inactive" = { fg = "$foreground-dim" }
+
+# Badges (date badges, notification counts)
+"ui.chrome.navbar.badge.background:active" = { bg = "$selection-background" }
+"ui.chrome.navbar.badge.text:active" = { fg = "$foreground", modifiers = ["bold"] }
+"ui.chrome.navbar.badge.text:inactive" = { fg = "$foreground-alt" }
+"ui.chrome.navbar.badge.text:empty" = { fg = "$foreground-dim" }
 
 # Panels & sidebars
-"ui.panel.background" = { bg = "$background-alt" }
-"ui.panel.foreground" = { fg = "$foreground-alt" }
-"ui.panel.border" = { fg = "$background-alt" }
-"ui.panel.title" = { fg = "$foreground", modifiers = ["bold"] }
-"ui.panel.sidebar.selected" = { bg = "$selection-background", fg = "$foreground" }
-"ui.panel.sidebar.hover" = { bg = "$background" }
+"ui.chrome.panel.background" = { bg = "$background-alt" }
+"ui.chrome.panel.text" = { fg = "$foreground-alt" }
+"ui.chrome.panel.title.text" = { fg = "$foreground", modifiers = ["bold"] }
+"ui.chrome.panel.border" = { fg = "$background-alt" }
+"ui.chrome.panel.item.background:selected" = { bg = "$selection-background" }
+"ui.chrome.panel.item.text:selected" = { fg = "$foreground" }
+"ui.chrome.panel.item.background:hover" = { bg = "$background" }
 
 # Interactive widgets
-"ui.widget.button.background" = { bg = "$background-alt" }
-"ui.widget.button.foreground" = { fg = "$foreground-alt" }
-"ui.widget.button.hover" = { bg = "$selection-background" }
-"ui.widget.button.active" = { bg = "$blue" }
+"ui.button.background" = { bg = "$background-alt" }
+"ui.button.text" = { fg = "$foreground-alt" }
+"ui.button.background:hover" = { bg = "$selection-background" }
+"ui.button.background:active" = { bg = "$blue" }
 
-"ui.widget.input.background" = { bg = "$background" }
-"ui.widget.input.foreground" = { fg = "$foreground" }
-"ui.widget.input.border" = { fg = "$background-alt" }
-"ui.widget.input.focus" = { fg = "$blue" }
+"ui.input.background" = { bg = "$background" }
+"ui.input.text" = { fg = "$foreground" }
+"ui.input.border" = { fg = "$background-alt" }
+"ui.input.border:focus" = { fg = "$blue" }
 
-"ui.widget.list.selected" = { bg = "$selection-background", fg = "$foreground" }
-"ui.widget.list.hover" = { bg = "$background" }
-
-# Text display elements
-"ui.text.label" = { fg = "$foreground-alt" }
-"ui.text.path" = { fg = "$foreground-dim" }
-"ui.text.filename" = { fg = "$foreground" }
-"ui.text.position" = { fg = "$foreground-dim" }
-"ui.text.muted" = { fg = "$foreground-dim" }
-"ui.text.error" = { fg = "$red", modifiers = ["bold"] }
-"ui.text.warning" = { fg = "$yellow", modifiers = ["bold"] }
-"ui.text.info" = { fg = "$blue" }
-"ui.text.success" = { fg = "$green" }
-"ui.text.highlight" = { bg = "$bg-blue-intense", fg = "$foreground", modifiers = ["bold"] }
-"ui.text.highlight.match" = { bg = "$bg-magenta-intense", fg = "$foreground", modifiers = ["bold"] }
-
-# Borders & separators
-"ui.border.default" = { fg = "$blue-faint" }
-"ui.border.focus" = { fg = "$cyan-intense" }
-"ui.border.active" = { fg = "$cyan-intense" }
-
-# List items
+# List views
 "ui.list.background" = { bg = "$background" }
-"ui.list.background.alternate" = { bg = "$background-dim" }
-"ui.list.text.primary" = { fg = "$foreground" }
-"ui.list.text.muted" = { fg = "$foreground-dim" }
+"ui.list.alternate.background" = { bg = "$background-dim" }
+"ui.list.text" = { fg = "$foreground" }
+"ui.list.secondary.text" = { fg = "$foreground-dim" }
 "ui.list.icon" = { fg = "$foreground-alt" }
-"ui.list.selected" = { bg = "$selection-background", fg = "$selection-foreground" }
-"ui.list.hover" = { bg = "$background-alt" }
+"ui.list.item.background:selected" = { bg = "$selection-background" }
+"ui.list.item.text:selected" = { fg = "$selection-foreground" }
+"ui.list.item.background:hover" = { bg = "$background-alt" }
+
+# Borders (standalone borders/dividers)
+"ui.border" = { fg = "$chrome-border" }
+"ui.border:focus" = { fg = "$cyan-intense" }
+"ui.border:active" = { fg = "$cyan-intense" }
+
+# Text display elements (generic labels, paths, etc.)
+"ui.label.text" = { fg = "$foreground-alt" }
+"ui.path.text" = { fg = "$foreground-dim" }
+"ui.filename.text" = { fg = "$foreground" }
+"ui.position.text" = { fg = "$foreground-dim" }
+
+# Semantic text colors
+"ui.error.text" = { fg = "$red", modifiers = ["bold"] }
+"ui.warning.text" = { fg = "$yellow", modifiers = ["bold"] }
+"ui.info.text" = { fg = "$blue" }
+"ui.success.text" = { fg = "$green" }
+
+# Highlight backgrounds
+"ui.highlight.background" = { bg = "$bg-blue-intense" }
+"ui.highlight.text" = { fg = "$foreground", modifiers = ["bold"] }
+"ui.highlight.match.background" = { bg = "$bg-magenta-intense" }
+"ui.highlight.match.text" = { fg = "$foreground", modifiers = ["bold"] }
 
 [palette]
 
@@ -171,6 +198,7 @@ chrome-background = "#17243dff"
 chrome-background-bright = "#001139ff"
 chrome-background-dim = "#101d34ff"
 chrome-background-alt = "#090e17ff"
+chrome-border = "#254d78b1"
 
 background = "#0d0e1c"
 background-bright = "#002272ff"
