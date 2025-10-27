@@ -109,6 +109,7 @@ author = "Jimmy"
 "ui.chrome.tab.text" = { fg = "$foreground-dim" }
 "ui.chrome.tab.border" = { fg = "$background-alt" }
 
+# Are tabs used? maybe we should remove this scope entirely from blink_theme in favor of navbar.item
 "ui.chrome.tab.item.background:active" = { bg = "$background-bright" }
 "ui.chrome.tab.item.text:active" = { fg = "$foreground", modifiers = ["bold"] }
 "ui.chrome.tab.item.text:inactive" = { fg = "$foreground-dim" }
@@ -129,12 +130,17 @@ author = "Jimmy"
 
 "ui.chrome.navbar.item.background" = { bg = "$chrome-background" }
 "ui.chrome.navbar.item.background:active" = { bg = "$selection-background" }
-"ui.chrome.navbar.item.text:active" = { fg = "$foreground", modifiers = ["bold"] }
-"ui.chrome.navbar.item.text:inactive" = { fg = "$foreground-dim" }
+"ui.chrome.navbar.item.text:active" = { fg = "$foreground", modifiers = [
+  "bold",
+] }
+"ui.chrome.navbar.item.empty.text" = { fg = "$foreground-dim" }
+"ui.chrome.navbar.item.empty.text:active" = { fg = "$foreground" }
 
 # Badges (date badges, notification counts)
 "ui.chrome.navbar.badge.background:active" = { bg = "$selection-background" }
-"ui.chrome.navbar.badge.text:active" = { fg = "$foreground", modifiers = ["bold"] }
+"ui.chrome.navbar.badge.text:active" = { fg = "$foreground", modifiers = [
+  "bold",
+] }
 "ui.chrome.navbar.badge.text:inactive" = { fg = "$foreground-alt" }
 "ui.chrome.navbar.badge.text:empty" = { fg = "$foreground-dim" }
 
