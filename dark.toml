@@ -158,6 +158,8 @@ author = "Jimmy"
 "ui.button.text" = { fg = "$foreground-alt" }
 "ui.button.background:hover" = { bg = "$selection-background" }
 "ui.button.background:active" = { bg = "$blue" }
+"ui.button.confirming.background" = { bg = "$selection-background" }
+"ui.button.confirming.text" = { fg = "$foreground" }
 
 "ui.input.background" = { bg = "$background" }
 "ui.input.text" = { fg = "$foreground" }

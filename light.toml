@@ -150,6 +150,8 @@ author = "Jimmy"
 "ui.button.background:hover" = { bg = "$linenr" }
 "ui.button.background:active" = { bg = "$blue" }
 "ui.button.text:active" = { fg = "$white" }
+"ui.button.confirming.background" = { bg = "$gray" }
+"ui.button.confirming.text" = { fg = "$black" }
 
 "ui.input.background" = { bg = "$white" }
 "ui.input.text" = { fg = "$black" }
