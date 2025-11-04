@@ -128,6 +128,8 @@ author = "Jimmy"
 
 "ui.chrome.navbar.item.text:active" = { fg = "$blue", modifiers = ["bold"] }
 "ui.chrome.navbar.item.text:inactive" = { fg = "$dark-gray" }
+"ui.chrome.navbar.item.highlight.text" = { fg = "$gold" }
+"ui.chrome.navbar.item.highlight.text:active" = { fg = "$gold", modifiers = ["bold"] }
 
 # Badges (date badges, notification counts)
 "ui.chrome.navbar.badge.background:active" = { bg = "$gray" }
@@ -152,6 +154,12 @@ author = "Jimmy"
 "ui.button.text:active" = { fg = "$white" }
 "ui.button.confirming.background" = { bg = "$gray" }
 "ui.button.confirming.text" = { fg = "$black" }
+
+# Negative/destructive action button (hold-to-trigger)
+"ui.button.negative.background" = { bg = "#ef4444" }
+"ui.button.negative.text" = { fg = "$white" }
+"ui.button.negative.confirming.background" = { bg = "#dc2626" }
+"ui.button.negative.confirming.text" = { fg = "$white" }
 
 "ui.input.background" = { bg = "$white" }
 "ui.input.text" = { fg = "$black" }

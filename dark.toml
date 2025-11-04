@@ -116,7 +116,7 @@ author = "Jimmy"
 "ui.chrome.tab.item.text:modified" = { fg = "$yellow" }
 
 # Menus and dropdowns
-"ui.chrome.menu.background" = { bg = "$background-bright" }
+"ui.chrome.menu.background" = { bg = "$background-alt" }
 "ui.chrome.menu.text" = { fg = "$foreground" }
 "ui.chrome.menu.item.text" = { fg = "$foreground-alt" }
 "ui.chrome.menu.item.background:selected" = { bg = "$selection-background" }
@@ -126,16 +126,21 @@ author = "Jimmy"
 
 # Navigation bars (bottom nav, toolbars)
 "ui.chrome.navbar.background" = { bg = "$chrome-background" }
-"ui.chrome.navbar.text" = { fg = "$foreground-alt" }
+"ui.chrome.navbar.text" = { fg = "$foreground" }
 
 "ui.chrome.navbar.item.background" = { bg = "$chrome-background" }
 "ui.chrome.navbar.item.background:active" = { bg = "$selection-background" }
 "ui.chrome.navbar.item.text:active" = { fg = "$foreground", modifiers = [
   "bold",
 ] }
-"ui.chrome.navbar.item.empty.text" = { fg = "$foreground-dim" }
+
+"ui.chrome.navbar.item.empty.text" = { fg = "$foreground-alt" }
 "ui.chrome.navbar.item.empty.text:active" = { fg = "$foreground" }
 
+"ui.chrome.navbar.item.highlight.text" = { fg = "$yellow" }
+"ui.chrome.navbar.item.highlight.text:active" = { fg = "$yellow", modifiers = [
+  "bold",
+] }
 # Badges (date badges, notification counts)
 "ui.chrome.navbar.badge.background:active" = { bg = "$selection-background" }
 "ui.chrome.navbar.badge.text:active" = { fg = "$foreground", modifiers = [
@@ -154,12 +159,18 @@ author = "Jimmy"
 "ui.chrome.panel.item.background:hover" = { bg = "$background" }
 
 # Interactive widgets
-"ui.button.background" = { bg = "$background-alt" }
+"ui.button.background" = { bg = "$background-bright" }
 "ui.button.text" = { fg = "$foreground-alt" }
 "ui.button.background:hover" = { bg = "$selection-background" }
 "ui.button.background:active" = { bg = "$blue" }
 "ui.button.confirming.background" = { bg = "$selection-background" }
 "ui.button.confirming.text" = { fg = "$foreground" }
+
+# Negative/destructive action button (hold-to-trigger)
+"ui.button.negative.background" = { bg = "$bg-red-intense" }
+"ui.button.negative.text" = { fg = "$foreground" }
+"ui.button.negative.confirming.background" = { bg = "$red-intense" }
+"ui.button.negative.confirming.text" = { fg = "$foreground" }
 
 "ui.input.background" = { bg = "$background" }
 "ui.input.text" = { fg = "$foreground" }
