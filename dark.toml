@@ -138,7 +138,11 @@ author = "Jimmy"
 "ui.chrome.navbar.item.empty.text:active" = { fg = "$foreground" }
 
 "ui.chrome.navbar.item.highlight.text" = { fg = "$yellow" }
+"ui.chrome.navbar.item.empty.highlight.text" = { fg = "$yellow" }
 "ui.chrome.navbar.item.highlight.text:active" = { fg = "$yellow", modifiers = [
+  "bold",
+] }
+"ui.chrome.navbar.item.empty.highlight.text:active" = { fg = "$yellow", modifiers = [
   "bold",
 ] }
 # Badges (date badges, notification counts)
