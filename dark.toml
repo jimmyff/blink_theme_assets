@@ -29,10 +29,13 @@ author = "Jimmy"
 "syntax.comment" = { fg = "$foreground-dim", modifiers = ["italic"] }
 "syntax.doctag" = { fg = "$blue", modifiers = ["italic"] }
 
+# Special characters
+"syntax.unprintable" = { fg = "$foreground", bg= "$bg-red-intense", modifiers = ["bold"] }
+
 # Highlight.js scopes - Titles and names
-"syntax.title" = { fg = "$yellow" }
-"syntax.title.class" = { fg = "$yellow" }
-"syntax.title.class.inherited" = { fg = "$yellow" }
+"syntax.title" = { fg = "$yellow-intense" }
+"syntax.title.class" = { fg = "$yellow-intense" }
+"syntax.title.class.inherited" = { fg = "$yellow-intense" }
 "syntax.title.function" = { fg = "$blue" }
 "syntax.title.function.invoke" = { fg = "$blue" }
 "syntax.params" = { fg = "$red" }
@@ -44,8 +47,8 @@ author = "Jimmy"
 "syntax.attribute" = { fg = "$fg-sage" }
 
 # Highlight.js scopes - Markdown/text markup
-"syntax.section" = { fg = "$yellow", modifiers = ["bold"] }
-"syntax.bullet" = { fg = "$red" }
+"syntax.section" = { fg = "$yellow-intense", modifiers = ["bold"] }
+"syntax.bullet" = { fg = "$magenta-intense" }
 "syntax.code" = { fg = "$green" }
 "syntax.emphasis" = { fg = "$magenta", modifiers = ["italic"] }
 "syntax.strong" = { fg = "$cyan", modifiers = ["bold"] }
@@ -84,7 +87,7 @@ author = "Jimmy"
 
 "ui.editor.gutter.background" = { bg = "$background-alt" }
 "ui.editor.gutter.background:selected" = { bg = "$background-alt" }
-"ui.editor.gutter.text" = { fg = "$foreground-dim" }
+"ui.editor.gutter.text" = { fg = "$foreground-dim-alt" }
 "ui.editor.gutter.text:selected" = { fg = "$foreground" }
 
 "ui.editor.scrollbar.track" = { bg = "$background-alt" }
@@ -93,7 +96,7 @@ author = "Jimmy"
 
 # Application chrome
 "ui.chrome.background" = { bg = "$chrome-background" }
-"ui.chrome.text" = { fg = "$foreground-alt" }
+"ui.chrome.text" = { fg = "$chrome-foreground-alt" }
 
 # App bar (top)
 "ui.chrome.appbar.background" = { bg = "$chrome-background" }
@@ -102,7 +105,7 @@ author = "Jimmy"
 
 # Status bar (bottom)
 "ui.chrome.statusbar.background" = { bg = "$chrome-background" }
-"ui.chrome.statusbar.text" = { fg = "$foreground-alt" }
+"ui.chrome.statusbar.text" = { fg = "$chrome-foreground-alt" }
 
 # Document tabs (tab bar for open files)
 "ui.chrome.tab.background" = { bg = "$chrome-background-dim" }
@@ -116,7 +119,7 @@ author = "Jimmy"
 "ui.chrome.tab.item.text:modified" = { fg = "$yellow" }
 
 # Menus and dropdowns
-"ui.chrome.menu.background" = { bg = "$background-alt" }
+"ui.chrome.menu.background" = { bg = "$chrome-background-bright" }
 "ui.chrome.menu.text" = { fg = "$foreground" }
 "ui.chrome.menu.item.text" = { fg = "$foreground-alt" }
 "ui.chrome.menu.item.background:selected" = { bg = "$selection-background" }
@@ -126,27 +129,39 @@ author = "Jimmy"
 
 # Navigation bars (bottom nav, toolbars)
 "ui.chrome.navbar.background" = { bg = "$chrome-background" }
-"ui.chrome.navbar.text" = { fg = "$foreground" }
+"ui.chrome.navbar.text" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.navbar.text:active" = { fg = "$chrome-foreground" }
+"ui.chrome.navbar.icon" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.navbar.icon:active" = { fg = "$yellow-intense" }
 
 "ui.chrome.navbar.item.background" = { bg = "$chrome-background" }
-"ui.chrome.navbar.item.background:active" = { bg = "$selection-background" }
-"ui.chrome.navbar.item.text:active" = { fg = "$foreground", modifiers = [
+"ui.chrome.navbar.item.background:active" = { bg = "$chrome-background-bright" }
+
+# Primary variant (has content)
+"ui.chrome.navbar.item.primary.text" = { fg = "$foreground" }
+"ui.chrome.navbar.item.primary.text:active" = { fg = "$foreground", modifiers = [
   "bold",
 ] }
+"ui.chrome.navbar.item.primary.icon" = { fg = "$chrome-foreground" }
+"ui.chrome.navbar.item.primary.icon:active" = { fg = "$yellow-intense" }
 
-"ui.chrome.navbar.item.empty.text" = { fg = "$foreground-alt" }
-"ui.chrome.navbar.item.empty.text:active" = { fg = "$foreground" }
+# Secondary variant (no content)
+"ui.chrome.navbar.item.secondary.text" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.navbar.item.secondary.text:active" = { fg = "$foreground" }
+"ui.chrome.navbar.item.secondary.icon" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.navbar.item.secondary.icon:active" = { fg = "$chrome-foreground-alt" }
 
-"ui.chrome.navbar.item.highlight.text" = { fg = "$yellow" }
-"ui.chrome.navbar.item.empty.highlight.text" = { fg = "$yellow" }
-"ui.chrome.navbar.item.highlight.text:active" = { fg = "$yellow", modifiers = [
+# Highlight modifier (today indicator)
+"ui.chrome.navbar.item.primary.highlight.text" = { fg = "$yellow-intense" }
+"ui.chrome.navbar.item.primary.highlight.text:active" = { fg = "$yellow-intense", modifiers = [
   "bold",
 ] }
-"ui.chrome.navbar.item.empty.highlight.text:active" = { fg = "$yellow", modifiers = [
+"ui.chrome.navbar.item.secondary.highlight.text" = { fg = "$yellow-intense" }
+"ui.chrome.navbar.item.secondary.highlight.text:active" = { fg = "$yellow-intense", modifiers = [
   "bold",
 ] }
 # Badges (date badges, notification counts)
-"ui.chrome.navbar.badge.background:active" = { bg = "$selection-background" }
+"ui.chrome.navbar.badge.background:active" = { bg = "$chrome-background-bright" }
 "ui.chrome.navbar.badge.text:active" = { fg = "$foreground", modifiers = [
   "bold",
 ] }
@@ -183,14 +198,14 @@ author = "Jimmy"
 
 # List views
 "ui.list.background" = { bg = "$background" }
-"ui.list.alternate.background" = { bg = "$background-dim" }
+"ui.list.alternate.background" = { bg = "$background-alt" }
 "ui.list.text" = { fg = "$foreground" }
-"ui.list.secondary.text" = { fg = "$foreground-dim" }
+"ui.list.secondary.text" = { fg = "$foreground-dim-alt" }
 "ui.list.icon" = { fg = "$foreground-alt" }
 "ui.list.item.background:selected" = { bg = "$selection-background" }
 "ui.list.item.text:selected" = { fg = "$selection-foreground" }
 "ui.list.item.background:hover" = { bg = "$background-alt" }
-
+"ui.list.item.border.fg" = { fg = "$background-bright" }
 # Borders (standalone borders/dividers)
 "ui.border" = { fg = "$chrome-border" }
 "ui.border:focus" = { fg = "$cyan-intense" }
@@ -208,7 +223,7 @@ author = "Jimmy"
 "ui.info.text" = { fg = "$blue" }
 "ui.success.text" = { fg = "$green" }
 
-# Highlight backgrounds
+# Highlight backgrounds (used by goto_word command)
 "ui.highlight.background" = { bg = "$bg-blue-intense" }
 "ui.highlight.text" = { fg = "$foreground", modifiers = ["bold"] }
 "ui.highlight.match.background" = { bg = "$bg-magenta-intense" }
@@ -217,20 +232,23 @@ author = "Jimmy"
 [palette]
 
 
-chrome-background = "#17243dff"
-chrome-background-bright = "#001139ff"
+chrome-background = "#0A2035"
+chrome-background-bright = "#003A59"
 chrome-background-dim = "#101d34ff"
 chrome-background-alt = "#090e17ff"
-chrome-border = "#254d78b1"
+chrome-border = "#003A59"
+chrome-foreground = "#ffffff"
+chrome-foreground-alt = "#72DFFF"
 
 background = "#0d0e1c"
 background-bright = "#002272ff"
 background-dim = "#181928ff"
-background-alt = "#131e32ff"
+background-alt = "#121426"
 
 foreground = "#fff"
-foreground-dim = "#37565dff"
-foreground-alt = "#b6c4dfff"
+foreground-dim = "#4BA2B5"
+foreground-alt = "#E6CEEE"
+foreground-dim-alt = "#60698F"
 
 selection-background = "#00667dff"
 selection-foreground = "#fff"
