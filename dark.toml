@@ -30,7 +30,9 @@ author = "Jimmy"
 "syntax.doctag" = { fg = "$blue", modifiers = ["italic"] }
 
 # Special characters
-"syntax.unprintable" = { fg = "$foreground", bg= "$bg-red-intense", modifiers = ["bold"] }
+"syntax.unprintable" = { fg = "$foreground", bg = "$bg-red-intense", modifiers = [
+  "bold",
+] }
 
 # Highlight.js scopes - Titles and names
 "syntax.title" = { fg = "$yellow-intense" }
@@ -48,7 +50,7 @@ author = "Jimmy"
 
 # Highlight.js scopes - Markdown/text markup
 "syntax.section" = { fg = "$yellow-intense", modifiers = ["bold"] }
-"syntax.bullet" = { fg = "$magenta-intense" }
+"syntax.bullet" = { fg = "$magenta-intense", modifiers = ["bold"] }
 "syntax.code" = { fg = "$green" }
 "syntax.emphasis" = { fg = "$magenta", modifiers = ["italic"] }
 "syntax.strong" = { fg = "$cyan", modifiers = ["bold"] }
@@ -191,8 +193,14 @@ author = "Jimmy"
 "ui.button.negative.confirming.background" = { bg = "$red-intense" }
 "ui.button.negative.confirming.text" = { fg = "$foreground" }
 
-"ui.input.background" = { bg = "$background" }
+# Disabled buttons
+"ui.button.disabled.background" = { bg = "$chrome-background-dim" }
+"ui.button.disabled.text" = { fg = "$foreground-dim" }
+
+"ui.input.background" = { bg = "$background-bright" }
 "ui.input.text" = { fg = "$foreground" }
+"ui.input.secondary.text" = { fg = "$foreground-dim" }
+
 "ui.input.border" = { fg = "$background-alt" }
 "ui.input.border:focus" = { fg = "$blue" }
 
@@ -206,6 +214,15 @@ author = "Jimmy"
 "ui.list.item.text:selected" = { fg = "$selection-foreground" }
 "ui.list.item.background:hover" = { bg = "$background-alt" }
 "ui.list.item.border.fg" = { fg = "$background-bright" }
+
+# Search overlay (extends list styling)
+"ui.list.search.background" = { bg = "$background" }
+"ui.list.search.border" = { fg = "$background-bright" }
+"ui.list.search.overlay.background" = { bg = "#000000" }       # Semi-transparent in code
+"ui.list.search.input.background" = { bg = "$background-alt" }
+"ui.list.search.input.text" = { fg = "$foreground" }
+"ui.list.search.error.text" = { fg = "$red" }
+
 # Borders (standalone borders/dividers)
 "ui.border" = { fg = "$chrome-border" }
 "ui.border:focus" = { fg = "$cyan-intense" }

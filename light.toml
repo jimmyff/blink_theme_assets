@@ -177,6 +177,10 @@ author = "Jimmy"
 "ui.button.negative.confirming.background" = { bg = "#dc2626" }
 "ui.button.negative.confirming.text" = { fg = "$white" }
 
+# Disabled buttons
+"ui.button.disabled.background" = { bg = "$light-white" }
+"ui.button.disabled.text" = { fg = "$dark-gray" }
+
 "ui.input.background" = { bg = "$white" }
 "ui.input.text" = { fg = "$black" }
 "ui.input.border" = { fg = "$linenr" }
@@ -191,6 +195,14 @@ author = "Jimmy"
 "ui.list.item.background:selected" = { bg = "$gray" }
 "ui.list.item.text:selected" = { fg = "$black" }
 "ui.list.item.background:hover" = { bg = "$light-white" }
+
+# Search overlay (extends list styling)
+"ui.list.search.background" = { bg = "$white" }
+"ui.list.search.border" = { fg = "$linenr" }
+"ui.list.search.overlay.background" = { bg = "#000000" } # Semi-transparent in code
+"ui.list.search.input.background" = { bg = "$light-white" }
+"ui.list.search.input.text" = { fg = "$black" }
+"ui.list.search.error.text" = { fg = "$red" }
 
 # Borders (standalone borders/dividers)
 "ui.border" = { fg = "$linenr" }

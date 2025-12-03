@@ -1,3 +1,53 @@
-# Blink Themes
+# blink_theme_assets
 
-Editor themes for Blink tools.
+Bundled TOML theme definitions for Blink applications. Contains the default dark and light themes shipped with Cache and Blink Editor.
+
+## Included Themes
+
+- **dark.toml** - "Blink Dark" theme with muted colors optimized for low-light environments
+- **light.toml** - "Blink Light" theme with high contrast for bright environments
+
+## File Structure
+
+Each theme file follows the blink_theme TOML format:
+
+```toml
+[metadata]
+name = "Theme Name"
+author = "Author"
+
+[scopes]
+# Hierarchical scope definitions
+"*" = { fg = "$foreground" }
+"syntax.keyword" = { fg = "$magenta" }
+"ui.editor.background" = { bg = "$bg" }
+"ui.chrome.navbar.item.text:active" = { fg = "$accent" }
+
+[palette]
+# Color definitions
+foreground = "#d4d4d4"
+bg = "#1e1e1e"
+magenta = "#c678dd"
+```
+
+## Usage
+
+Applications reference these themes by filename in their default settings:
+
+```dart
+// apps/notes/lib/app_defaults.dart
+const notesDefaults = AppDefaults(
+  theme: ThemeDefaults(
+    mode: 'system',
+    dark: 'dark.toml',
+    light: 'light.toml',
+  ),
+);
+```
+
+The `blink_theme` package handles parsing and applying these TOML files.
+
+## See Also
+
+- **blink_theme package** (`../../packages/blink_theme/`) - Theme parsing, API, and scope system documentation
+- **THEME_SCOPE_SYSTEM.md** - Complete scope specification and guidelines
