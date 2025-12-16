@@ -78,6 +78,9 @@ author = "Jimmy"
 # Root UI text default
 "ui.text" = { fg = "$foreground" }
 
+# Safe area border (only shows on edges with safe area insets)
+"ui.safearea.background" = { border = { fg = "$chrome-border", width = 1 } }
+
 # Editor surface
 "ui.editor.background" = { bg = "$background" }
 "ui.editor.text" = { fg = "$foreground" }
@@ -99,7 +102,7 @@ author = "Jimmy"
 "ui.editor.scrollbar.thumb:hover" = { fg = "$foreground-alt" }
 
 # Application chrome
-"ui.chrome.background" = { bg = "$chrome-background" }
+"ui.chrome.background" = { bg = "$chrome-background", border = { fg = "$chrome-border" } }
 "ui.chrome.text" = { fg = "$chrome-foreground-alt" }
 "ui.chrome.primary.text" = { fg = "$chrome-foreground" }
 "ui.chrome.icon" = { fg = "$chrome-foreground-alt" }
@@ -116,7 +119,6 @@ author = "Jimmy"
 # Document tabs (tab bar for open files)
 "ui.chrome.tab.background" = { bg = "$chrome-background-dim" }
 "ui.chrome.tab.text" = { fg = "$foreground-dim" }
-"ui.chrome.tab.border" = { fg = "$background-alt" }
 
 # Are tabs used? maybe we should remove this scope entirely from blink_theme in favor of navbar.item
 "ui.chrome.tab.item.background:active" = { bg = "$background-bright" }
@@ -142,7 +144,6 @@ author = "Jimmy"
 
 "ui.chrome.navbar.item.background" = { bg = "$chrome-background" }
 "ui.chrome.navbar.item.background:active" = { bg = "$background" }
-"ui.chrome.navbar.border" = { fg = "$background" }
 
 # Primary variant (has content)
 "ui.chrome.navbar.item.primary.text" = { fg = "$foreground" }
@@ -179,7 +180,6 @@ author = "Jimmy"
 "ui.chrome.panel.background" = { bg = "$background-alt" }
 "ui.chrome.panel.text" = { fg = "$foreground-alt" }
 "ui.chrome.panel.title.text" = { fg = "$foreground", modifiers = ["bold"] }
-"ui.chrome.panel.border" = { fg = "$background-alt" }
 "ui.chrome.panel.item.background:selected" = { bg = "$selection-background" }
 "ui.chrome.panel.item.text:selected" = { fg = "$foreground" }
 "ui.chrome.panel.item.background:hover" = { bg = "$background" }
@@ -206,9 +206,6 @@ author = "Jimmy"
 "ui.input.text" = { fg = "$foreground" }
 "ui.input.secondary.text" = { fg = "$foreground-dim" }
 
-"ui.input.border" = { fg = "$background-alt" }
-"ui.input.border:focus" = { fg = "$blue" }
-
 # List views
 "ui.list.background" = { bg = "$background" }
 "ui.list.alternate.background" = { bg = "$background-alt" }
@@ -218,20 +215,13 @@ author = "Jimmy"
 "ui.list.item.background:selected" = { bg = "$selection-background" }
 "ui.list.item.text:selected" = { fg = "$selection-foreground" }
 "ui.list.item.background:hover" = { bg = "$background-alt" }
-"ui.list.item.border" = { fg = "$transparent" }
 
 # Search overlay (extends list styling)
 "ui.list.search.background" = { bg = "$background" }
-"ui.list.search.border" = { fg = "$transparent" }
 "ui.overlay.background" = { bg = "$background-overlay" }
 "ui.list.search.input.background" = { bg = "$background-alt" }
 "ui.list.search.input.text" = { fg = "$foreground" }
 "ui.list.search.error.text" = { fg = "$red" }
-
-# Borders (standalone borders/dividers)
-"ui.border" = { fg = "$transparent" }
-"ui.border:focus" = { fg = "$cyan-intense" }
-"ui.border:active" = { fg = "$cyan-intense" }
 
 # Text display elements (generic labels, paths, etc.)
 "ui.label.text" = { fg = "$foreground-alt" }

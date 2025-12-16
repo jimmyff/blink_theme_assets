@@ -76,6 +76,9 @@ author = "Jimmy"
 # Root UI text default
 "ui.text" = { fg = "$black" }
 
+# Safe area border (only shows on edges with safe area insets)
+"ui.safearea.background" = { border = { fg = "$linenr", width = 1 } }
+
 # Editor surface
 "ui.editor.background" = { bg = "$white" }
 "ui.editor.text" = { fg = "$black" }
@@ -94,7 +97,7 @@ author = "Jimmy"
 "ui.editor.scrollbar.thumb:hover" = { fg = "$dark-gray" }
 
 # Application chrome
-"ui.chrome.background" = { bg = "$light-white" }
+"ui.chrome.background" = { bg = "$light-white", border = { fg = "$linenr" } }
 "ui.chrome.text" = { fg = "$black" }
 
 # App bar (top)
@@ -109,7 +112,6 @@ author = "Jimmy"
 # Document tabs (tab bar for open files)
 "ui.chrome.tab.background" = { bg = "$light-white" }
 "ui.chrome.tab.text" = { fg = "$dark-gray" }
-"ui.chrome.tab.border" = { fg = "$linenr" }
 
 "ui.chrome.tab.item.background:active" = { bg = "$white" }
 "ui.chrome.tab.item.text:active" = { fg = "$black", modifiers = ["bold"] }
@@ -157,7 +159,6 @@ author = "Jimmy"
 "ui.chrome.panel.background" = { bg = "$light-white" }
 "ui.chrome.panel.text" = { fg = "$black" }
 "ui.chrome.panel.title.text" = { fg = "$black", modifiers = ["bold"] }
-"ui.chrome.panel.border" = { fg = "$linenr" }
 "ui.chrome.panel.item.background:selected" = { bg = "$gray" }
 "ui.chrome.panel.item.text:selected" = { fg = "$black" }
 "ui.chrome.panel.item.background:hover" = { bg = "$white" }
@@ -183,8 +184,6 @@ author = "Jimmy"
 
 "ui.input.background" = { bg = "$white" }
 "ui.input.text" = { fg = "$black" }
-"ui.input.border" = { fg = "$linenr" }
-"ui.input.border:focus" = { fg = "$blue" }
 
 # List views
 "ui.list.background" = { bg = "$white" }
@@ -198,16 +197,10 @@ author = "Jimmy"
 
 # Search overlay (extends list styling)
 "ui.list.search.background" = { bg = "$white" }
-"ui.list.search.border" = { fg = "$linenr" }
 "ui.list.search.overlay.background" = { bg = "#000000" } # Semi-transparent in code
 "ui.list.search.input.background" = { bg = "$light-white" }
 "ui.list.search.input.text" = { fg = "$black" }
 "ui.list.search.error.text" = { fg = "$red" }
-
-# Borders (standalone borders/dividers)
-"ui.border" = { fg = "$linenr" }
-"ui.border:focus" = { fg = "$blue" }
-"ui.border:active" = { fg = "$cyan" }
 
 # Text display elements (generic labels, paths, etc.)
 "ui.label.text" = { fg = "$black" }

@@ -76,7 +76,9 @@ author = "Jimmy"
 # Class-based structure with semantic suffixes and :state notation
 
 # Root UI text default
-"ui.text" = { fg = "$foreground" }
+"ui.text" = { fg = "#FFFFFF" }
+"ui.secondary.text" = { fg = "#DDDDDD" }
+
 
 # Editor surface
 "ui.editor.background" = { bg = "$background" }
@@ -84,8 +86,8 @@ author = "Jimmy"
 
 "ui.editor.cursor.background" = { bg = "$cursor", fg = "$cursor-fg" }
 
-"ui.editor.selection.background" = { bg = "$selection-background" }
-"ui.editor.selection.text" = { fg = "$selection-foreground" }
+"ui.editor.selection.background" = { bg = "$accent-bg" }
+"ui.editor.selection.text" = { fg = "$accent-fg" }
 
 "ui.editor.gutter.background" = { bg = "$background-alt" }
 "ui.editor.gutter.background:selected" = { bg = "$background-alt" }
@@ -99,183 +101,75 @@ author = "Jimmy"
 "ui.editor.scrollbar.thumb:hover" = { fg = "$foreground-alt" }
 
 # Application chrome
-"ui.chrome.background" = { bg = "$chrome-background" }
-"ui.chrome.text" = { fg = "$chrome-foreground-alt" }
+# 
+"ui.chrome.background" = { bg = "#181818", border = { fg = "$border-fg" } }
+#"ui.chrome.background" = { bg = "#181818", border = { fg = "#ff0000" } }
+#"ui.background" = { border = { fg = "#00ff00" } }
+"ui.background" = { border = { fg = "$border-fg" } }
 
-# App bar (top)
-"ui.chrome.appbar.background" = { bg = "$chrome-background" }
-"ui.chrome.appbar.text" = { fg = "$foreground" }
-"ui.chrome.appbar.title.text" = { fg = "$foreground", modifiers = ["bold"] }
 
-# Status bar (bottom)
-"ui.chrome.statusbar.background" = { bg = "$chrome-background" }
-"ui.chrome.statusbar.text" = { fg = "$chrome-foreground-alt" }
+"ui.safearea.background" = { bg = "#181818", border = { fg = "$border-fg", width = 1 } }
+#"ui.divider" = { border = { fg = "#0000ff" } }
+"ui.divider" = { border = { fg = "$border-fg" } }
 
-# Document tabs (tab bar for open files)
-"ui.chrome.tab.background" = { bg = "$chrome-background-dim" }
-"ui.chrome.tab.text" = { fg = "$foreground-dim" }
-"ui.chrome.tab.border" = { fg = "$background-alt" }
+"ui.overlay.background" = { bg = "#00000088" }
 
-# Are tabs used? maybe we should remove this scope entirely from blink_theme in favor of navbar.item
-"ui.chrome.tab.item.background:active" = { bg = "$background-bright" }
-"ui.chrome.tab.item.text:active" = { fg = "$foreground", modifiers = ["bold"] }
-"ui.chrome.tab.item.text:inactive" = { fg = "$foreground-dim" }
-"ui.chrome.tab.item.text:modified" = { fg = "$yellow" }
 
-# Menus and dropdowns
-"ui.chrome.menu.background" = { bg = "$chrome-background-bright" }
-"ui.chrome.menu.text" = { fg = "$foreground" }
-"ui.chrome.menu.item.text" = { fg = "$foreground-alt" }
-"ui.chrome.menu.item.background:selected" = { bg = "$selection-background" }
-"ui.chrome.menu.item.text:selected" = { fg = "$foreground" }
-"ui.chrome.menu.item.background:hover" = { bg = "$background" }
-"ui.chrome.menu.separator" = { fg = "$background-alt" }
+"ui.chrome.text" = { fg = "#DDDDDD" }
+"ui.chrome.secondary.text" = { fg = "#BBBBBB" }
 
-# Navigation bars (bottom nav, toolbars)
-"ui.chrome.navbar.background" = { bg = "$chrome-background" }
-"ui.chrome.navbar.text" = { fg = "$chrome-foreground" }
-"ui.chrome.navbar.text:active" = { fg = "$chrome-foreground" }
-"ui.chrome.navbar.icon" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.icon:active" = { fg = "$yellow-intense" }
 
-"ui.chrome.navbar.item.background" = { bg = "$chrome-background" }
-"ui.chrome.navbar.item.background:active" = { bg = "$chrome-background-bright" }
+"ui.chrome.navbar.item.secondary.text" = { fg = "#777777" }
 
-# Primary variant (has content)
-"ui.chrome.navbar.item.primary.text" = { fg = "$foreground" }
-"ui.chrome.navbar.item.primary.text:active" = { fg = "$foreground", modifiers = [
+"ui.chrome.navbar.item.text" = { fg = "#CCCCCC" }
+"ui.chrome.navbar.item.text:active" = { fg = "#FFFFFF" }
+"ui.chrome.navbar.item.icon" = { fg = "#AAAAAA" }
+"ui.chrome.navbar.item.icon:active" = { fg = "#EEEEEE" }
+"ui.chrome.navbar.item.background:active" = { bg = "#222222", border = { width = 3, fg = "$accent-bg" } }
+
+# badges
+"ui.chrome.navbar.badge.background" = { bg = "$accent-bg" }
+"ui.chrome.navbar.badge.text:active" = { fg = "$accent-fg", modifiers = [
   "bold",
 ] }
-"ui.chrome.navbar.item.primary.icon" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.item.primary.icon:active" = { fg = "$yellow-intense" }
-
-# Secondary variant (no content)
-"ui.chrome.navbar.item.secondary.text" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.item.secondary.text:active" = { fg = "$chrome-foreground" }
-"ui.chrome.navbar.item.secondary.icon" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.item.secondary.icon:active" = { fg = "$chrome-foreground-alt" }
-
-# Highlight modifier (today indicator)
-"ui.chrome.navbar.item.primary.highlight.text" = { fg = "$yellow-intense" }
-"ui.chrome.navbar.item.primary.highlight.text:active" = { fg = "$yellow-intense", modifiers = [
-  "bold",
-] }
-"ui.chrome.navbar.item.secondary.highlight.text" = { fg = "$yellow-intense" }
-"ui.chrome.navbar.item.secondary.highlight.text:active" = { fg = "$yellow-intense", modifiers = [
-  "bold",
-] }
-# Badges (date badges, notification counts)
-"ui.chrome.navbar.badge.background:active" = { bg = "$chrome-background-bright" }
-"ui.chrome.navbar.badge.text:active" = { fg = "$foreground", modifiers = [
-  "bold",
-] }
-"ui.chrome.navbar.badge.text:inactive" = { fg = "$foreground-alt" }
-"ui.chrome.navbar.badge.text:empty" = { fg = "$foreground-dim" }
-
-# Panels & sidebars
-"ui.chrome.panel.background" = { bg = "$background-alt" }
-"ui.chrome.panel.text" = { fg = "$foreground-alt" }
-"ui.chrome.panel.title.text" = { fg = "$foreground", modifiers = ["bold"] }
-"ui.chrome.panel.border" = { fg = "$background-alt" }
-"ui.chrome.panel.item.background:selected" = { bg = "$selection-background" }
-"ui.chrome.panel.item.text:selected" = { fg = "$foreground" }
-"ui.chrome.panel.item.background:hover" = { bg = "$background" }
-
-# Interactive widgets
-"ui.button.background" = { bg = "$background-bright" }
-"ui.button.text" = { fg = "$foreground-alt" }
-"ui.button.background:hover" = { bg = "$selection-background" }
-"ui.button.background:active" = { bg = "$blue" }
-"ui.button.confirming.background" = { bg = "$selection-background" }
-"ui.button.confirming.text" = { fg = "$foreground" }
-
-# Negative/destructive action button (hold-to-trigger)
-"ui.button.negative.background" = { bg = "$bg-red-intense" }
-"ui.button.negative.text" = { fg = "$foreground" }
-"ui.button.negative.confirming.background" = { bg = "$red-intense" }
-"ui.button.negative.confirming.text" = { fg = "$foreground" }
-
-# Disabled buttons
-"ui.button.disabled.background" = { bg = "$chrome-background-dim" }
-"ui.button.disabled.text" = { fg = "$foreground-dim" }
-
-"ui.input.background" = { bg = "$background-bright" }
-"ui.input.text" = { fg = "$foreground" }
-"ui.input.secondary.text" = { fg = "$foreground-dim" }
-
-"ui.input.border" = { fg = "$background-alt" }
-"ui.input.border:focus" = { fg = "$blue" }
-
-# List views
-"ui.list.background" = { bg = "$background" }
-"ui.list.alternate.background" = { bg = "$background-alt" }
-"ui.list.text" = { fg = "$foreground" }
-"ui.list.secondary.text" = { fg = "$foreground-dim-alt" }
-"ui.list.icon" = { fg = "$foreground-alt" }
-"ui.list.item.background:selected" = { bg = "$selection-background" }
-"ui.list.item.text:selected" = { fg = "$selection-foreground" }
-"ui.list.item.background:hover" = { bg = "$background-alt" }
-"ui.list.item.border" = { fg = "$transparent" }
-
-# Search overlay (extends list styling)
-"ui.list.search.background" = { bg = "$background" }
-"ui.list.search.border" = { fg = "$transparent" }
-"ui.overlay.background" = { bg = "$background-overlay" }
-"ui.list.search.input.background" = { bg = "$background-alt" }
-"ui.list.search.input.text" = { fg = "$foreground" }
-"ui.list.search.error.text" = { fg = "$red" }
-
-# Borders (standalone borders/dividers)
-"ui.border" = { fg = "$chrome-border" }
-"ui.border:focus" = { fg = "$cyan-intense" }
-"ui.border:active" = { fg = "$cyan-intense" }
-
-# Text display elements (generic labels, paths, etc.)
-"ui.label.text" = { fg = "$foreground-alt" }
-"ui.path.text" = { fg = "$foreground-dim" }
-"ui.filename.text" = { fg = "$foreground" }
-"ui.position.text" = { fg = "$foreground-dim" }
-
-# Semantic text colors
-"ui.error.text" = { fg = "$red", modifiers = ["bold"] }
-"ui.warning.text" = { fg = "$yellow", modifiers = ["bold"] }
-"ui.info.text" = { fg = "$blue" }
-"ui.success.text" = { fg = "$green" }
-
-# Highlight backgrounds (used by goto_word command)
-"ui.highlight.background" = { bg = "$bg-blue-intense" }
-"ui.highlight.text" = { fg = "$foreground", modifiers = ["bold"] }
-"ui.highlight.match.background" = { bg = "$bg-magenta-intense" }
-"ui.highlight.match.text" = { fg = "$foreground", modifiers = ["bold"] }
 
 [palette]
 
 transparent = "#00000000"
 
-chrome-background = "#132A40"
-chrome-background-bright = "#003A59"
+accent-bg = "oklch(0.567 0.1996 248.5156)"
+accent-fg = "#ffffff"
+accent-text = "oklch(0.8 0.1251 237.7)"
+
+chrome-background = "#333333"
+
+border-fg = "#333333"
+
+
+chrome-background-bright = "#444444"
 chrome-background-dim = "#101d34ff"
 chrome-background-alt = "#090e17ff"
 chrome-border = "#0B406E55"
 chrome-foreground = "#ffffff"
-chrome-foreground-alt = "#72DFFF"
+chrome-foreground-alt = "#CCCCCC"
 
 background = "#000000"
-background-bright = "#002272ff"
-background-dim = "#181928ff"
-background-overlay = "#020E23AA"
+background-bright = "#3C3C3C"
+background-dim = "#252525"
+background-overlay = "#000000AA"
 
 # Gutter
-background-alt = "#121426"
+background-alt = "#111111"
 
 
 foreground = "#fff"
-foreground-dim = "#4BA2B5"
-foreground-alt = "#DAB8E6"
-foreground-dim-alt = "#6C81CD"
+foreground-dim = "#AAAAAA"
+foreground-alt = "#CCCCCC"
+foreground-dim-alt = "#999999"
 
-selection-background = "#00667dff"
+selection-background = "#007ACC"
 selection-foreground = "#fff"
+
 
 cursor = "#ff66ff"
 cursor-fg = "#000000"
