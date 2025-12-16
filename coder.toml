@@ -1,5 +1,5 @@
 [metadata]
-name = "Blink Dark"
+name = "Coder"
 author = "Jimmy"
 
 [scopes]
@@ -101,15 +101,17 @@ author = "Jimmy"
 # Application chrome
 "ui.chrome.background" = { bg = "$chrome-background" }
 "ui.chrome.text" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.primary.text" = { fg = "$chrome-foreground" }
+"ui.chrome.icon" = { fg = "$chrome-foreground-alt" }
 
 # App bar (top)
-"ui.chrome.appbar.background" = { bg = "$chrome-background" }
+"ui.chrome.appbar.background" = { bg = "$chrome-background-bright" }
 "ui.chrome.appbar.text" = { fg = "$foreground" }
 "ui.chrome.appbar.title.text" = { fg = "$foreground", modifiers = ["bold"] }
 
 # Status bar (bottom)
-"ui.chrome.statusbar.background" = { bg = "$chrome-background" }
-"ui.chrome.statusbar.text" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.statusbar.background" = { bg = "$accent-bg" }
+"ui.chrome.statusbar.text" = { fg = "$accent-fg" }
 
 # Document tabs (tab bar for open files)
 "ui.chrome.tab.background" = { bg = "$chrome-background-dim" }
@@ -139,7 +141,8 @@ author = "Jimmy"
 "ui.chrome.navbar.icon:active" = { fg = "$yellow-intense" }
 
 "ui.chrome.navbar.item.background" = { bg = "$chrome-background" }
-"ui.chrome.navbar.item.background:active" = { bg = "$chrome-background-bright" }
+"ui.chrome.navbar.item.background:active" = { bg = "$background" }
+"ui.chrome.navbar.border" = { fg = "$background" }
 
 # Primary variant (has content)
 "ui.chrome.navbar.item.primary.text" = { fg = "$foreground" }
@@ -147,7 +150,7 @@ author = "Jimmy"
   "bold",
 ] }
 "ui.chrome.navbar.item.primary.icon" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.item.primary.icon:active" = { fg = "$yellow-intense" }
+"ui.chrome.navbar.item.primary.icon:active" = { fg = "$foreground" }
 
 # Secondary variant (no content)
 "ui.chrome.navbar.item.secondary.text" = { fg = "$chrome-foreground-alt" }
@@ -156,12 +159,12 @@ author = "Jimmy"
 "ui.chrome.navbar.item.secondary.icon:active" = { fg = "$chrome-foreground-alt" }
 
 # Highlight modifier (today indicator)
-"ui.chrome.navbar.item.primary.highlight.text" = { fg = "$yellow-intense" }
-"ui.chrome.navbar.item.primary.highlight.text:active" = { fg = "$yellow-intense", modifiers = [
+"ui.chrome.navbar.item.primary.highlight.text" = { fg = "$accent-text" }
+"ui.chrome.navbar.item.primary.highlight.text:active" = { fg = "$accent-text", modifiers = [
   "bold",
 ] }
-"ui.chrome.navbar.item.secondary.highlight.text" = { fg = "$yellow-intense" }
-"ui.chrome.navbar.item.secondary.highlight.text:active" = { fg = "$yellow-intense", modifiers = [
+"ui.chrome.navbar.item.secondary.highlight.text" = { fg = "$accent-text" }
+"ui.chrome.navbar.item.secondary.highlight.text:active" = { fg = "$accent-text", modifiers = [
   "bold",
 ] }
 # Badges (date badges, notification counts)
@@ -226,7 +229,7 @@ author = "Jimmy"
 "ui.list.search.error.text" = { fg = "$red" }
 
 # Borders (standalone borders/dividers)
-"ui.border" = { fg = "$chrome-border" }
+"ui.border" = { fg = "$transparent" }
 "ui.border:focus" = { fg = "$cyan-intense" }
 "ui.border:active" = { fg = "$cyan-intense" }
 
@@ -252,35 +255,42 @@ author = "Jimmy"
 
 transparent = "#00000000"
 
-chrome-background = "#132A40"
-chrome-background-bright = "#003A59"
+accent-bg = "oklch(0.567 0.1996 248.5156)"
+accent-fg = "#ffffff"
+accent-text = "oklch(0.8 0.1251 237.7)"
+
+
+chrome-background = "#333333"
+
+chrome-background-bright = "#444444"
 chrome-background-dim = "#101d34ff"
 chrome-background-alt = "#090e17ff"
 chrome-border = "#0B406E55"
 chrome-foreground = "#ffffff"
-chrome-foreground-alt = "#72DFFF"
+chrome-foreground-alt = "#CCCCCC"
 
-background = "#000000"
-background-bright = "#002272ff"
-background-dim = "#181928ff"
-background-overlay = "#020E23AA"
+background = "#1E1E1E"
+background-bright = "#3C3C3C"
+background-dim = "#252525"
+background-overlay = "#000000AA"
 
 # Gutter
-background-alt = "#121426"
+background-alt = "#252525"
 
 
 foreground = "#fff"
-foreground-dim = "#4BA2B5"
-foreground-alt = "#DAB8E6"
-foreground-dim-alt = "#6C81CD"
+foreground-dim = "#AAAAAA"
+foreground-alt = "#CCCCCC"
+foreground-dim-alt = "#999999"
 
-selection-background = "#00667dff"
+selection-background = "#007ACC"
 selection-foreground = "#fff"
 
 cursor = "#ff66ff"
 cursor-fg = "#000000"
 
 # colors:
+
 
 red = "#ff5f59"
 red-warmer = "#ff6b55"
