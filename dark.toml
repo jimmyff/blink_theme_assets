@@ -77,28 +77,32 @@ author = "Jimmy"
 
 # Root UI text default
 "ui.text" = { fg = "#FFFFFF" }
-"ui.secondary.text" = { fg = "#DDDDDD" }
+"ui.text-alt" = { fg = "#DDDDDD" }
 
+# ==== WORKSPACE SCOPES ====
+# Primary workspace (editor, settings, main content areas)
+"ui.workspace.background" = { bg = "$background" }
+"ui.workspace.text" = { fg = "$foreground" }
 
-# Editor surface
-"ui.editor.background" = { bg = "$background" }
-"ui.editor.text" = { fg = "$foreground" }
+# Alternative surfaces (gutter, sidebars, panels)
+"ui.workspace.background-alt" = { bg = "$background-alt" }
+"ui.workspace.text-alt" = { fg = "$foreground-dim-alt" }
 
-"ui.editor.cursor.background" = { bg = "$cursor", fg = "$cursor-fg" }
+# Editor-specific (inherits from workspace)
+"ui.workspace.editor.cursor.background" = { bg = "$cursor", fg = "$cursor-fg" }
+"ui.workspace.editor.selection.background" = { bg = "$accent-bg" }
+"ui.workspace.editor.selection.text" = { fg = "$accent-fg" }
 
-"ui.editor.selection.background" = { bg = "$accent-bg" }
-"ui.editor.selection.text" = { fg = "$accent-fg" }
+# Editor gutter (uses -alt classes, inherits from workspace.*-alt)
+"ui.workspace.editor.background-alt" = { bg = "$background-alt" }
+"ui.workspace.editor.background-alt:selected" = { bg = "$background-alt" }
+"ui.workspace.editor.text-alt" = { fg = "$foreground-dim-alt" }
+"ui.workspace.editor.text-alt:selected" = { fg = "$foreground" }
 
-"ui.editor.gutter.background" = { bg = "$background-alt" }
-"ui.editor.gutter.background:selected" = { bg = "$background-alt" }
-"ui.editor.gutter.text" = { fg = "$foreground-dim-alt" }
-"ui.editor.gutter.primary.text" = { fg = "$foreground-alt" }
-"ui.editor.gutter.secondary.text" = { fg = "$foreground-dim-alt" }
-"ui.editor.gutter.text:selected" = { fg = "$foreground" }
-
-"ui.editor.scrollbar.track" = { bg = "$background-alt" }
-"ui.editor.scrollbar.thumb" = { fg = "$foreground-dim" }
-"ui.editor.scrollbar.thumb:hover" = { fg = "$foreground-alt" }
+# Scrollbar (reusable across workspace)
+"ui.workspace.scrollbar.track" = { bg = "$background-alt" }
+"ui.workspace.scrollbar.thumb" = { fg = "$foreground-dim" }
+"ui.workspace.scrollbar.thumb:hover" = { fg = "$foreground-alt" }
 
 # Application chrome
 # 
@@ -112,20 +116,37 @@ author = "Jimmy"
 #"ui.divider" = { border = { fg = "#0000ff" } }
 "ui.divider" = { border = { fg = "$border-fg" } }
 
-"ui.overlay.background" = { bg = "#00000088" }
+"ui.overlay.background" = { bg = "#000000DD" }
+"ui.chrome.menu.background" = { bg = "#222222" }
 
 
 "ui.chrome.text" = { fg = "#DDDDDD" }
-"ui.chrome.secondary.text" = { fg = "#BBBBBB" }
+"ui.chrome.text-alt" = { fg = "#BBBBBB" }
 
-
-"ui.chrome.navbar.item.secondary.text" = { fg = "#777777" }
+"ui.chrome.navbar.item.text-alt" = { fg = "#888888" }
+"ui.chrome.navbar.item.text-alt:active" = { fg = "#DDDDDD" }
+"ui.chrome.navbar.item.icon-alt" = { fg = "#666666" }
 
 "ui.chrome.navbar.item.text" = { fg = "#CCCCCC" }
-"ui.chrome.navbar.item.text:active" = { fg = "#FFFFFF" }
+"ui.chrome.navbar.item.text:active" = { fg = "#DDDDDD" }
 "ui.chrome.navbar.item.icon" = { fg = "#AAAAAA" }
-"ui.chrome.navbar.item.icon:active" = { fg = "#EEEEEE" }
+"ui.chrome.navbar.item.icon:active" = { fg = "#FFFFFF" }
 "ui.chrome.navbar.item.background:active" = { bg = "#222222", border = { width = 3, fg = "$accent-bg" } }
+
+"ui.chrome.navbar.item.background:hover" = { bg = "#222222" }
+
+# input
+"ui.chrome.input.text" = { fg = "#DDDDDD" }
+"ui.chrome.input.text-alt" = { fg = "#888888" }
+"ui.chrome.input.icon" = { fg = "#DDDDDD" }
+"ui.chrome.input.icon-alt" = { fg = "#AAAAAA" }
+
+# List
+"ui.list.text" = { fg = "#DDDDDD" }
+"ui.list.text-alt" = { fg = "#888888" }
+"ui.list.icon" = { fg = "#666666" }
+"ui.list.icon-alt" = { fg = "#666666" }
+
 
 # badges
 "ui.chrome.navbar.badge.background" = { bg = "$accent-bg" }
@@ -133,11 +154,26 @@ author = "Jimmy"
   "bold",
 ] }
 
+
+# Semantic text colors
+"ui.error.text" = { fg = "$red", modifiers = ["bold"] }
+"ui.warning.text" = { fg = "$yellow", modifiers = ["bold"] }
+"ui.info.text" = { fg = "$blue" }
+"ui.success.text" = { fg = "$green" }
+
+# Highlight backgrounds (used by goto_word command)
+"ui.highlight.background" = { bg = "$rich-blue" }
+"ui.highlight.text" = { fg = "$accent-fg", modifiers = ["bold"] }
+"ui.highlight.match.background" = { bg = "$rich-rust" }
+"ui.highlight.match.text" = { fg = "$accent-fg", modifiers = ["bold"] }
+
+
 [palette]
 
 transparent = "#00000000"
 
-accent-bg = "oklch(0.567 0.1996 248.5156)"
+accent-bg = "oklch(0.6006 0.1577 230.16)"
+
 accent-fg = "#ffffff"
 accent-text = "oklch(0.8 0.1251 237.7)"
 
@@ -176,6 +212,11 @@ cursor-fg = "#000000"
 
 # colors:
 
+
+rich-rust = "oklch(0.5339 0.1795 42.75)"
+rich-blue = "oklch(0.5183 0.173 246.04)"
+
+#---
 red = "#ff5f59"
 red-warmer = "#ff6b55"
 red-cooler = "#ff7f86"

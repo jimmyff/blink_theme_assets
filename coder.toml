@@ -81,30 +81,35 @@ author = "Jimmy"
 # Safe area border (only shows on edges with safe area insets)
 "ui.safearea.background" = { border = { fg = "$chrome-border", width = 1 } }
 
-# Editor surface
-"ui.editor.background" = { bg = "$background" }
-"ui.editor.text" = { fg = "$foreground" }
+# ==== WORKSPACE SCOPES ====
+# Primary workspace (editor, settings, main content areas)
+"ui.workspace.background" = { bg = "$background" }
+"ui.workspace.text" = { fg = "$foreground" }
 
-"ui.editor.cursor.background" = { bg = "$cursor", fg = "$cursor-fg" }
+# Alternative surfaces (gutter, sidebars, panels)
+"ui.workspace.background-alt" = { bg = "$background-alt" }
+"ui.workspace.text-alt" = { fg = "$foreground-dim-alt" }
 
-"ui.editor.selection.background" = { bg = "$selection-background" }
-"ui.editor.selection.text" = { fg = "$selection-foreground" }
+# Editor-specific (inherits from workspace)
+"ui.workspace.editor.cursor.background" = { bg = "$cursor", fg = "$cursor-fg" }
+"ui.workspace.editor.selection.background" = { bg = "$selection-background" }
+"ui.workspace.editor.selection.text" = { fg = "$selection-foreground" }
 
-"ui.editor.gutter.background" = { bg = "$background-alt" }
-"ui.editor.gutter.background:selected" = { bg = "$background-alt" }
-"ui.editor.gutter.text" = { fg = "$foreground-dim-alt" }
-"ui.editor.gutter.primary.text" = { fg = "$foreground-alt" }
-"ui.editor.gutter.secondary.text" = { fg = "$foreground-dim-alt" }
-"ui.editor.gutter.text:selected" = { fg = "$foreground" }
+# Editor gutter (uses -alt classes, inherits from workspace.*-alt)
+"ui.workspace.editor.background-alt" = { bg = "$background-alt" }
+"ui.workspace.editor.background-alt:selected" = { bg = "$background-alt" }
+"ui.workspace.editor.text-alt" = { fg = "$foreground-dim-alt" }
+"ui.workspace.editor.text-alt:selected" = { fg = "$foreground" }
 
-"ui.editor.scrollbar.track" = { bg = "$background-alt" }
-"ui.editor.scrollbar.thumb" = { fg = "$foreground-dim" }
-"ui.editor.scrollbar.thumb:hover" = { fg = "$foreground-alt" }
+# Scrollbar (reusable across workspace)
+"ui.workspace.scrollbar.track" = { bg = "$background-alt" }
+"ui.workspace.scrollbar.thumb" = { fg = "$foreground-dim" }
+"ui.workspace.scrollbar.thumb:hover" = { fg = "$foreground-alt" }
 
 # Application chrome
 "ui.chrome.background" = { bg = "$chrome-background", border = { fg = "$chrome-border" } }
-"ui.chrome.text" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.primary.text" = { fg = "$chrome-foreground" }
+"ui.chrome.text" = { fg = "$chrome-foreground" }
+"ui.chrome.text-alt" = { fg = "$chrome-foreground-alt" }
 "ui.chrome.icon" = { fg = "$chrome-foreground-alt" }
 
 # App bar (top)
@@ -145,27 +150,27 @@ author = "Jimmy"
 "ui.chrome.navbar.item.background" = { bg = "$chrome-background" }
 "ui.chrome.navbar.item.background:active" = { bg = "$background" }
 
-# Primary variant (has content)
-"ui.chrome.navbar.item.primary.text" = { fg = "$foreground" }
-"ui.chrome.navbar.item.primary.text:active" = { fg = "$foreground", modifiers = [
+# Primary text/icon (has content)
+"ui.chrome.navbar.item.text" = { fg = "$foreground" }
+"ui.chrome.navbar.item.text:active" = { fg = "$foreground", modifiers = [
   "bold",
 ] }
-"ui.chrome.navbar.item.primary.icon" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.item.primary.icon:active" = { fg = "$foreground" }
+"ui.chrome.navbar.item.icon" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.navbar.item.icon:active" = { fg = "$foreground" }
 
-# Secondary variant (no content)
-"ui.chrome.navbar.item.secondary.text" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.item.secondary.text:active" = { fg = "$chrome-foreground" }
-"ui.chrome.navbar.item.secondary.icon" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.item.secondary.icon:active" = { fg = "$chrome-foreground-alt" }
+# Alternative variant (no content - dimmer)
+"ui.chrome.navbar.item.text-alt" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.navbar.item.text-alt:active" = { fg = "$chrome-foreground" }
+"ui.chrome.navbar.item.icon-alt" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.navbar.item.icon-alt:active" = { fg = "$chrome-foreground-alt" }
 
 # Highlight modifier (today indicator)
-"ui.chrome.navbar.item.primary.highlight.text" = { fg = "$accent-text" }
-"ui.chrome.navbar.item.primary.highlight.text:active" = { fg = "$accent-text", modifiers = [
+"ui.chrome.navbar.item.highlight.text" = { fg = "$accent-text" }
+"ui.chrome.navbar.item.highlight.text:active" = { fg = "$accent-text", modifiers = [
   "bold",
 ] }
-"ui.chrome.navbar.item.secondary.highlight.text" = { fg = "$accent-text" }
-"ui.chrome.navbar.item.secondary.highlight.text:active" = { fg = "$accent-text", modifiers = [
+"ui.chrome.navbar.item.highlight.text-alt" = { fg = "$accent-text" }
+"ui.chrome.navbar.item.highlight.text-alt:active" = { fg = "$accent-text", modifiers = [
   "bold",
 ] }
 # Badges (date badges, notification counts)
@@ -204,14 +209,15 @@ author = "Jimmy"
 
 "ui.input.background" = { bg = "$background-bright" }
 "ui.input.text" = { fg = "$foreground" }
-"ui.input.secondary.text" = { fg = "$foreground-dim" }
+"ui.input.text-alt" = { fg = "$foreground-dim" }
 
 # List views
 "ui.list.background" = { bg = "$background" }
 "ui.list.alternate.background" = { bg = "$background-alt" }
 "ui.list.text" = { fg = "$foreground" }
-"ui.list.secondary.text" = { fg = "$foreground-dim-alt" }
+"ui.list.text-alt" = { fg = "$foreground-dim-alt" }
 "ui.list.icon" = { fg = "$foreground-alt" }
+"ui.list.icon-alt" = { fg = "$foreground-dim" }
 "ui.list.item.background:selected" = { bg = "$selection-background" }
 "ui.list.item.text:selected" = { fg = "$selection-foreground" }
 "ui.list.item.background:hover" = { bg = "$background-alt" }

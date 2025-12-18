@@ -79,22 +79,29 @@ author = "Jimmy"
 # Safe area border (only shows on edges with safe area insets)
 "ui.safearea.background" = { border = { fg = "$linenr", width = 1 } }
 
-# Editor surface
-"ui.editor.background" = { bg = "$white" }
-"ui.editor.text" = { fg = "$black" }
+# ==== WORKSPACE SCOPES ====
+# Primary workspace (editor, settings, main content areas)
+"ui.workspace.background" = { bg = "$white" }
+"ui.workspace.text" = { fg = "$black" }
 
-"ui.editor.cursor.background" = { bg = "$black" }
+# Alternative surfaces (gutter, sidebars, panels)
+"ui.workspace.background-alt" = { bg = "$light-white" }
+"ui.workspace.text-alt" = { fg = "$linenr" }
 
-"ui.editor.selection.background" = { bg = "$gray" }
+# Editor-specific (inherits from workspace)
+"ui.workspace.editor.cursor.background" = { bg = "$black" }
+"ui.workspace.editor.selection.background" = { bg = "$gray" }
 
-"ui.editor.gutter.background" = { bg = "$white" }
-"ui.editor.gutter.background:selected" = { bg = "$light-white" }
-"ui.editor.gutter.text" = { fg = "$linenr" }
-"ui.editor.gutter.text:selected" = { fg = "$black" }
+# Editor gutter (uses -alt classes, inherits from workspace.*-alt)
+"ui.workspace.editor.background-alt" = { bg = "$white" }
+"ui.workspace.editor.background-alt:selected" = { bg = "$light-white" }
+"ui.workspace.editor.text-alt" = { fg = "$linenr" }
+"ui.workspace.editor.text-alt:selected" = { fg = "$black" }
 
-"ui.editor.scrollbar.track" = { bg = "$light-white" }
-"ui.editor.scrollbar.thumb" = { fg = "$linenr" }
-"ui.editor.scrollbar.thumb:hover" = { fg = "$dark-gray" }
+# Scrollbar (reusable across workspace)
+"ui.workspace.scrollbar.track" = { bg = "$light-white" }
+"ui.workspace.scrollbar.thumb" = { fg = "$linenr" }
+"ui.workspace.scrollbar.thumb:hover" = { fg = "$dark-gray" }
 
 # Application chrome
 "ui.chrome.background" = { bg = "$light-white", border = { fg = "$linenr" } }
@@ -131,23 +138,23 @@ author = "Jimmy"
 "ui.chrome.navbar.background" = { bg = "$white" }
 "ui.chrome.navbar.text" = { fg = "$black" }
 
-# Primary variant (has content)
-"ui.chrome.navbar.item.primary.text:active" = { fg = "$blue", modifiers = ["bold"] }
-"ui.chrome.navbar.item.primary.text:inactive" = { fg = "$black" }
-"ui.chrome.navbar.item.primary.icon" = { fg = "$black" }
-"ui.chrome.navbar.item.primary.icon:active" = { fg = "$gold" }
+# Primary text/icon (has content)
+"ui.chrome.navbar.item.text:active" = { fg = "$blue", modifiers = ["bold"] }
+"ui.chrome.navbar.item.text:inactive" = { fg = "$black" }
+"ui.chrome.navbar.item.icon" = { fg = "$black" }
+"ui.chrome.navbar.item.icon:active" = { fg = "$gold" }
 
-# Secondary variant (no content)
-"ui.chrome.navbar.item.secondary.text" = { fg = "$dark-gray" }
-"ui.chrome.navbar.item.secondary.text:active" = { fg = "$blue", modifiers = ["bold"] }
-"ui.chrome.navbar.item.secondary.icon" = { fg = "$dark-gray" }
-"ui.chrome.navbar.item.secondary.icon:active" = { fg = "$dark-gray" }
+# Alternative variant (no content - dimmer)
+"ui.chrome.navbar.item.text-alt" = { fg = "$dark-gray" }
+"ui.chrome.navbar.item.text-alt:active" = { fg = "$blue", modifiers = ["bold"] }
+"ui.chrome.navbar.item.icon-alt" = { fg = "$dark-gray" }
+"ui.chrome.navbar.item.icon-alt:active" = { fg = "$dark-gray" }
 
 # Highlight modifier (today indicator)
-"ui.chrome.navbar.item.primary.highlight.text" = { fg = "$gold" }
-"ui.chrome.navbar.item.primary.highlight.text:active" = { fg = "$gold", modifiers = ["bold"] }
-"ui.chrome.navbar.item.secondary.highlight.text" = { fg = "$gold" }
-"ui.chrome.navbar.item.secondary.highlight.text:active" = { fg = "$gold", modifiers = ["bold"] }
+"ui.chrome.navbar.item.highlight.text" = { fg = "$gold" }
+"ui.chrome.navbar.item.highlight.text:active" = { fg = "$gold", modifiers = ["bold"] }
+"ui.chrome.navbar.item.highlight.text-alt" = { fg = "$gold" }
+"ui.chrome.navbar.item.highlight.text-alt:active" = { fg = "$gold", modifiers = ["bold"] }
 
 # Badges (date badges, notification counts)
 "ui.chrome.navbar.badge.background:active" = { bg = "$gray" }
@@ -189,8 +196,9 @@ author = "Jimmy"
 "ui.list.background" = { bg = "$white" }
 "ui.list.alternate.background" = { bg = "$light-white" }
 "ui.list.text" = { fg = "$black" }
-"ui.list.secondary.text" = { fg = "$dark-gray" }
+"ui.list.text-alt" = { fg = "$dark-gray" }
 "ui.list.icon" = { fg = "$black" }
+"ui.list.icon-alt" = { fg = "$dark-gray" }
 "ui.list.item.background:selected" = { bg = "$gray" }
 "ui.list.item.text:selected" = { fg = "$black" }
 "ui.list.item.background:hover" = { bg = "$light-white" }
