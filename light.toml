@@ -125,6 +125,14 @@ author = "Jimmy"
 "ui.chrome.tab.item.text:inactive" = { fg = "$dark-gray" }
 "ui.chrome.tab.item.text:modified" = { fg = "$yellow" }
 
+# Overlay backdrop
+"ui.overlay.background" = { bg = "#00000066" }
+
+# Dialog (paged dialogs, settings overlays)
+"ui.dialog.background" = { bg = "$white", border = { fg = "$linenr" } }
+"ui.dialog.text" = { fg = "$black" }
+"ui.dialog.border" = { border = { fg = "$linenr" } }
+
 # Menus and dropdowns
 "ui.chrome.menu.background" = { bg = "$white" }
 "ui.chrome.menu.text" = { fg = "$black" }
@@ -188,6 +196,23 @@ author = "Jimmy"
 # Disabled buttons
 "ui.button.disabled.background" = { bg = "$light-white" }
 "ui.button.disabled.text" = { fg = "$dark-gray" }
+
+# Severity button classes (class name encodes severity)
+"ui.button-background-info" = { bg = "$blue", border = { fg = "$blue" } }
+"ui.button-background-info:hover" = { bg = "#005DB5" }
+"ui.button-text-info" = { fg = "$white" }
+
+"ui.button-background-success" = { bg = "$green", border = { fg = "$green" } }
+"ui.button-background-success:hover" = { bg = "#1F6630" }
+"ui.button-text-success" = { fg = "$white" }
+
+"ui.button-background-warning" = { bg = "$gold", border = { fg = "$gold" } }
+"ui.button-background-warning:hover" = { bg = "#8F5600" }
+"ui.button-text-warning" = { fg = "$white" }
+
+"ui.button-background-error" = { bg = "$red", border = { fg = "$red" } }
+"ui.button-background-error:hover" = { bg = "#9A2618" }
+"ui.button-text-error" = { fg = "$white" }
 
 "ui.input.background" = { bg = "$white" }
 "ui.input.text" = { fg = "$black" }

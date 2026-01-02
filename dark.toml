@@ -119,9 +119,18 @@ author = "Jimmy"
 "ui.overlay.background" = { bg = "#000000DD" }
 "ui.chrome.menu.background" = { bg = "#222222" }
 
+# Dialog (paged dialogs, settings overlays)
+"ui.dialog.background" = { bg = "$background", border = { fg = "$border-fg" } }
+"ui.dialog.border" = { border = { fg = "$border-fg" } }
 
-"ui.chrome.text" = { fg = "#DDDDDD" }
-"ui.chrome.text-alt" = { fg = "#BBBBBB" }
+# Bar (toolbar-like bars in chrome and dialogs)
+"ui.bar-background" = { bg = "@rainbow:neutral-1000", border = { fg = "$border-fg" } }
+
+"ui.bar-text" = { fg = "@rainbow:neutral-100" }
+"ui.bar-text-alt" = { fg = "@rainbow:neutral-500" }
+
+"ui.chrome.text" = { fg = "@rainbow:neutral-100" }
+"ui.chrome.text-alt" = { fg = "@rainbow:neutral-500" }
 
 "ui.chrome.navbar.item.text-alt" = { fg = "#888888" }
 "ui.chrome.navbar.item.text-alt:active" = { fg = "#DDDDDD" }
@@ -142,18 +151,76 @@ author = "Jimmy"
 "ui.chrome.input.icon-alt" = { fg = "#AAAAAA" }
 
 # List
-"ui.list.text" = { fg = "#DDDDDD" }
-"ui.list.text-alt" = { fg = "#888888" }
+"ui.list.background" = { bg = "$background" }
+"ui.list.background:hover" = { bg = "#111111" }
+"ui.list.text" = { fg = "@rainbow:neutral-100" }
+"ui.list.text-alt" = { fg = "@rainbow:neutral-500" }
 "ui.list.icon" = { fg = "#666666" }
 "ui.list.icon-alt" = { fg = "#666666" }
 
+"ui.list.button-background" = { bg = "$transparent", border = { fg = "$border-fg" } }
 
-# badges
-"ui.chrome.navbar.badge.background" = { bg = "$accent-bg" }
-"ui.chrome.navbar.badge.text:active" = { fg = "$accent-fg", modifiers = [
-  "bold",
-] }
 
+# Button
+
+"ui.button-background" = { bg = "@rainbow:neutral-1000", border = { fg = "@rainbow:neutral-900" } }
+"ui.button-background:hover" = { bg = "@rainbow:neutral-950", border = { fg = "@rainbow:neutral-700" } }
+"ui.button-text" = { fg = "@rainbow:neutral-100" }
+"ui.button-text:hover" = { fg = "@rainbow:neutral-50" }
+"ui.button-background:disabled" = { bg = "@rainbow:neutral-1000", border = { fg = "@rainbow:neutral-950" } }
+"ui.button-text:disabled" = { fg = "@rainbow:neutral-600" }
+
+# Severity button classes (class name encodes severity)
+"ui.button-background-info" = { bg = "@rainbow:azure-1000", border = { fg = "@rainbow:azure-900" } }
+"ui.button-background-info:hover" = { bg = "@rainbow:azure-950", border = { fg = "@rainbow:azure-700" } }
+"ui.button-text-info" = { fg = "@rainbow:azure-200" }
+"ui.button-text-info:hover" = { fg = "@rainbow:azure-100" }
+
+"ui.button-background-success" = { bg = "@rainbow:emerald-1000", border = { fg = "@rainbow:emerald-900" } }
+"ui.button-background-success:hover" = { bg = "@rainbow:emerald-950", border = { fg = "@rainbow:emerald-700" } }
+"ui.button-text-success" = { fg = "@rainbow:emerald-200" }
+"ui.button-text-success:hover" = { fg = "@rainbow:emerald-100" }
+
+"ui.button-background-warning" = { bg = "@rainbow:amber-1000", border = { fg = "@rainbow:amber-900" } }
+"ui.button-background-warning:hover" = { bg = "@rainbow:amber-950", border = { fg = "@rainbow:amber-700" } }
+"ui.button-text-warning" = { fg = "@rainbow:amber-200" }
+"ui.button-text-warning:hover" = { fg = "@rainbow:amber-100" }
+
+"ui.button-background-error" = { bg = "@rainbow:crimson-1000", border = { fg = "@rainbow:crimson-900" } }
+"ui.button-background-error:hover" = { bg = "@rainbow:crimson-950", border = { fg = "@rainbow:crimson-700" } }
+"ui.button-text-error" = { fg = "@rainbow:crimson-200" }
+"ui.button-text-error:hover" = { fg = "@rainbow:crimson-100" }
+
+# Containers (banners, snackbars)
+"ui.background-info" = { bg = "@rainbow:azure-1000", border = { fg = "@rainbow:azure-950" } }
+"ui.text-info" = { fg = "@rainbow:azure-300" }
+
+"ui.background-success" = { bg = "@rainbow:emerald-1000", border = { fg = "@rainbow:emerald-950" } }
+"ui.text-success" = { fg = "@rainbow:emerald-300" }
+
+"ui.background-warning" = { bg = "@rainbow:amber-1000", border = { fg = "@rainbow:amber-950" } }
+"ui.text-warning" = { fg = "@rainbow:amber-300" }
+
+"ui.background-error" = { bg = "@rainbow:crimson-1000", border = { fg = "@rainbow:crimson-950" } }
+"ui.text-error" = { fg = "@rainbow:crimson-300" }
+
+# Badges (small icon indicators)
+
+"ui.badge.background" = { bg = "@rainbow:neutralCool-700" }
+"ui.badge.background:selected" = { bg = "$accent-bg" }
+"ui.badge.text" = { fg = "@rainbow:neutralCool-50", modifiers = ["bold"] }
+
+"ui.badge.background-info" = { bg = "@rainbow:azure-700", border = { fg = "@rainbow:azure-600" } }
+"ui.badge.text-info" = { fg = "@rainbow:azure-50" }
+
+"ui.badge.background-success" = { bg = "@rainbow:emerald-700", border = { fg = "@rainbow:emerald-600" } }
+"ui.badge.text-success" = { fg = "@rainbow:emerald-50" }
+
+"ui.badge.background-warning" = { bg = "@rainbow:amber-700", border = { fg = "@rainbow:amber-600" } }
+"ui.badge.text-warning" = { fg = "@rainbow:amber-50" }
+
+"ui.badge.background-error" = { bg = "@rainbow:crimson-700", border = { fg = "@rainbow:crimson-600" } }
+"ui.badge.text-error" = { fg = "@rainbow:crimson-50" }
 
 # Semantic text colors
 "ui.error.text" = { fg = "$red", modifiers = ["bold"] }

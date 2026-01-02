@@ -207,6 +207,23 @@ author = "Jimmy"
 "ui.button.disabled.background" = { bg = "$chrome-background-dim" }
 "ui.button.disabled.text" = { fg = "$foreground-dim" }
 
+# Severity button classes (class name encodes severity)
+"ui.button-background-info" = { bg = "$bg-blue-intense", border = { fg = "$blue" } }
+"ui.button-background-info:hover" = { bg = "$bg-blue-subtle" }
+"ui.button-text-info" = { fg = "$foreground" }
+
+"ui.button-background-success" = { bg = "$bg-green-intense", border = { fg = "$green" } }
+"ui.button-background-success:hover" = { bg = "$bg-green-subtle" }
+"ui.button-text-success" = { fg = "$foreground" }
+
+"ui.button-background-warning" = { bg = "$bg-yellow-intense", border = { fg = "$yellow" } }
+"ui.button-background-warning:hover" = { bg = "$bg-yellow-subtle" }
+"ui.button-text-warning" = { fg = "$foreground" }
+
+"ui.button-background-error" = { bg = "$bg-red-intense", border = { fg = "$red" } }
+"ui.button-background-error:hover" = { bg = "$bg-red-subtle" }
+"ui.button-text-error" = { fg = "$foreground" }
+
 "ui.input.background" = { bg = "$background-bright" }
 "ui.input.text" = { fg = "$foreground" }
 "ui.input.text-alt" = { fg = "$foreground-dim" }
