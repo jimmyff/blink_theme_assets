@@ -1,6 +1,7 @@
 [metadata]
 name = "Coder"
 author = "Jimmy"
+brightness = "dark"
 
 [scopes]
 # Global default (fallback for all scopes)

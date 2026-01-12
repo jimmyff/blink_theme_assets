@@ -1,6 +1,7 @@
 [metadata]
 name = "Blink Light"
 author = "Jimmy"
+brightness = "light"
 
 [scopes]
 # Global default (fallback for all scopes)
@@ -246,6 +247,27 @@ author = "Jimmy"
 "ui.warning.text" = { fg = "$yellow", modifiers = ["bold"] }
 "ui.info.text" = { fg = "$blue" }
 "ui.success.text" = { fg = "$green" }
+
+# Notification overlay (floating cards in top-right)
+"ui.notification.background" = { bg = "$white", border = { fg = "$linenr", width = 1 } }
+"ui.notification.text" = { fg = "$black" }
+"ui.notification.icon" = { fg = "$dark-gray" }
+
+"ui.notification.background-info" = { bg = "#E3F2FD", border = { fg = "$blue", width = 1 } }
+"ui.notification.text-info" = { fg = "#0D47A1" }
+"ui.notification.icon-info" = { fg = "$blue" }
+
+"ui.notification.background-success" = { bg = "#E8F5E9", border = { fg = "$green", width = 1 } }
+"ui.notification.text-success" = { fg = "#1B5E20" }
+"ui.notification.icon-success" = { fg = "$green" }
+
+"ui.notification.background-warning" = { bg = "#FFF3E0", border = { fg = "$gold", width = 1 } }
+"ui.notification.text-warning" = { fg = "#E65100" }
+"ui.notification.icon-warning" = { fg = "$gold" }
+
+"ui.notification.background-error" = { bg = "#FFEBEE", border = { fg = "$red", width = 1 } }
+"ui.notification.text-error" = { fg = "#B71C1C" }
+"ui.notification.icon-error" = { fg = "$red" }
 
 [palette]
 yellow = "#986801"

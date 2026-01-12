@@ -1,6 +1,7 @@
 [metadata]
-name = "Blink Dark"
-author = "Jimmy"
+name = "Dark (Turquoise)"
+author = "jimmyff"
+brightness = "dark"
 
 [scopes]
 # Global default (fallback for all scopes)
@@ -35,9 +36,9 @@ author = "Jimmy"
 ] }
 
 # Highlight.js scopes - Titles and names
-"syntax.title" = { fg = "$yellow-intense" }
-"syntax.title.class" = { fg = "$yellow-intense" }
-"syntax.title.class.inherited" = { fg = "$yellow-intense" }
+"syntax.title" = { fg = "$syntax-title" }
+"syntax.title.class" = { fg = "$syntax-title" }
+"syntax.title.class.inherited" = { fg = "$syntax-title" }
 "syntax.title.function" = { fg = "$blue" }
 "syntax.title.function.invoke" = { fg = "$blue" }
 "syntax.params" = { fg = "$red" }
@@ -49,11 +50,11 @@ author = "Jimmy"
 "syntax.attribute" = { fg = "$fg-sage" }
 
 # Highlight.js scopes - Markdown/text markup
-"syntax.section" = { fg = "$yellow-intense", modifiers = ["bold"] }
+"syntax.section" = { fg = "$syntax-title", modifiers = ["bold"] }
 "syntax.bullet" = { fg = "$magenta-intense", modifiers = ["bold"] }
 "syntax.code" = { fg = "$green" }
 "syntax.emphasis" = { fg = "$magenta", modifiers = ["italic"] }
-"syntax.strong" = { fg = "$cyan", modifiers = ["bold"] }
+"syntax.strong" = { fg = "$syntax-strong", modifiers = ["bold"] }
 "syntax.formula" = { fg = "$blue" }
 "syntax.link" = { fg = "$blue", underline = { style = "line" } }
 "syntax.quote" = { fg = "$fg-lavender" }
@@ -105,7 +106,7 @@ author = "Jimmy"
 "ui.workspace.scrollbar.thumb:hover" = { fg = "$foreground-alt" }
 
 # Application chrome
-# 
+#
 "ui.chrome.background" = { bg = "#181818", border = { fg = "$border-fg" } }
 #"ui.chrome.background" = { bg = "#181818", border = { fg = "#ff0000" } }
 #"ui.background" = { border = { fg = "#00ff00" } }
@@ -117,7 +118,7 @@ author = "Jimmy"
 "ui.divider" = { border = { fg = "$border-fg" } }
 
 "ui.overlay.background" = { bg = "#000000DD" }
-"ui.chrome.menu.background" = { bg = "#222222" }
+"ui.chrome.menu.background" = { bg = "@rainbow:neutral-950", border = { fg = "@rainbow:neutral-800", width = 1 }  }
 
 # Dialog (paged dialogs, settings overlays)
 "ui.dialog.background" = { bg = "$background", border = { fg = "$border-fg" } }
@@ -142,12 +143,18 @@ author = "Jimmy"
 "ui.chrome.navbar.item.icon:active" = { fg = "#FFFFFF" }
 "ui.chrome.navbar.item.background:active" = { bg = "#222222", border = { width = 3, fg = "$accent-bg" } }
 
-"ui.chrome.navbar.item.background:hover" = { bg = "#222222" }
+"ui.chrome.navbar.item.background:hover" = { bg = "#222222", border = { width = 3, fg = "#999999"  }  }
 
 # input
-"ui.chrome.input.text" = { fg = "#DDDDDD" }
-"ui.chrome.input.text-alt" = { fg = "#888888" }
-"ui.chrome.input.icon" = { fg = "#DDDDDD" }
+"ui.input.text" = { fg = "#DDDDDD" }
+"ui.input.text-alt" = { fg = "#888888" }
+"ui.input.icon" = { fg = "#DDDDDD" }
+
+"ui.input.checkbox.button-text" = { fg = "#DDDDDD" }
+"ui.input.checkbox.button-text:hover" = { fg = "#EEEEEE" }
+"ui.input.checkbox.selected.button-text" = { fg = "$accent-bg" }
+"ui.input.checkbox.selected.button-text:hover" = { fg = "$accent-bg" }
+
 "ui.chrome.input.icon-alt" = { fg = "#AAAAAA" }
 
 # List
@@ -191,6 +198,23 @@ author = "Jimmy"
 "ui.button-text-error" = { fg = "@rainbow:crimson-200" }
 "ui.button-text-error:hover" = { fg = "@rainbow:crimson-100" }
 
+# Negative/destructive action button (hold-to-trigger)
+"ui.negative.button-background" = { bg = "@rainbow:crimson-1000" }
+"ui.negative.button-text" = { fg = "@rainbow:crimson-200" }
+"ui.negative.button-background:hover" = { bg = "@rainbow:crimson-1000" }
+"ui.negative.button-text:hover" = { fg = "@rainbow:crimson-100" }
+"ui.negative.button-background:confirming" = { bg = "@rainbow:crimson-800" }
+"ui.negative.button-text:confirming" = { fg = "@rainbow:crimson-100" }
+
+# Positive action button (hold-to-trigger)
+"ui.positive.button-background" = { bg = "@rainbow:emerald-1000" }
+"ui.positive.button-text" = { fg = "@rainbow:emerald-200" }
+"ui.positive.button-background:hover" = { bg = "@rainbow:emerald-1000" }
+"ui.positive.button-text:hover" = { fg = "@rainbow:emerald-100" }
+    "ui.positive.button-background:confirming" = { bg = "@rainbow:emerald-800" }
+"ui.positive.button-text:confirming" = { fg = "@rainbow:emerald-100" }
+
+
 # Containers (banners, snackbars)
 "ui.background-info" = { bg = "@rainbow:azure-1000", border = { fg = "@rainbow:azure-950" } }
 "ui.text-info" = { fg = "@rainbow:azure-300" }
@@ -203,6 +227,27 @@ author = "Jimmy"
 
 "ui.background-error" = { bg = "@rainbow:crimson-1000", border = { fg = "@rainbow:crimson-950" } }
 "ui.text-error" = { fg = "@rainbow:crimson-300" }
+
+# Notification overlay (floating cards in top-right)
+"ui.notification.background" = { bg = "@rainbow:neutralCool-950", border = { fg = "@rainbow:neutralCool-800", width = 1 } }
+"ui.notification.text" = { fg = "@rainbow:neutralCool-100" }
+"ui.notification.icon" = { fg = "@rainbow:neutralCool-300" }
+
+"ui.notification.background-info" = { bg = "@rainbow:azure-1000", border = { fg = "@rainbow:azure-900", width = 1 } }
+"ui.notification.text-info" = { fg = "@rainbow:azure-200" }
+"ui.notification.icon-info" = { fg = "@rainbow:azure-400" }
+
+"ui.notification.background-success" = { bg = "@rainbow:emerald-1000", border = { fg = "@rainbow:emerald-900", width = 1 } }
+"ui.notification.text-success" = { fg = "@rainbow:emerald-200" }
+"ui.notification.icon-success" = { fg = "@rainbow:emerald-400" }
+
+"ui.notification.background-warning" = { bg = "@rainbow:amber-1000", border = { fg = "@rainbow:amber-900", width = 1 } }
+"ui.notification.text-warning" = { fg = "@rainbow:amber-200" }
+"ui.notification.icon-warning" = { fg = "@rainbow:amber-400" }
+
+"ui.notification.background-error" = { bg = "@rainbow:crimson-1000", border = { fg = "@rainbow:crimson-900", width = 1 } }
+"ui.notification.text-error" = { fg = "@rainbow:crimson-200" }
+"ui.notification.icon-error" = { fg = "@rainbow:crimson-400" }
 
 # Badges (small icon indicators)
 
@@ -237,12 +282,19 @@ author = "Jimmy"
 
 [palette]
 
-transparent = "#00000000"
 
-accent-bg = "oklch(0.6006 0.1577 230.16)"
+accent-bg = "oklch(0.71 0.14 230.16)"
 
 accent-fg = "#ffffff"
 accent-text = "oklch(0.8 0.1251 237.7)"
+
+
+# Syntax
+syntax-title = "#efef00"
+syntax-strong = "#00d3d0"
+
+transparent = "#00000000"
+
 
 chrome-background = "#333333"
 
