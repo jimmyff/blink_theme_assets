@@ -1,0 +1,15 @@
+[metadata]
+name = "Emerald Mist"
+author = "jimmyff"
+brightness = "light"
+inherits = "storm-emerald"
+imports = ["classic-light"]
+
+[palette]
+# Accent colors adjusted for light backgrounds
+accent-bg = "@rainbow:emerald-500"
+accent-fg = "#FFFFFF"
+
+[scopes]
+# Inherits syntax highlighting from dark-emerald
+# UI scopes are overridden by light-ui fragment

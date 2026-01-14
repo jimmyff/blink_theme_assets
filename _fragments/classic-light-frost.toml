@@ -1,0 +1,16 @@
+# Light UI Fragment
+# Apply this fragment to a dark theme to create a light variant.
+# This overrides UI scopes while preserving syntax highlighting from the parent.
+
+[scopes]
+
+[palette]
+background = "#FFF"
+background-alt = "#FFF"
+background-hover = "#FFF" # Row hover
+background-dim = "#FFF"
+
+border-fg = "#DDDDDD"
+chrome-background = "#FFF"
+chrome-background-hover = "#EEE"
+chrome-background-active = "#FFF"

@@ -1,0 +1,26 @@
+[metadata]
+name = "Sonora Sunrise Storm"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-turquoise"
+
+[variables]
+
+color-accent = "red"
+tone-accent = "400"
+
+color-highlight = "cyan"
+color-highlight-match = "red"
+
+[scopes]
+# Inherits all scopes from storm-amethyst.toml
+
+[palette]
+
+syntax-title = "@rainbow:cyan-{tone-syntax-bright}"
+syntax-strong = "@rainbow:orange-{tone-syntax-bright}"
+syntax-emphasis = "@rainbow:pink-{tone-syntax-bright}"
+syntax-bullet = "@rainbow:red-{tone-syntax-medium}"
+syntax-quote = "@rainbow:berry-{tone-syntax-medium}"
+syntax-code = "@rainbow:indigo-{tone-syntax-bright}"
+syntax-link = "@rainbow:lemon-{tone-syntax-accent}"

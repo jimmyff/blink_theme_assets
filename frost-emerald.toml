@@ -1,0 +1,6 @@
+[metadata]
+name = "Emerald Frost"
+author = "jimmyff"
+brightness = "light"
+inherits = "mist-emerald"
+imports = ["classic-light-frost"]

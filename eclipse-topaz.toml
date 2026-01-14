@@ -1,0 +1,6 @@
+[metadata]
+name = "Topaz Eclipse"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-topaz"
+imports = ["classic-dark-eclipse"]

@@ -1,0 +1,8 @@
+[metadata]
+name = "Topaz Mist"
+author = "jimmyff"
+brightness = "light"
+inherits = "storm-topaz"
+imports = ["classic-light"]
+
+[palette]

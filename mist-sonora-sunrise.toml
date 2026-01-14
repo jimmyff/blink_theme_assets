@@ -1,0 +1,14 @@
+[metadata]
+name = "Sonora Sunrise Mist"
+author = "jimmyff"
+brightness = "light"
+inherits = "storm-sonora-sunrise"
+imports = ["classic-light"]
+
+[variables]
+
+
+[palette]
+
+
+[scopes]

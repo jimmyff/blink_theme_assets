@@ -1,0 +1,6 @@
+[metadata]
+name = "Turquoise Frost"
+author = "jimmyff"
+brightness = "light"
+inherits = "mist-turquoise"
+imports = ["classic-light-frost"]

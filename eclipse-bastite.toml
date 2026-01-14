@@ -1,0 +1,6 @@
+[metadata]
+name = "Bastite Eclipse"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-bastite"
+imports = ["classic-dark-eclipse"]

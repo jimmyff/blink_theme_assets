@@ -1,0 +1,23 @@
+[metadata]
+name = "Emerald Storm"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-turquoise"
+
+[variables]
+
+color-accent = "emerald"
+tone-accent = "400"
+
+[scopes]
+# Inherits all scopes from storm-amethyst.toml
+
+[palette]
+
+syntax-title = "@rainbow:emerald-{tone-syntax-bright}"
+syntax-strong = "@rainbow:cyan-{tone-syntax-bright}"
+syntax-bullet = "@rainbow:forest-{tone-syntax-medium}"
+syntax-quote = "@rainbow:indigo-{tone-syntax-medium}"
+syntax-emphasis = "@rainbow:sky-{tone-syntax-bright}"
+syntax-code = "@rainbow:indigo-{tone-syntax-bright}"
+syntax-link = "@rainbow:lemon-{tone-syntax-accent}"

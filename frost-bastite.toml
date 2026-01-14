@@ -1,0 +1,6 @@
+[metadata]
+name = "Bastite Frost"
+author = "jimmyff"
+brightness = "light"
+inherits = "mist-bastite"
+imports = ["classic-light-frost"]

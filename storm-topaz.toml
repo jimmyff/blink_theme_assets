@@ -1,0 +1,23 @@
+[metadata]
+name = "Topaz Storm"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-turquoise"
+
+[variables]
+
+color-accent = "rust"
+tone-accent = "400"
+
+[scopes]
+# Inherits all scopes from storm-amethyst.toml
+
+[palette]
+
+syntax-title = "@rainbow:rust-{tone-syntax-bright}"
+syntax-strong = "@rainbow:yellow-{tone-syntax-bright}"
+syntax-bullet = "@rainbow:cyan-{tone-syntax-bright}"
+syntax-quote = "@rainbow:azure-{tone-syntax-medium}"
+syntax-emphasis = "@rainbow:pink-{tone-syntax-medium}"
+syntax-code = "@rainbow:purple-{tone-syntax-medium}"
+syntax-link = "@rainbow:sky-{tone-syntax-bright}"

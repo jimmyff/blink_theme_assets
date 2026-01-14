@@ -1,0 +1,6 @@
+[metadata]
+name = "Amethyst Frost"
+author = "jimmyff"
+brightness = "light"
+inherits = "mist-amethyst"
+imports = ["classic-light-frost"]

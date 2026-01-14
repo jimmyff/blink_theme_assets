@@ -1,0 +1,19 @@
+# Light UI Fragment
+# Apply this fragment to a dark theme to create a light variant.
+# This overrides UI scopes while preserving syntax highlighting from the parent.
+
+[scopes]
+
+[palette]
+
+border-fg = "@rainbow:{color-accent}-900"
+
+chrome-background = "@rainbow:{color-accent}-1000"
+chrome-border = "@rainbow:{color-accent}-700"
+chrome-background-hover = "@rainbow:{color-accent}-950"
+chrome-background-active = "@rainbow:{color-accent}-950"
+
+chrome-foreground = "@rainbow:{color-accent}-50"
+chrome-foreground-hover = "@rainbow:{color-accent}-0"
+chrome-foreground-alt = "@rainbow:{color-accent}-100"
+chrome-foreground-dim = "@rainbow:{color-accent}-200"

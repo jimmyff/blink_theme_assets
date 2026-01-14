@@ -1,0 +1,6 @@
+[metadata]
+name = "Amethyst Eclipse"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-amethyst"
+imports = ["classic-dark-eclipse"]
