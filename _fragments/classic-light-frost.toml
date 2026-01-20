@@ -4,6 +4,8 @@
 
 [scopes]
 
+"ui.chrome.navbar.item.background:hover" = { bg = "@rainbow:{color-accent}-0", border = { width = 3, fg = "@rainbow:{color-accent}-100" } }
+
 [palette]
 background = "#FFF"
 background-alt = "#FFF"

@@ -143,21 +143,25 @@ tone-badge-text-alt = "50"
 #"ui.divider" = { border = { fg = "#0000ff" } }
 "ui.divider" = { border = { fg = "$border-fg" } }
 
-"ui.overlay.background" = { bg = "#000000DD" }
+"ui.overlay.background" = { bg = "$background-overlay" }
 "ui.chrome.menu.background" = { bg = "$menu-background", border = { fg = "$menu-border", width = 1 }  }
 
 # Dialog (paged dialogs, settings overlays)
 "ui.dialog.background" = { bg = "$background", border = { fg = "$border-fg" } }
-"ui.dialog.border" = { border = { fg = "$border-fg" } }
+"ui.dialog.divider" = { border = { fg = "$border-fg" } }
 
 # Bar (toolbar-like bars in chrome and dialogs)
 "ui.bar-background" = { bg = "$chrome-background", border = { fg = "$border-fg" } }
+"ui.bar-background:hover" = { bg = "$chrome-background-hover", border = { fg = "$border-fg" } }
 
 "ui.bar-text" = { fg = "$chrome-foreground" }
 "ui.bar-text-alt" = { fg = "$chrome-foreground-alt" }
 
 "ui.chrome.text" = { fg = "$chrome-foreground" }
 "ui.chrome.text-alt" = { fg = "$chrome-foreground-alt" }
+
+"ui.chrome.navbar.bar-background" = { bg = "$chrome-background", border = { fg = "$border-fg" } }
+"ui.chrome.navbar.divider" = { border = { fg = "$border-fg" } }
 
 "ui.chrome.navbar.item.text-alt" = { fg = "$chrome-foreground-dim" }
 "ui.chrome.navbar.item.text-alt:active" = { fg = "$chrome-foreground" }
@@ -171,7 +175,7 @@ tone-badge-text-alt = "50"
 
 "ui.chrome.navbar.item.background:active" = { bg = "$chrome-background-active", border = { width = 3, fg = "$accent-bg" } }
 
-"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-active", border = { width = 3, fg = "#999999"  }  }
+"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "#999999"  }  }
 
 # input
 "ui.input.text" = { fg = "$foreground" }
@@ -192,7 +196,7 @@ tone-badge-text-alt = "50"
 "ui.list.text-alt" = { fg = "$foreground-alt" }
 "ui.list.icon" = { fg = "$foreground-dim" }
 "ui.list.icon-alt" = { fg = "$foreground-dim" }
-
+"ui.list.divider" = { border = { fg = "$border-fg" } }
 "ui.list.button-background" = { bg = "$transparent", border = { fg = "$border-fg" } }
 
 
@@ -337,7 +341,7 @@ syntax-highlight-match-text = "@rainbow:{color-highlight-match}-{tone-badge-text
 # Chrome
 chrome-background = "@rainbow:neutral-1000"
 chrome-background-hover = "@rainbow:neutral-950"
-chrome-background-active = "@rainbow:neutral-900"
+chrome-background-active = "@rainbow:neutral-950"
 
 chrome-foreground = "@rainbow:neutral-100"
 chrome-foreground-hover = "@rainbow:neutral-50"
@@ -359,9 +363,9 @@ background-overlay = "#000000AA"
 
 
 background-alt = "#111111" # Gutter
-background-hover = "#111111" # Row hover
+# background-hover = "@rainbow:{color-accent}-1000" # Row hover
 
-
+background-hover = "@rainbow:neutral-1000" # Row hover
 
 foreground = "#fff"
 foreground-alt = "#CCCCCC"

@@ -4,13 +4,17 @@
 
 [scopes]
 
+"ui.chrome.navbar.item.background:hover" = { bg = "@rainbow:{color-accent}-1000", border = { width = 3, fg = "@rainbow:{color-accent}-900"  }  }
+
 [palette]
 background = "#000"
 background-alt = "#000"
-background-hover = "#000" # Row hover
 background-dim = "#000"
 
 border-fg = "#333"
 chrome-background = "#000"
-chrome-background-hover = "#111"
+# chrome-background-hover = "#111"
 chrome-background-active = "#000"
+
+chrome-background-hover = "@rainbow:{color-accent}-1000"
+background-hover = "@rainbow:{color-accent}-1000"
