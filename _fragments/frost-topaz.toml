@@ -1,6 +1,0 @@
-[metadata]
-name = "Topaz Frost"
-author = "jimmyff"
-brightness = "light"
-inherits = "mist-topaz"
-imports = ["classic-light-frost"]

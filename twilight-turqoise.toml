@@ -1,0 +1,6 @@
+[metadata]
+name = "Turquoise Twilight"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-turquoise"
+imports = ["classic-dark-twilight"]

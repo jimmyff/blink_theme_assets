@@ -32,11 +32,15 @@ background-dim = "#E8E8E8"
 
 # Light mode text colors
 foreground = "#000"
+foreground-hover = "#000"
 foreground-alt = "@rainbow:neutral-700"
+foreground-alt-hover = "@rainbow:neutral-800"
 foreground-dim = "@rainbow:neutral-400"
+foreground-dim-hover= "@rainbow:neutral-500"
 
 # Light mode UI colors
 border-fg = "#D5D5D5"
+chrome-border-fg = "#D5D5D5"
 
 chrome-background = "#E9E9E9"
 chrome-background-hover = "@rainbow:neutral-50"
@@ -45,7 +49,9 @@ chrome-background-active = "@rainbow:neutral-50"
 chrome-foreground = "#222"
 chrome-foreground-hover = "#111"
 chrome-foreground-alt = "#555"
+chrome-foreground-alt-hover = "#444"
 chrome-foreground-dim = "@rainbow:neutral-300"
+chrome-foreground-dim-hover = "@rainbow:neutral-500"
 
 menu-background = "@rainbow:neutral-100"
 menu-border = "@rainbow:neutral-200"

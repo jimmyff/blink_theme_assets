@@ -1,0 +1,47 @@
+# Light UI Fragment
+# Apply this fragment to a dark theme to create a light variant.
+# This overrides UI scopes while preserving syntax highlighting from the parent.
+
+[variables]
+# Override brightness for light backgrounds (darker colors for readability)
+tone-syntax-bright = "100"
+tone-syntax-medium = "200"
+tone-syntax-accent = "50"
+
+[scopes]
+
+"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "@rainbow:blue-400" } }
+
+[palette]
+background = "@rainbow:azure-950"
+background-alt = "@rainbow:azure-1000"
+background-hover = "@rainbow:azure-950" # Row hover
+background-dim = "@rainbow:azure-700"
+
+background-overlay = "@rainbow:azure-1000"
+
+border-fg = "@rainbow:azure-900"
+chrome-border-fg = "@rainbow:azure-900"
+
+chrome-background = "@rainbow:azure-1000"
+chrome-background-hover = "@rainbow:azure-950"
+chrome-background-active = "@rainbow:azure-950"
+
+
+# # Light mode text colors
+foreground = "#fff"
+foreground-hover = "#fff"
+foreground-alt = "@rainbow:neutralCool-200"
+foreground-alt-hover = "@rainbow:neutralCool-100"
+foreground-dim = "@rainbow:blue-300"
+foreground-dim-hover= "@rainbow:azure-200"
+
+chrome-foreground = "@rainbow:blue-100"
+chrome-foreground-hover = "@rainbow:blue-50"
+chrome-foreground-alt = "@rainbow:blue-300"
+chrome-foreground-alt-hover = "@rainbow:blue-100"
+chrome-foreground-dim = "@rainbow:blue-600"
+chrome-foreground-dim-hover = "@rainbow:blue-300"
+
+menu-background = "@rainbow:azure-900"
+menu-border = "@rainbow:azure-700"

@@ -1,0 +1,11 @@
+[metadata]
+name = "Bastite Haboob"
+author = "jimmyff"
+brightness = "light"
+inherits = "storm-bastite"
+imports = ["classic-light-haboob"]
+
+[palette]
+
+
+[scopes]

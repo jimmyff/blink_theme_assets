@@ -1,0 +1,8 @@
+[metadata]
+name = "Topaz Haboob"
+author = "jimmyff"
+brightness = "light"
+inherits = "storm-topaz"
+imports = ["classic-light-haboob"]
+
+[palette]

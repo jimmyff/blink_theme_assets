@@ -1,0 +1,6 @@
+[metadata]
+name = "Bastite Twilight"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-bastite"
+imports = ["classic-dark-twilight"]

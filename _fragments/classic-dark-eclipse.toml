@@ -12,6 +12,7 @@ background-alt = "#000"
 background-dim = "#000"
 
 border-fg = "#333"
+chrome-border-fg = "#333"
 chrome-background = "#000"
 # chrome-background-hover = "#111"
 chrome-background-active = "#000"

@@ -1,0 +1,15 @@
+[metadata]
+name = "Turquoise Haboob"
+author = "jimmyff"
+brightness = "light"
+inherits = "storm-turquoise"
+imports = ["classic-light-haboob"]
+
+[palette]
+# Accent colors adjusted for light backgrounds
+accent-bg = "@rainbow:cerulean-500"
+accent-fg = "#FFFFFF"
+
+[scopes]
+# Inherits syntax highlighting from dark-turquoise
+# UI scopes are overridden by light-ui fragment

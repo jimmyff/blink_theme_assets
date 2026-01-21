@@ -1,0 +1,6 @@
+[metadata]
+name = "Amethyst Haboob"
+author = "jimmyff"
+brightness = "light"
+inherits = "mist-amethyst"
+imports = ["classic-light-haboob"]

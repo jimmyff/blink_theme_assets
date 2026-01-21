@@ -13,6 +13,7 @@ background-hover = "#FFF" # Row hover
 background-dim = "#FFF"
 
 border-fg = "#DDDDDD"
+chrome-border-fg = "#DDDDDD"
 chrome-background = "#FFF"
 chrome-background-hover = "#EEE"
 chrome-background-active = "#FFF"

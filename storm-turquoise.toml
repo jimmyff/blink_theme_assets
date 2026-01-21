@@ -133,13 +133,13 @@ tone-badge-text-alt = "50"
 
 # Application chrome
 #
-"ui.chrome.background" = { bg = "$chrome-background", border = { fg = "$border-fg" } }
+"ui.chrome.background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg" } }
 #"ui.chrome.background" = { bg = "#181818", border = { fg = "#ff0000" } }
 #"ui.background" = { border = { fg = "#00ff00" } }
 "ui.background" = { border = { fg = "$border-fg" } }
 
 
-"ui.safearea.background" = { bg = "$chrome-background", border = { fg = "$border-fg", width = 1 } }
+"ui.safearea.background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg", width = 1 } }
 #"ui.divider" = { border = { fg = "#0000ff" } }
 "ui.divider" = { border = { fg = "$border-fg" } }
 
@@ -147,12 +147,12 @@ tone-badge-text-alt = "50"
 "ui.chrome.menu.background" = { bg = "$menu-background", border = { fg = "$menu-border", width = 1 }  }
 
 # Dialog (paged dialogs, settings overlays)
-"ui.dialog.background" = { bg = "$background", border = { fg = "$border-fg" } }
-"ui.dialog.divider" = { border = { fg = "$border-fg" } }
+"ui.dialog.background" = { bg = "$background", border = { fg = "$chrome-border-fg" } }
+"ui.dialog.divider" = { border = { fg = "$chrome-border-fg" } }
 
 # Bar (toolbar-like bars in chrome and dialogs)
-"ui.bar-background" = { bg = "$chrome-background", border = { fg = "$border-fg" } }
-"ui.bar-background:hover" = { bg = "$chrome-background-hover", border = { fg = "$border-fg" } }
+"ui.bar-background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg" } }
+"ui.bar-background:hover" = { bg = "$chrome-background-hover", border = { fg = "$chrome-border-fg" } }
 
 "ui.bar-text" = { fg = "$chrome-foreground" }
 "ui.bar-text-alt" = { fg = "$chrome-foreground-alt" }
@@ -160,22 +160,28 @@ tone-badge-text-alt = "50"
 "ui.chrome.text" = { fg = "$chrome-foreground" }
 "ui.chrome.text-alt" = { fg = "$chrome-foreground-alt" }
 
-"ui.chrome.navbar.bar-background" = { bg = "$chrome-background", border = { fg = "$border-fg" } }
-"ui.chrome.navbar.divider" = { border = { fg = "$border-fg" } }
+"ui.chrome.navbar.bar-background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg" } }
+"ui.chrome.navbar.divider" = { border = { fg = "$chrome-border-fg" } }
+
+"ui.chrome.navbar.text" = { fg = "$chrome-foreground-dim" }
 
 "ui.chrome.navbar.item.text-alt" = { fg = "$chrome-foreground-dim" }
+"ui.chrome.navbar.item.text-alt:hover" = { fg = "$chrome-foreground-dim-hover" }
 "ui.chrome.navbar.item.text-alt:active" = { fg = "$chrome-foreground" }
 "ui.chrome.navbar.item.icon-alt" = { fg = "$chrome-foreground-dim" }
+"ui.chrome.navbar.item.icon-alt:hover" = { fg = "$chrome-foreground-dim-hover" }
 
 "ui.chrome.navbar.item.text" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.navbar.item.text:hover" = { fg = "$chrome-foreground-alt-hover" }
 "ui.chrome.navbar.item.text:active" = { fg = "$chrome-foreground" }
 "ui.chrome.navbar.item.icon" = { fg = "$chrome-foreground-alt" }
 "ui.chrome.navbar.item.icon:active" = { fg = "$foreground" }
+"ui.chrome.navbar.item.icon:hover" = { fg = "$chrome-foreground" }
 "ui.chrome.navbar.item.background" = { bg = "$chrome-background", border = { width = 3, fg = "$transparent" } }
 
 "ui.chrome.navbar.item.background:active" = { bg = "$chrome-background-active", border = { width = 3, fg = "$accent-bg" } }
 
-"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "#999999"  }  }
+"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "$chrome-border-fg"  }  }
 
 # input
 "ui.input.text" = { fg = "$foreground" }
@@ -193,9 +199,13 @@ tone-badge-text-alt = "50"
 "ui.list.background" = { bg = "$background" }
 "ui.list.background:hover" = { bg = "$background-hover" }
 "ui.list.text" = { fg = "$foreground" }
-"ui.list.text-alt" = { fg = "$foreground-alt" }
+"ui.list.text:hover" = { fg = "$foreground-hover" }
+"ui.list.text-alt" = { fg = "$foreground-dim" }
+"ui.list.text-alt:hover" = { fg = "$foreground-dim-hover" }
 "ui.list.icon" = { fg = "$foreground-dim" }
+"ui.list.icon:hover" = { fg = "$foreground-dim-hover" }
 "ui.list.icon-alt" = { fg = "$foreground-dim" }
+# "ui.list.icon-alt:hover" = { fg = "#F00" }
 "ui.list.divider" = { border = { fg = "$border-fg" } }
 "ui.list.button-background" = { bg = "$transparent", border = { fg = "$border-fg" } }
 
@@ -346,13 +356,16 @@ chrome-background-active = "@rainbow:neutral-950"
 chrome-foreground = "@rainbow:neutral-100"
 chrome-foreground-hover = "@rainbow:neutral-50"
 chrome-foreground-alt = "@rainbow:neutral-500"
-chrome-foreground-dim = "@rainbow:neutral-700"
+chrome-foreground-alt-hover = "@rainbow:neutral-200"
+chrome-foreground-dim = "@rainbow:neutral-800"
+chrome-foreground-dim-hover = "#f00"
 
 # Menus
 menu-background = "@rainbow:neutral-950"
 menu-border = "@rainbow:neutral-800"
 
 border-fg = "#333333"
+chrome-border-fg = "#333333"
 
 
 chrome-background-alt = "#090e17ff"
@@ -368,8 +381,11 @@ background-alt = "#111111" # Gutter
 background-hover = "@rainbow:neutral-1000" # Row hover
 
 foreground = "#fff"
+foreground-hover = "#fff"
 foreground-alt = "#CCCCCC"
+foreground-alt-hover = "#DDDDDD"
 foreground-dim = "#666666"
+foreground-dim-hover = "#888888"
 
 selection-background = "#007ACC"
 selection-foreground = "#fff"

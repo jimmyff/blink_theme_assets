@@ -1,0 +1,14 @@
+[metadata]
+name = "Sonora Sunrise Haboob"
+author = "jimmyff"
+brightness = "light"
+inherits = "storm-sonora-sunrise"
+imports = ["classic-light-haboob"]
+
+[variables]
+
+
+[palette]
+
+
+[scopes]
