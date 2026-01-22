@@ -10,6 +10,18 @@ tone-syntax-accent = "800"
 
 color-badge = "neutralWarm"
 
+
+tone-button-background =  "200"
+tone-button-background-hover =  "100"
+tone-button-border =  "400"
+tone-button-border-hover =  "300"
+tone-button-text =  "950"
+tone-button-text-hover =  "1000"
+
+tone-badge-background = "600"
+tone-badge-text = "0"
+tone-badge-text-alt = "50"
+
 [scopes]
 
 "ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "@rainbow:neutralWarm-400" } }

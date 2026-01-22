@@ -210,6 +210,7 @@ tone-badge-text-alt = "50"
 
 # List
 "ui.list.background" = { bg = "$background" }
+"ui.list.background:selected" = { bg = "$background-hover" }
 "ui.list.background:hover" = { bg = "$background-hover" }
 "ui.list.text" = { fg = "$foreground" }
 "ui.list.text:hover" = { fg = "$foreground-hover" }
@@ -330,7 +331,7 @@ tone-badge-text-alt = "50"
 
 # Highlight backgrounds (used by goto_word command)
 "ui.highlight.background" = { bg = "$syntax-highlight-background" }
-"ui.highlight.text" = { fg = "$syntax-highlight-text", modifiers = ["bold"] }
+"ui.highlight.text" = { fg = "$syntax-highlight-text" }
 "ui.highlight.match.background" = { bg = "$syntax-highlight-match-background" }
 "ui.highlight.match.text" = { fg = "$syntax-highlight-match-text", modifiers = ["bold"] }
 
