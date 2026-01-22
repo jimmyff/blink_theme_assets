@@ -25,7 +25,7 @@ tone-badge-text-alt = "50"
 [palette]
 # Light mode surface colors
 background = "@rainbow:neutral-50"
-background-overlay = "#FFFFFFCC"
+background-overlay = "#FFFFFF"
 background-alt = "#EAEAEA"
 background-hover = "@rainbow:neutral-0" # Row hover
 background-dim = "#E8E8E8"

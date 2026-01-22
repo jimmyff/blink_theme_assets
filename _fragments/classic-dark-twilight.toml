@@ -7,15 +7,17 @@
 tone-syntax-bright = "100"
 tone-syntax-medium = "200"
 tone-syntax-accent = "50"
-
+color-badge = "azure"
 [scopes]
 
-"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "@rainbow:blue-400" } }
+"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "@rainbow:blue-600" } }
+
+"ui.chrome.navbar.item.icon:hover" = { fg = "$foreground-hover" }
 
 [palette]
 background = "@rainbow:azure-950"
 background-alt = "@rainbow:azure-1000"
-background-hover = "@rainbow:azure-950" # Row hover
+background-hover = "@rainbow:azure-1000" # Row hover
 background-dim = "@rainbow:azure-700"
 
 background-overlay = "@rainbow:azure-1000"
@@ -30,7 +32,7 @@ chrome-background-active = "@rainbow:azure-950"
 
 # # Light mode text colors
 foreground = "#fff"
-foreground-hover = "#fff"
+foreground-hover = "@rainbow:yellow-100"
 foreground-alt = "@rainbow:neutralCool-200"
 foreground-alt-hover = "@rainbow:neutralCool-100"
 foreground-dim = "@rainbow:blue-300"

@@ -8,6 +8,8 @@ tone-syntax-bright = "800"
 tone-syntax-medium = "700"
 tone-syntax-accent = "800"
 
+color-badge = "neutralWarm"
+
 [scopes]
 
 "ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "@rainbow:neutralWarm-400" } }
@@ -22,6 +24,7 @@ background-overlay = "@rainbow:neutralWarm-400"
 
 border-fg = "@rainbow:neutralWarm-300"
 chrome-border-fg = "@rainbow:neutralWarm-300"
+
 chrome-background = "@rainbow:neutralWarm-200"
 chrome-background-hover = "@rainbow:neutralWarm-300"
 chrome-background-active = "@rainbow:neutralWarm-100"
@@ -35,11 +38,11 @@ foreground-alt-hover = "@rainbow:neutralWarm-800"
 foreground-dim = "@rainbow:neutralWarm-500"
 foreground-dim-hover= "@rainbow:neutralWarm-700"
 
-chrome-foreground = "@rainbow:neutralWarm-800"
+chrome-foreground = "@rainbow:neutralWarm-900"
 chrome-foreground-hover = "@rainbow:neutralWarm-1000"
-chrome-foreground-alt = "@rainbow:neutralWarm-700"
+chrome-foreground-alt = "@rainbow:neutralWarm-800"
 chrome-foreground-alt-hover = "@rainbow:neutralWarm-900"
-chrome-foreground-dim = "@rainbow:neutralWarm-600"
+chrome-foreground-dim = "@rainbow:neutralWarm-500"
 chrome-foreground-dim-hover = "@rainbow:neutralWarm-800"
 
 menu-background = "@rainbow:neutralWarm-100"

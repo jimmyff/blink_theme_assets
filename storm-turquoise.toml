@@ -24,6 +24,7 @@ tone-button-border-hover =  "700"
 tone-button-text =  "200"
 tone-button-text-hover =  "100"
 
+color-badge = "neutralCool"
 tone-badge-background = "700"
 tone-badge-text = "0"
 tone-badge-text-alt = "50"
@@ -163,7 +164,7 @@ tone-badge-text-alt = "50"
 "ui.chrome.navbar.bar-background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg" } }
 "ui.chrome.navbar.divider" = { border = { fg = "$chrome-border-fg" } }
 
-"ui.chrome.navbar.text" = { fg = "$chrome-foreground-dim" }
+"ui.chrome.navbar.text" = { fg = "$chrome-foreground" }
 
 "ui.chrome.navbar.item.text-alt" = { fg = "$chrome-foreground-dim" }
 "ui.chrome.navbar.item.text-alt:hover" = { fg = "$chrome-foreground-dim-hover" }
@@ -175,25 +176,37 @@ tone-badge-text-alt = "50"
 "ui.chrome.navbar.item.text:hover" = { fg = "$chrome-foreground-alt-hover" }
 "ui.chrome.navbar.item.text:active" = { fg = "$chrome-foreground" }
 "ui.chrome.navbar.item.icon" = { fg = "$chrome-foreground-alt" }
-"ui.chrome.navbar.item.icon:active" = { fg = "$foreground" }
-"ui.chrome.navbar.item.icon:hover" = { fg = "$chrome-foreground" }
+"ui.chrome.navbar.item.icon:active" = { fg = "$chrome-foreground" }
+"ui.chrome.navbar.item.icon:hover" = { fg = "$chrome-foreground-alt-hover" }
 "ui.chrome.navbar.item.background" = { bg = "$chrome-background", border = { width = 3, fg = "$transparent" } }
 
 "ui.chrome.navbar.item.background:active" = { bg = "$chrome-background-active", border = { width = 3, fg = "$accent-bg" } }
 
-"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "$chrome-border-fg"  }  }
+"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "$chrome-foreground-dim"  }  }
 
 # input
-"ui.input.text" = { fg = "$foreground" }
+"ui.input.text" = { fg = "$foreground-alt" }
+"ui.input.text:active" = { fg = "$foreground" }
 "ui.input.text-alt" = { fg = "$foreground-dim" }
-"ui.input.icon" = { fg = "$foreground-alt" }
+"ui.input.text-alt:active" = { fg = "$foreground-dim-hover" }
+"ui.input.icon" = { fg = "$foreground-dim" }
+"ui.input.icon:active" = { fg = "$foreground-dim-hover" }
+"ui.input.icon:hover" = { fg = "$foreground-dim-hover" }
+
+"ui.chrome.input.text" = { fg = "$chrome-foreground-alt" }
+"ui.chrome.input.text:active" = { fg = "$chrome-foreground" }
+"ui.chrome.input.text-alt" = { fg = "$chrome-foreground-dim" }
+"ui.chrome.input.text-alt:active" = { fg = "$chrome-foreground-dim-hover" }
+"ui.chrome.input.icon" = { fg = "$chrome-foreground-dim" }
+"ui.chrome.input.icon:active" = { fg = "$chrome-foreground-dim-hover" }
+"ui.chrome.input.icon:hover" = { fg = "$chrome-foreground-dim-hover" }
+
 
 "ui.input.checkbox.button-text" = { fg = "$chrome-foreground" }
 "ui.input.checkbox.button-text:hover" = { fg = "$chrome-foreground-hover" }
 "ui.input.checkbox.selected.button-text" = { fg = "$accent-bg" }
 "ui.input.checkbox.selected.button-text:hover" = { fg = "$accent-bg" }
 
-"ui.chrome.input.icon-alt" = { fg = "#AAAAAA" }
 
 # List
 "ui.list.background" = { bg = "$background" }
@@ -293,9 +306,9 @@ tone-badge-text-alt = "50"
 
 # Badges (small icon indicators)
 
-"ui.badge.background" = { bg = "@rainbow:neutralCool-{tone-badge-background}" }
+"ui.badge.background" = { bg = "@rainbow:{color-badge}-{tone-badge-background}" }
 "ui.badge.background:selected" = { bg = "$accent-bg" }
-"ui.badge.text" = { fg = "@rainbow:neutralCool-{tone-badge-text}", modifiers = ["bold"] }
+"ui.badge.text" = { fg = "@rainbow:{color-badge}-{tone-badge-text}", modifiers = ["bold"] }
 
 "ui.badge.background-info" = { bg = "@rainbow:azure-{tone-badge-background}", border = { fg = "@rainbow:azure-600" } }
 "ui.badge.text-info" = { fg = "@rainbow:azure-{tone-badge-text}" }
@@ -372,7 +385,7 @@ chrome-background-alt = "#090e17ff"
 chrome-border = "#0B406E55"
 
 background = "#000000"
-background-overlay = "#000000AA"
+background-overlay = "#000000"
 
 
 background-alt = "#111111" # Gutter
