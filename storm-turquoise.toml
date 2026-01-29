@@ -193,6 +193,14 @@ tone-badge-text-alt = "50"
 "ui.input.icon:active" = { fg = "$foreground-dim-hover" }
 "ui.input.icon:hover" = { fg = "$foreground-dim-hover" }
 
+"ui.input.label" = { fg = "$foreground-alt" }
+"ui.input.label:active" = { fg = "$foreground" }
+"ui.input.background" = { border = { width = 1, fg = "$border-fg" } }
+"ui.input.background:active" = { border = { width = 1, fg = "$foreground" } }
+"ui.input.background:error" = { border = { width = 2, fg = "@rainbow:crimson-{tone-button-border}" } }
+
+
+# Are the input chrome scopes required?
 "ui.chrome.input.text" = { fg = "$chrome-foreground-alt" }
 "ui.chrome.input.text:active" = { fg = "$chrome-foreground" }
 "ui.chrome.input.text-alt" = { fg = "$chrome-foreground-dim" }
@@ -200,6 +208,11 @@ tone-badge-text-alt = "50"
 "ui.chrome.input.icon" = { fg = "$chrome-foreground-dim" }
 "ui.chrome.input.icon:active" = { fg = "$chrome-foreground-dim-hover" }
 "ui.chrome.input.icon:hover" = { fg = "$chrome-foreground-dim-hover" }
+
+"ui.chrome.input.label" = { fg = "$foreground-alt" }
+"ui.chrome.input.label:active" = { fg = "$foreground" }
+"ui.chrome.input.background" = { border = { width = 1, fg = "$border-fg" } }
+"ui.chrome.input.background:active" = { border = { width = 1, fg = "$foreground" } }
 
 
 "ui.input.checkbox.button-text" = { fg = "$chrome-foreground" }
@@ -369,7 +382,7 @@ chrome-background-active = "@rainbow:neutral-950"
 
 chrome-foreground = "@rainbow:neutral-100"
 chrome-foreground-hover = "@rainbow:neutral-50"
-chrome-foreground-alt = "@rainbow:neutral-500"
+chrome-foreground-alt = "@rainbow:neutral-400"
 chrome-foreground-alt-hover = "@rainbow:neutral-200"
 chrome-foreground-dim = "@rainbow:neutral-800"
 chrome-foreground-dim-hover = "#f00"
