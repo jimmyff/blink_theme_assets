@@ -12,6 +12,10 @@ tone-accent = "400"
 color-highlight = "cyan"
 color-highlight-match = "red"
 
+color-task-today = "cyan"
+color-task-overdue = "crimson"
+color-task-soon = "violet"
+
 [scopes]
 # Inherits all scopes from storm-amethyst.toml
 
@@ -24,3 +28,5 @@ syntax-bullet = "@rainbow:red-{tone-syntax-medium}"
 syntax-quote = "@rainbow:berry-{tone-syntax-medium}"
 syntax-code = "@rainbow:indigo-{tone-syntax-bright}"
 syntax-link = "@rainbow:lemon-{tone-syntax-accent}"
+syntax-checkbox = "@rainbow:cerulean-{tone-syntax-medium}"
+syntax-rule = "@rainbow:cyan-{tone-syntax-medium}"

@@ -6,8 +6,12 @@ inherits = "storm-turquoise"
 
 [variables]
 
-color-accent = "rust"
+color-accent = "orange"
 tone-accent = "400"
+
+color-task-today = "amber"
+color-task-overdue = "magenta"
+color-task-soon = "violet"
 
 [scopes]
 # Inherits all scopes from storm-amethyst.toml
@@ -21,3 +25,5 @@ syntax-quote = "@rainbow:azure-{tone-syntax-medium}"
 syntax-emphasis = "@rainbow:pink-{tone-syntax-medium}"
 syntax-code = "@rainbow:purple-{tone-syntax-medium}"
 syntax-link = "@rainbow:sky-{tone-syntax-bright}"
+syntax-checkbox = "@rainbow:magenta-{tone-syntax-medium}"
+syntax-rule = "@rainbow:pink-{tone-syntax-medium}"

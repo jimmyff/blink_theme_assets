@@ -25,6 +25,10 @@ tone-button-text =  "200"
 tone-button-text-hover =  "100"
 
 color-badge = "neutralCool"
+color-task-today = "forest"
+color-task-overdue = "pink"
+color-task-soon = "azure"
+
 tone-badge-background = "700"
 tone-badge-text = "0"
 tone-badge-text-alt = "50"
@@ -61,6 +65,7 @@ tone-badge-text-alt = "50"
 "syntax.unprintable" = { fg = "$foreground", bg = "$bg-red-intense", modifiers = [
   "bold",
 ] }
+"syntax.whitespace" = { fg = "$foreground-dim" }
 
 # Highlight.js scopes - Titles and names
 "syntax.title" = { fg = "$syntax-title" }
@@ -100,6 +105,19 @@ tone-badge-text-alt = "50"
 "syntax.warning" = { fg = "$yellow", modifiers = ["bold"] }
 "syntax.error" = { fg = "$red", modifiers = ["bold"] }
 
+"syntax.rule" = { fg = "$syntax-rule" }
+
+"syntax.task.marker" = { bg = "$background-alt", fg = "$syntax-checkbox" }
+"syntax.task.pending" = { bg = "$background-alt" }
+"syntax.task.done" = { bg = "$background-alt", fg = "@rainbow:{color-accent}-{tone-syntax-medium}", modifiers = ["bold"] }
+"syntax.task.active" = { bg = "$background-alt", fg = "@rainbow:{color-accent}-{tone-syntax-medium}", modifiers = ["bold"] }
+"syntax.task.cancelled" = { bg = "$background-alt", fg = "$foreground-dim", modifiers = ["bold"] }
+
+"syntax.strikethrough" = { fg = "$foreground-dim", modifiers = ["strikethrough"] }
+"syntax.frontmatter" = { fg = "$syntax-code" }
+"syntax.table" = { fg = "$foreground" }
+"syntax.table.marker" = { fg = "$foreground-dim" }
+
 # ==== UI SCOPES ====
 # Class-based structure with semantic suffixes and :state notation
 
@@ -118,8 +136,9 @@ tone-badge-text-alt = "50"
 
 # Editor-specific (inherits from workspace)
 "ui.workspace.editor.cursor.background" = { bg = "$cursor", fg = "$cursor-fg" }
-"ui.workspace.editor.selection.background" = { bg = "$accent-bg" }
-"ui.workspace.editor.selection.text" = { fg = "$accent-fg" }
+
+"ui.workspace.editor.selection.background" = { bg = "$syntax-highlight-background" }
+"ui.workspace.editor.selection.text" = { fg = "$syntax-highlight-text" }
 
 # Editor gutter (uses -alt classes, inherits from workspace.*-alt)
 "ui.workspace.editor.background-alt" = { bg = "$background-alt" }
@@ -321,8 +340,11 @@ tone-badge-text-alt = "50"
 # Badges (small icon indicators)
 
 "ui.badge.background" = { bg = "@rainbow:{color-badge}-{tone-badge-background}" }
-"ui.badge.background:selected" = { bg = "$accent-bg" }
+"ui.badge.background:selected" = { bg = "@rainbow:{color-task-today}-{tone-badge-background}" }
+"ui.badge.background-themed" = { bg = "@rainbow:{color-accent}-{tone-badge-background}" }
 "ui.badge.text" = { fg = "@rainbow:{color-badge}-{tone-badge-text}", modifiers = ["bold"] }
+"ui.badge.text:selected" = { fg = "@rainbow:{color-task-today}-{tone-badge-text}", modifiers = ["bold"] }
+"ui.badge.text-themed" = { fg = "@rainbow:{color-accent}-{tone-badge-text}", modifiers = ["bold"] }
 
 "ui.badge.background-info" = { bg = "@rainbow:azure-{tone-badge-background}", border = { fg = "@rainbow:azure-600" } }
 "ui.badge.text-info" = { fg = "@rainbow:azure-{tone-badge-text}" }
@@ -335,6 +357,18 @@ tone-badge-text-alt = "50"
 
 "ui.badge.background-error" = { bg = "@rainbow:crimson-{tone-badge-background}", border = { fg = "@rainbow:crimson-600" } }
 "ui.badge.text-error" = { fg = "@rainbow:crimson-{tone-badge-text}" }
+
+"ui.badge.background-task" = { bg = "@rainbow:{color-badge}-{tone-badge-background}", border = { fg = "@rainbow:azure-600" } }
+"ui.badge.text-task" = { fg = "@rainbow:{color-badge}-{tone-badge-text}", modifiers = ["bold"] }
+
+"ui.badge.background-task-overdue" = { bg = "@rainbow:{color-task-overdue}-{tone-badge-background}", border = { fg = "@rainbow:{color-task-overdue}-600" } }
+"ui.badge.text-task-overdue" = { fg = "@rainbow:{color-task-overdue}-{tone-badge-text}", modifiers = ["bold"] }
+
+"ui.badge.background-task-today" = { bg = "@rainbow:{color-task-today}-{tone-badge-background}", border = { fg = "@rainbow:{color-task-today}-600" } }
+"ui.badge.text-task-today" = { fg = "@rainbow:{color-task-today}-{tone-badge-text}", modifiers = ["bold"] }
+
+"ui.badge.background-task-soon" = { bg = "@rainbow:{color-task-soon}-{tone-badge-background}", border = { fg = "@rainbow:{color-task-soon}-600" } }
+"ui.badge.text-task-soon" = { fg = "@rainbow:{color-task-soon}-{tone-badge-text}", modifiers = ["bold"] }
 
 # Semantic text colors
 "ui.error.text" = { fg = "@rainbow:crimson-{tone-syntax-medium}", modifiers = ["bold"] }
@@ -368,6 +402,8 @@ syntax-quote = "@rainbow:berry-{tone-syntax-medium}"
 syntax-emphasis = "@rainbow:sky-{tone-syntax-bright}"
 syntax-code = "@rainbow:indigo-{tone-syntax-bright}"
 syntax-link = "@rainbow:lemon-{tone-syntax-accent}"
+syntax-checkbox = "@rainbow:lime-{tone-syntax-medium}"
+syntax-rule = "@rainbow:indigo-{tone-syntax-medium}"
 
 syntax-highlight-background = "@rainbow:{color-highlight}-{tone-badge-background}"
 syntax-highlight-text = "@rainbow:{color-highlight}-{tone-badge-text-alt}"

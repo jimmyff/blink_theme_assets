@@ -21,3 +21,6 @@ syntax-quote = "@rainbow:turquoise-{tone-syntax-medium}"
 syntax-emphasis = "@rainbow:cerulean-{tone-syntax-bright}"
 syntax-code = "@rainbow:indigo-{tone-syntax-bright}"
 syntax-link = "@rainbow:lemon-{tone-syntax-accent}"
+
+syntax-checkbox = "@rainbow:crimson-{tone-syntax-medium}"
+syntax-rule = "@rainbow:turquoise-{tone-syntax-medium}"
