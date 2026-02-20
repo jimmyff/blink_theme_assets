@@ -11,10 +11,29 @@ background = "#000"
 background-alt = "#000"
 background-dim = "#000"
 
-border-fg = "#333"
-chrome-border-fg = "#333"
+border-fg = "oklch(0.3 0 0)"
+chrome-border-fg = "oklch(0.3 0 0)"
 chrome-background = "#000"
+
+menu-background = "oklch(0.2 0 0)"
+menu-border = "oklch(0.3 0 0)"
+
 # chrome-background-hover = "#111"
+#
+chrome-foreground = "oklch(0.8 0 0)"
+chrome-foreground-hover = "oklch(1 0 0)"
+chrome-foreground-alt = "oklch(0.6 0 0)"
+chrome-foreground-alt-hover = "oklch(1 0 0)"
+chrome-foreground-dim = "oklch(0.5 0 0)"
+chrome-foreground-dim-hover = "oklch(0.6 0 0)"
+
+foreground = "#fff"
+foreground-hover = "#fff"
+foreground-alt = "oklch(0.6 0 0)"
+foreground-alt-hover = "oklch(0.7 0 0)"
+foreground-dim = "oklch(0.5 0 0)"
+foreground-dim-hover = "oklch(0.6 0 0)"
+
 chrome-background-active = "#000"
 
 chrome-background-hover = "@rainbow:{color-accent}-1000"

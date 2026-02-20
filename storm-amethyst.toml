@@ -7,7 +7,7 @@ inherits = "storm-turquoise"
 [variables]
 
 color-accent = "berry"
-tone-accent = "500"
+tone-accent = "600"
 
 color-task-today = "berry"
 color-task-overdue = "fuchsia"
@@ -27,3 +27,7 @@ syntax-code = "@rainbow:azure-{tone-syntax-bright}"
 syntax-link = "@rainbow:blue-{tone-syntax-bright}"
 syntax-checkbox = "@rainbow:cerulean-{tone-syntax-medium}"
 syntax-rule = "@rainbow:cyan-{tone-syntax-medium}"
+
+
+cursor = "#ff66ff"
+cursor-fg = "#000000"

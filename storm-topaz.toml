@@ -13,6 +13,9 @@ color-task-today = "amber"
 color-task-overdue = "magenta"
 color-task-soon = "violet"
 
+color-highlight =  "red"
+color-highlight-match =  "amber"
+
 [scopes]
 # Inherits all scopes from storm-amethyst.toml
 
@@ -27,3 +30,6 @@ syntax-code = "@rainbow:purple-{tone-syntax-medium}"
 syntax-link = "@rainbow:sky-{tone-syntax-bright}"
 syntax-checkbox = "@rainbow:magenta-{tone-syntax-medium}"
 syntax-rule = "@rainbow:pink-{tone-syntax-medium}"
+
+cursor = "@rainbow:yellow-100"
+cursor-fg = "@rainbow:crimson-800"

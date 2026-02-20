@@ -146,6 +146,10 @@ tone-badge-text-alt = "50"
 "ui.workspace.editor.text-alt" = { fg = "$foreground-alt" }
 "ui.workspace.editor.text-alt:selected" = { fg = "$foreground" }
 
+
+"ui.workspace.sidebar.text" = { fg = "$foreground-alt" }
+"ui.workspace.sidebar.text-alt" = { fg = "$foreground-dim" }
+
 # Scrollbar (reusable across workspace)
 "ui.workspace.scrollbar.track" = { bg = "$background-alt" }
 "ui.workspace.scrollbar.thumb" = { fg = "$foreground-alt" }
@@ -246,23 +250,23 @@ tone-badge-text-alt = "50"
 "ui.list.background:hover" = { bg = "$background-hover" }
 "ui.list.text" = { fg = "$foreground" }
 "ui.list.text:hover" = { fg = "$foreground-hover" }
-"ui.list.text-alt" = { fg = "$foreground-dim" }
-"ui.list.text-alt:hover" = { fg = "$foreground-dim-hover" }
-"ui.list.icon" = { fg = "$foreground-dim" }
-"ui.list.icon:hover" = { fg = "$foreground-dim-hover" }
+"ui.list.text-alt" = { fg = "$foreground-alt" }
+"ui.list.text-alt:hover" = { fg = "$foreground-alt-hover" }
+"ui.list.icon" = { fg = "$foreground-alt" }
+"ui.list.icon:hover" = { fg = "$foreground-alt-hover" }
 "ui.list.icon-alt" = { fg = "$foreground-dim" }
-# "ui.list.icon-alt:hover" = { fg = "#F00" }
+"ui.list.icon-alt:hover" = { fg = "$foreground-dim-hover" }
 "ui.list.divider" = { border = { fg = "$border-fg" } }
 "ui.list.button-background" = { bg = "$transparent", border = { fg = "$border-fg" } }
 
 
 # Button
 
-"ui.button-background" = { bg = "$chrome-background", border = { fg = "@rainbow:neutral-900" } }
-"ui.button-background:hover" = { bg = "$chrome-background-hover", border = { fg = "@rainbow:neutral-700" } }
+"ui.button-background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg" } }
+"ui.button-background:hover" = { bg = "$chrome-background-hover", border = { fg = "$chrome-border-fg" } }
 "ui.button-text" = { fg = "$chrome-foreground" }
 "ui.button-text:hover" = { fg = "$chrome-foreground-hover" }
-"ui.button-background:disabled" = { bg = "$chrome-background", border = { fg = "$border-fg" } }
+"ui.button-background:disabled" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg" } }
 "ui.button-text:disabled" = { fg = "$chrome-foreground-dim" }
 
 # Severity button classes (class name encodes severity)
@@ -412,46 +416,43 @@ syntax-highlight-match-background = "@rainbow:{color-highlight-match}-{tone-badg
 syntax-highlight-match-text = "@rainbow:{color-highlight-match}-{tone-badge-text}"
 
 # Chrome
-chrome-background = "@rainbow:neutral-1000"
-chrome-background-hover = "@rainbow:neutral-950"
-chrome-background-active = "@rainbow:neutral-950"
+chrome-background = "oklch(0.22 0.02 272.95)"
+chrome-background-hover = "oklch(0.28 0.03 272.95)"
+chrome-background-active = "oklch(0.28 0.03 272.95)"
 
-chrome-foreground = "@rainbow:neutral-100"
-chrome-foreground-hover = "@rainbow:neutral-50"
-chrome-foreground-alt = "@rainbow:neutral-400"
-chrome-foreground-alt-hover = "@rainbow:neutral-200"
-chrome-foreground-dim = "@rainbow:neutral-800"
-chrome-foreground-dim-hover = "#f00"
+chrome-foreground = "oklch(0.92 0.04 275.18)"
+chrome-foreground-hover = "oklch(1 0 275.18)"
+chrome-foreground-alt = "oklch(0.75 0.08 275.18)"
+chrome-foreground-alt-hover = "oklch(0.85 0.08 275.18)"
+chrome-foreground-dim = "oklch(0.55 0.08 275.18)"
+chrome-foreground-dim-hover = "oklch(0.65 0.08 275.18)"
 
 # Menus
-menu-background = "@rainbow:neutral-950"
-menu-border = "@rainbow:neutral-800"
+menu-background = "oklch(0.3 0.03 272.95)"
+menu-border = "oklch(0.4 0.03 272.95)"
 
-border-fg = "#333333"
-chrome-border-fg = "#333333"
+border-fg = "oklch(0.3 0.03 272.95)"
+chrome-border-fg = "oklch(0.35 0.05 284.01)"
 
 
 chrome-background-alt = "#090e17ff"
-chrome-border = "#0B406E55"
+chrome-border = "oklch(0.35 0.05 284.01)"
 
 background = "#000000"
 background-overlay = "#000000"
 
 
-background-alt = "#111111" # Gutter
+background-alt = "oklch(0.17 0.015 272.95)" # Gutter
 # background-hover = "@rainbow:{color-accent}-1000" # Row hover
 
-background-hover = "@rainbow:neutral-1000" # Row hover
+background-hover = "oklch(0.15 0.02 272.95)" # Row hover
 
 foreground = "#fff"
 foreground-hover = "#fff"
-foreground-alt = "#CCCCCC"
-foreground-alt-hover = "#DDDDDD"
-foreground-dim = "#666666"
-foreground-dim-hover = "#888888"
-
-selection-background = "#007ACC"
-selection-foreground = "#fff"
+foreground-alt = "oklch(0.6 0.04 285.54)"
+foreground-alt-hover = "oklch(0.7 0.04 285.54)"
+foreground-dim = "oklch(0.5 0.06 281.83)"
+foreground-dim-hover = "oklch(0.58 0.06 281.83)"
 
 
 cursor = "#ff66ff"
