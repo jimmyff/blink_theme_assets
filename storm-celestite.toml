@@ -1,0 +1,40 @@
+[metadata]
+name = "Celestite Storm"
+author = "jimmyff"
+brightness = "dark"
+inherits = "storm-turquoise"
+
+[variables]
+
+color-accent = "sky"
+tone-accent = "200"
+
+color-task-today = "sky"
+color-task-overdue = "fuchsia"
+color-task-soon = "orange"
+
+color-highlight = "blue"
+color-highlight-match = "yellow"
+
+tone-syntax-bright = "100"
+tone-syntax-medium = "400"
+tone-syntax-accent = "50"
+
+[scopes]
+# Inherits all scopes from dark-turquoise
+
+[palette]
+
+syntax-title = "@rainbow:blue-{tone-syntax-bright}"
+syntax-strong = "@rainbow:cerulean-{tone-syntax-bright}"
+syntax-bullet = "@rainbow:neutralCool-{tone-syntax-bright}"
+syntax-quote = "@rainbow:azure-{tone-syntax-bright}"
+syntax-emphasis = "@rainbow:berry-{tone-syntax-bright}"
+syntax-code = "@rainbow:azure-{tone-syntax-bright}"
+syntax-link = "@rainbow:blue-{tone-syntax-bright}"
+syntax-checkbox = "@rainbow:neutralCool-{tone-syntax-medium}"
+syntax-rule = "@rainbow:neutralCool-{tone-syntax-medium}"
+
+
+cursor = "@rainbow:blue-0"
+cursor-fg = "#000000"

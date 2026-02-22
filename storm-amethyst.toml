@@ -7,7 +7,7 @@ inherits = "storm-turquoise"
 [variables]
 
 color-accent = "berry"
-tone-accent = "600"
+tone-accent = "500"
 
 color-task-today = "berry"
 color-task-overdue = "fuchsia"
