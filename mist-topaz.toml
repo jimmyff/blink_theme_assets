@@ -2,7 +2,7 @@
 name = "Topaz Mist"
 author = "jimmyff"
 brightness = "light"
-inherits = "storm-topaz"
-imports = ["classic-light"]
+inherits = "twilight-topaz"
+imports = ["classic-light-mist"]
 
 [palette]

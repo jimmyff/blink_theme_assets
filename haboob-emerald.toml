@@ -2,7 +2,7 @@
 name = "Emerald Haboob"
 author = "jimmyff"
 brightness = "light"
-inherits = "storm-emerald"
+inherits = "twilight-emerald"
 imports = ["classic-light-haboob"]
 
 [palette]

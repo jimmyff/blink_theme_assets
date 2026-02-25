@@ -1,0 +1,6 @@
+[metadata]
+name = "Sandstone Snow"
+author = "jimmyff"
+brightness = "light"
+inherits = "mist-sandstone"
+imports = ["classic-light-snow"]

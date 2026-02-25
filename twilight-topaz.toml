@@ -2,5 +2,34 @@
 name = "Topaz Twilight"
 author = "jimmyff"
 brightness = "dark"
-inherits = "storm-topaz"
-imports = ["classic-dark-twilight"]
+inherits = "twilight-turquoise"
+
+[variables]
+
+color-accent = "orange"
+tone-accent = "400"
+
+color-task-today = "amber"
+color-task-overdue = "magenta"
+color-task-soon = "violet"
+
+color-highlight =  "red"
+color-highlight-match =  "amber"
+
+[scopes]
+# Inherits all scopes from twilight-turquoise.toml
+
+[palette]
+
+syntax-title = "@rainbow:rust-{tone-syntax-bright}"
+syntax-strong = "@rainbow:yellow-{tone-syntax-bright}"
+syntax-bullet = "@rainbow:cyan-{tone-syntax-bright}"
+syntax-quote = "@rainbow:azure-{tone-syntax-medium}"
+syntax-emphasis = "@rainbow:pink-{tone-syntax-medium}"
+syntax-code = "@rainbow:purple-{tone-syntax-medium}"
+syntax-link = "@rainbow:sky-{tone-syntax-bright}"
+syntax-checkbox = "@rainbow:magenta-{tone-syntax-medium}"
+syntax-rule = "@rainbow:pink-{tone-syntax-medium}"
+
+cursor = "@rainbow:yellow-100"
+cursor-fg = "@rainbow:crimson-800"

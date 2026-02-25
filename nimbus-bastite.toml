@@ -1,6 +1,6 @@
 [metadata]
-name = "Bastite Eclipse"
+name = "Bastite Nimbus"
 author = "jimmyff"
 brightness = "dark"
 inherits = "twilight-bastite"
-imports = ["classic-dark-eclipse"]
+imports = ["classic-dark-nimbus"]

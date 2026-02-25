@@ -1,8 +1,8 @@
 [metadata]
-name = "Celestite Storm"
+name = "Celestite Twilight"
 author = "jimmyff"
 brightness = "dark"
-inherits = "storm-turquoise"
+inherits = "twilight-turquoise"
 
 [variables]
 

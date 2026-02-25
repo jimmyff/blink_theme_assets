@@ -1,6 +1,6 @@
 [metadata]
-name = "Sonora Sunrise Eclipse"
+name = "Sonora Sunrise Nimbus"
 author = "jimmyff"
 brightness = "dark"
 inherits = "twilight-sonora-sunrise"
-imports = ["classic-dark-eclipse"]
+imports = ["classic-dark-nimbus"]

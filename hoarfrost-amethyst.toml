@@ -1,9 +1,9 @@
 [metadata]
-name = "Amethyst Mist"
+name = "Amethyst Hoarfrost"
 author = "jimmyff"
 brightness = "light"
 inherits = "twilight-amethyst"
-imports = ["classic-light-mist"]
+imports = ["classic-light-hoarfrost"]
 
 [palette]
 

@@ -2,8 +2,8 @@
 name = "Bastite Mist"
 author = "jimmyff"
 brightness = "light"
-inherits = "storm-bastite"
-imports = ["classic-light"]
+inherits = "twilight-bastite"
+imports = ["classic-light-mist"]
 
 [palette]
 

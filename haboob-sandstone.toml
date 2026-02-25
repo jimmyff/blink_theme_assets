@@ -1,11 +1,8 @@
 [metadata]
-name = "Bastite Haboob"
+name = "Sandstone Haboob"
 author = "jimmyff"
 brightness = "light"
-inherits = "twilight-bastite"
+inherits = "twilight-sandstone"
 imports = ["classic-light-haboob"]
 
 [palette]
-
-
-[scopes]

@@ -1,9 +1,9 @@
 [metadata]
-name = "Bastite Haboob"
+name = "Bastite Hoarfrost"
 author = "jimmyff"
 brightness = "light"
 inherits = "twilight-bastite"
-imports = ["classic-light-haboob"]
+imports = ["classic-light-hoarfrost"]
 
 [palette]
 

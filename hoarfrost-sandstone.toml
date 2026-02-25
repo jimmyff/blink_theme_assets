@@ -1,0 +1,8 @@
+[metadata]
+name = "Sandstone Hoarfrost"
+author = "jimmyff"
+brightness = "light"
+inherits = "twilight-sandstone"
+imports = ["classic-light-hoarfrost"]
+
+[palette]

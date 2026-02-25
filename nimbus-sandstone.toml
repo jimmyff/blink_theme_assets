@@ -1,0 +1,6 @@
+[metadata]
+name = "Sandstone Nimbus"
+author = "jimmyff"
+brightness = "dark"
+inherits = "twilight-sandstone"
+imports = ["classic-dark-nimbus"]

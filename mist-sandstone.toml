@@ -1,14 +1,8 @@
 [metadata]
-name = "Sonora Sunrise Mist"
+name = "Sandstone Mist"
 author = "jimmyff"
 brightness = "light"
-inherits = "twilight-sonora-sunrise"
+inherits = "twilight-sandstone"
 imports = ["classic-light-mist"]
 
-[variables]
-
-
 [palette]
-
-
-[scopes]

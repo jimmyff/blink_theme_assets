@@ -1,0 +1,40 @@
+[metadata]
+name = "Sandstone Twilight"
+author = "jimmyff"
+brightness = "dark"
+inherits = "twilight-turquoise"
+
+[variables]
+
+color-accent = "amber"
+tone-accent = "300"
+
+color-task-today = "amber"
+color-task-overdue = "red"
+color-task-soon = "neutralCool"
+
+# color-highlight = "neutralWarm"
+color-highlight-match = "amber"
+
+tone-syntax-bright = "200"
+tone-syntax-medium = "400"
+tone-syntax-accent = "100"
+
+[scopes]
+# Inherits all scopes from dark-turquoise
+
+[palette]
+
+syntax-title = "@rainbow:amber-{tone-syntax-bright}"
+syntax-strong = "@rainbow:neutralWarm-{tone-syntax-bright}"
+syntax-bullet = "@rainbow:neutral-{tone-syntax-medium}"
+syntax-quote = "@rainbow:neutralCool-{tone-syntax-medium}"
+syntax-emphasis = "@rainbow:neutralWarm-{tone-syntax-bright}"
+syntax-code = "@rainbow:neutralCool-{tone-syntax-bright}"
+syntax-link = "@rainbow:yellow-{tone-syntax-bright}"
+syntax-checkbox = "@rainbow:neutralCool-{tone-syntax-medium}"
+syntax-rule = "@rainbow:neutralCool-{tone-syntax-medium}"
+
+
+cursor = "@rainbow:amber-0"
+cursor-fg = "#000000"

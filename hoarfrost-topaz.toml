@@ -1,8 +1,8 @@
 [metadata]
-name = "Topaz Haboob"
+name = "Topaz Hoarfrost"
 author = "jimmyff"
 brightness = "light"
 inherits = "twilight-topaz"
-imports = ["classic-light-haboob"]
+imports = ["classic-light-hoarfrost"]
 
 [palette]

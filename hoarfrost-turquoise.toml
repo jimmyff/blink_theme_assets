@@ -1,9 +1,9 @@
 [metadata]
-name = "Turquoise Mist"
+name = "Turquoise Hoarfrost"
 author = "jimmyff"
 brightness = "light"
 inherits = "twilight-turquoise"
-imports = ["classic-light-mist"]
+imports = ["classic-light-hoarfrost"]
 
 [palette]
 # Accent colors adjusted for light backgrounds

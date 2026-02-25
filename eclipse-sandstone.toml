@@ -1,6 +1,6 @@
 [metadata]
-name = "Turquoise Eclipse"
+name = "Sandstone Eclipse"
 author = "jimmyff"
 brightness = "dark"
-inherits = "twilight-turquoise"
+inherits = "twilight-sandstone"
 imports = ["classic-dark-eclipse"]

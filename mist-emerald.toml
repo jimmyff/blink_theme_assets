@@ -2,8 +2,8 @@
 name = "Emerald Mist"
 author = "jimmyff"
 brightness = "light"
-inherits = "storm-emerald"
-imports = ["classic-light"]
+inherits = "twilight-emerald"
+imports = ["classic-light-mist"]
 
 [palette]
 # Accent colors adjusted for light backgrounds

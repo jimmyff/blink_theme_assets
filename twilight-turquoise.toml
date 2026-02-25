@@ -1,5 +1,5 @@
 [metadata]
-name = "Turquoise Storm"
+name = "Turquoise Twilight"
 author = "jimmyff"
 brightness = "dark"
 
@@ -8,7 +8,7 @@ brightness = "dark"
 color-accent = "cerulean"
 tone-accent = "400"
 
-color-highlight = "indigo"
+color-highlight = "neutralCool"
 color-highlight-match = "rust"
 
 
@@ -42,27 +42,27 @@ tone-badge-text-alt = "50"
 # All syntax scopes now prefixed with "syntax."
 
 # Highlight.js scopes - General code
-"syntax.keyword" = { fg = "$magenta" }
-"syntax.built_in" = { fg = "$blue" }
-"syntax.type" = { fg = "$yellow" }
-"syntax.literal" = { fg = "$fg-clay" }
-"syntax.number" = { fg = "$fg-clay" }
-"syntax.operator" = { fg = "$foreground-alt" }
-"syntax.punctuation" = { fg = "$foreground-alt" }
-"syntax.property" = { fg = "$blue" }
-"syntax.regexp" = { fg = "$green" }
-"syntax.string" = { fg = "$green" }
-"syntax.char.escape" = { fg = "$fg-clay" }
-"syntax.subst" = { fg = "$foreground-alt" }
-"syntax.symbol" = { fg = "$magenta" }
-"syntax.variable" = { fg = "$foreground-alt" }
-"syntax.variable.language" = { fg = "$red" }
-"syntax.variable.constant" = { fg = "$fg-clay" }
-"syntax.comment" = { fg = "$foreground-alt", modifiers = ["italic"] }
-"syntax.doctag" = { fg = "$blue", modifiers = ["italic"] }
+# "syntax.keyword" = { fg = "$magenta" }
+# "syntax.built_in" = { fg = "$blue" }
+# "syntax.type" = { fg = "$yellow" }
+# "syntax.literal" = { fg = "$fg-clay" }
+# "syntax.number" = { fg = "$fg-clay" }
+# "syntax.operator" = { fg = "$foreground-alt" }
+# "syntax.punctuation" = { fg = "$foreground-alt" }
+# "syntax.property" = { fg = "$blue" }
+# "syntax.regexp" = { fg = "$green" }
+# "syntax.string" = { fg = "$green" }
+# "syntax.char.escape" = { fg = "$fg-clay" }
+# "syntax.subst" = { fg = "$foreground-alt" }
+# "syntax.symbol" = { fg = "$magenta" }
+# "syntax.variable" = { fg = "$foreground-alt" }
+# "syntax.variable.language" = { fg = "$red" }
+# "syntax.variable.constant" = { fg = "$fg-clay" }
+# "syntax.comment" = { fg = "$foreground-alt", modifiers = ["italic"] }
+# "syntax.doctag" = { fg = "$blue", modifiers = ["italic"] }
 
 # Special characters
-"syntax.unprintable" = { fg = "$foreground", bg = "$bg-red-intense", modifiers = [
+"syntax.unprintable" = { fg = "$foreground", bg = "@rainbow:crimson-{tone-badge-background}", modifiers = [
   "bold",
 ] }
 "syntax.whitespace" = { fg = "$foreground-dim" }
@@ -71,15 +71,15 @@ tone-badge-text-alt = "50"
 "syntax.title" = { fg = "$syntax-title" }
 "syntax.title.class" = { fg = "$syntax-title" }
 "syntax.title.class.inherited" = { fg = "$syntax-title" }
-"syntax.title.function" = { fg = "$blue" }
-"syntax.title.function.invoke" = { fg = "$blue" }
-"syntax.params" = { fg = "$red" }
+# "syntax.title.function" = { fg = "$blue" }
+# "syntax.title.function.invoke" = { fg = "$blue" }
+# "syntax.params" = { fg = "$red" }
 
 # Highlight.js scopes - Tags and attributes
-"syntax.tag" = { fg = "$magenta" }
-"syntax.name" = { fg = "$magenta" }
-"syntax.attr" = { fg = "$fg-sage" }
-"syntax.attribute" = { fg = "$fg-sage" }
+# "syntax.tag" = { fg = "$magenta" }
+# "syntax.name" = { fg = "$magenta" }
+# "syntax.attr" = { fg = "$fg-sage" }
+# "syntax.attribute" = { fg = "$fg-sage" }
 
 # Highlight.js scopes - Markdown/text markup
 "syntax.section" = { fg = "$syntax-title", modifiers = ["bold"] }
@@ -92,18 +92,18 @@ tone-badge-text-alt = "50"
 "syntax.quote" = { fg = "$syntax-quote" }
 
 # Highlight.js scopes - Diff
-"syntax.addition" = { fg = "$green" }
-"syntax.deletion" = { fg = "$red" }
+"syntax.addition" = { fg = "@rainbow:emerald-{tone-syntax-medium}" }
+"syntax.deletion" = { fg = "@rainbow:red-{tone-syntax-medium}" }
 
 # Highlight.js scopes - Meta
-"syntax.meta" = { fg = "$blue" }
-"syntax.meta.prompt" = { fg = "$magenta" }
+"syntax.meta" = { fg = "@rainbow:blue-{tone-syntax-medium}" }
+"syntax.meta.prompt" = { fg = "@rainbow:crimson-{tone-syntax-medium}" }
 
 # Diagnostic scopes
-"syntax.info" = { fg = "$blue", modifiers = ["bold"] }
-"syntax.hint" = { fg = "$green", modifiers = ["bold"] }
-"syntax.warning" = { fg = "$yellow", modifiers = ["bold"] }
-"syntax.error" = { fg = "$red", modifiers = ["bold"] }
+"syntax.info" = { fg = "@rainbow:blue-{tone-syntax-medium}", modifiers = ["bold"] }
+"syntax.hint" = { fg = "@rainbow:emerald-{tone-syntax-medium}", modifiers = ["bold"] }
+"syntax.warning" = { fg = "@rainbow:yellow-{tone-syntax-medium}", modifiers = ["bold"] }
+"syntax.error" = { fg = "@rainbow:red-{tone-syntax-medium}", modifiers = ["bold"] }
 
 "syntax.rule" = { fg = "$syntax-rule" }
 
@@ -158,9 +158,11 @@ tone-badge-text-alt = "50"
 # Application chrome
 #
 "ui.chrome.background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg" } }
+"ui.chrome.background-splash" = {  bg = "$chrome-background-splash"  }
 #"ui.chrome.background" = { bg = "#181818", border = { fg = "#ff0000" } }
 #"ui.background" = { border = { fg = "#00ff00" } }
 "ui.background" = { border = { fg = "$border-fg" } }
+"ui.background-splash" = {  bg = "$background-splash" }
 
 
 "ui.safearea.background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg", width = 1 } }
@@ -419,6 +421,7 @@ syntax-highlight-match-text = "@rainbow:{color-highlight-match}-{tone-badge-text
 chrome-background = "oklch(0.225 0.022 272.95)"
 chrome-background-hover = "oklch(0.28 0.03 272.95)"
 chrome-background-active = "oklch(0.28 0.03 272.95)"
+chrome-background-splash = "@rainbow:{color-accent}-{tone-accent}"
 
 chrome-foreground = "oklch(0.8456 0.061 272.95)"
 chrome-foreground-hover = "oklch(0.95 0.0611 272.95)"
@@ -436,6 +439,7 @@ chrome-border-fg = "oklch(0.30 0.04 272.95)"
 
 background = "#000000"
 background-overlay = "#000000"
+background-splash = "@rainbow:{color-accent}-{tone-accent}"
 
 
 background-alt = "oklch(0.17 0.012 272.95)" # Gutter
@@ -455,77 +459,3 @@ cursor = "#ff66ff"
 cursor-fg = "#000000"
 
 # colors:
-
-
-rich-rust = "oklch(0.5339 0.1795 42.75)"
-rich-blue = "oklch(0.5183 0.173 246.04)"
-
-#---
-red = "#ff5f59"
-red-warmer = "#ff6b55"
-red-cooler = "#ff7f86"
-red-faint = "#ef8386"
-red-intense = "#ff5f5f"
-green = "#44bc44"
-green-warmer = "#75c13e"
-green-cooler = "#11c777"
-green-faint = "#88ca9f"
-green-intense = "#44df44"
-yellow = "#d0bc00"
-yellow-warmer = "#fec43f"
-yellow-cooler = "#dfaf7a"
-yellow-faint = "#d2b580"
-yellow-intense = "#efef00"
-blue = "#2fafff"
-blue-warmer = "#79a8ff"
-blue-cooler = "#00bcff"
-blue-faint = "#82b0ec"
-blue-intense = "#338fff"
-magenta = "#feacd0"
-magenta-warmer = "#f78fe7"
-magenta-cooler = "#b6a0ff"
-magenta-faint = "#caa6df"
-magenta-intense = "#ff66ff"
-cyan = "#00d3d0"
-cyan-warmer = "#4ae2f0"
-cyan-cooler = "#6ae4b9"
-cyan-faint = "#9ac8e0"
-cyan-intense = "#00eff0"
-
-
-# Common accent backgrounds
-
-bg-red-intense = "#9d1f1f"
-bg-green-intense = "#2f822f"
-bg-yellow-intense = "#7a6100"
-bg-blue-intense = "#1640b0"
-bg-magenta-intense = "#7030af"
-bg-cyan-intense = "#2266ae"
-
-bg-red-subtle = "#620f2a"
-bg-green-subtle = "#00422a"
-bg-yellow-subtle = "#4a4000"
-bg-blue-subtle = "#242679"
-bg-magenta-subtle = "#552f5f"
-bg-cyan-subtle = "#004065"
-
-bg-red-nuanced = "#3a0c14"
-bg-green-nuanced = "#092f1f"
-bg-yellow-nuanced = "#381d0f"
-bg-blue-nuanced = "#12154a"
-bg-magenta-nuanced = "#2f0c3f"
-bg-cyan-nuanced = "#042837"
-
-# Uncommon accent background and foreground pairs
-
-bg-clay = "#49191a"
-fg-clay = "#f1b090"
-
-bg-ochre = "#462f20"
-fg-ochre = "#e0d09c"
-
-bg-lavender = "#38325c"
-fg-lavender = "#dfc0f0"
-
-bg-sage = "#143e32"
-fg-sage = "#c3e7d4"

@@ -1,6 +1,6 @@
 [metadata]
-name = "Emerald Eclipse"
+name = "Emerald Nimbus"
 author = "jimmyff"
 brightness = "dark"
 inherits = "twilight-emerald"
-imports = ["classic-dark-eclipse"]
+imports = ["classic-dark-nimbus"]

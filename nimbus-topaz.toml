@@ -1,6 +1,6 @@
 [metadata]
-name = "Topaz Eclipse"
+name = "Topaz Nimbus"
 author = "jimmyff"
 brightness = "dark"
 inherits = "twilight-topaz"
-imports = ["classic-dark-eclipse"]
+imports = ["classic-dark-nimbus"]

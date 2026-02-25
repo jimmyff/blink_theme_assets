@@ -1,15 +1,15 @@
 [metadata]
-name = "Turquoise Mist"
+name = "Emerald Hoarfrost"
 author = "jimmyff"
 brightness = "light"
-inherits = "twilight-turquoise"
-imports = ["classic-light-mist"]
+inherits = "twilight-emerald"
+imports = ["classic-light-hoarfrost"]
 
 [palette]
 # Accent colors adjusted for light backgrounds
-accent-bg = "@rainbow:cerulean-500"
+accent-bg = "@rainbow:emerald-500"
 accent-fg = "#FFFFFF"
 
 [scopes]
-# Inherits syntax highlighting from dark-turquoise
+# Inherits syntax highlighting from dark-emerald
 # UI scopes are overridden by light-ui fragment

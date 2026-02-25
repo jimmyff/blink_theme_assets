@@ -1,0 +1,66 @@
+# Light UI Fragment
+# Apply this fragment to a dark theme to create a light variant.
+# Overrides brightness variables for syntax and UI palette for light backgrounds.
+
+[variables]
+# Override brightness for light backgrounds (darker colors for readability)
+tone-syntax-accent = "700"
+tone-syntax-bright = "800"
+tone-syntax-medium = "900"
+tone-accent = "500"
+
+tone-button-background =  "100"
+tone-button-background-hover =  "50"
+tone-button-border =  "300"
+tone-button-border-hover =  "300"
+tone-button-text =  "900"
+tone-button-text-hover =  "1000"
+
+tone-badge-background = "600"
+tone-badge-text = "0"
+tone-badge-text-alt = "50"
+
+[scopes]
+
+[palette]
+# Light mode surface colors
+background = "#FFFFFF"
+background-alt = "oklch(0.98 0.005 280)"
+background-hover = "oklch(0.99 0.015 280)"
+background-dim = "#E8E8E8"
+background-overlay = "oklch(0.985 0.025 280)"
+
+# Light mode text colors
+foreground = "#000"
+foreground-hover = "#000"
+foreground-alt = "oklch(0.55 0.07 280)"
+foreground-alt-hover = "oklch(0.45 0.08 280)"
+foreground-dim = "oklch(0.75 0.0611 280)"
+foreground-dim-hover = "oklch(0.65 0.0611 280)"
+
+# Light mode UI colors
+border-fg = "oklch(0.93 0.05 280)"
+# chrome-border-fg = "#D5D5D5"
+
+chrome-border-fg = "oklch(0.92 0.06 280)"
+
+chrome-background = "oklch(0.97 0.019 276)"
+chrome-background-hover = "#FFFFFF"
+chrome-background-active = "#FFFFFF"
+
+chrome-foreground = "oklch(0.35 0.061 272.95)"
+chrome-foreground-hover = "oklch(0.3 0.0611 272.95)"
+chrome-foreground-alt = "oklch(0.5 0.0611 272.95)"
+chrome-foreground-alt-hover = "oklch(0.4 0.0611 272.95)"
+chrome-foreground-dim = "oklch(0.7 0.0611 272.95)"
+chrome-foreground-dim-hover = "oklch(0.6 0.06 272.95)"
+
+menu-background = "oklch(0.93 0.017 280)"
+menu-border = "oklch(0.85 0.025 280)"
+
+cursor = "oklch(0.2291 0.0844 272.95)"
+cursor-fg = "#ffffff"
+
+
+background-splash = "@rainbow:{color-accent}-100"
+chrome-background-splash = "@rainbow:{color-accent}-100"

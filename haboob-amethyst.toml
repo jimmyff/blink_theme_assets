@@ -2,5 +2,5 @@
 name = "Amethyst Haboob"
 author = "jimmyff"
 brightness = "light"
-inherits = "mist-amethyst"
+inherits = "twilight-amethyst"
 imports = ["classic-light-haboob"]
