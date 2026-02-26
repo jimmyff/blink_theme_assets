@@ -56,8 +56,9 @@ chrome-foreground-alt-hover = "oklch(0.4 0.0611 272.95)"
 chrome-foreground-dim = "oklch(0.7 0.0611 272.95)"
 chrome-foreground-dim-hover = "oklch(0.6 0.06 272.95)"
 
-menu-background = "oklch(0.92 0.028 250)"
-menu-border = "oklch(0.8 0.028 250)"
+menu-background = "oklch(0.9 0.028 250)"
+menu-background-hover = "oklch(0.93 0.026 250)"
+menu-border = "oklch(0.8 0.04 250)"
 
 cursor = "oklch(0.2291 0.0844 272.95)"
 cursor-fg = "#ffffff"

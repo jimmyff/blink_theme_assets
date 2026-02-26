@@ -2,6 +2,17 @@
 # Apply this fragment to a dark theme to create a light variant.
 # This overrides UI scopes while preserving syntax highlighting from the parent.
 
+[variables]
+
+color-border = "oklch(0.3 0.0381 292.76)"
+
+color-fg = "oklch(0.8 0.0381 292.76)"
+color-fg-hover = "oklch(0.9 0.0381 292.76)"
+color-fg-alt = "oklch(0.6 0.0381 292.76)"
+color-fg-alt-hover = "oklch(0.7 0.0381 292.76)"
+color-fg-dim = "oklch(0.4 0.0381 292.76)"
+color-fg-dim-hover = "oklch(0.5 0.0381 292.76)"
+
 [scopes]
 
 "ui.chrome.navbar.item.background:hover" = { bg = "@rainbow:{color-accent}-1000", border = { width = 3, fg = "@rainbow:{color-accent}-900"  }  }
@@ -9,32 +20,31 @@
 [palette]
 background = "#000"
 background-alt = "#000"
-background-dim = "#000"
+background-hover = "@rainbow:{color-accent}-1000"
+background-overlay = "#000"
 
-border-fg = "oklch(0.3 0 0)"
-chrome-border-fg = "oklch(0.3 0 0)"
-chrome-background = "#000"
+border-fg = "{color-border}"
+chrome-border-fg = "{color-border}"
 
-menu-background = "oklch(0.2 0 0)"
-menu-border = "oklch(0.3 0 0)"
+menu-background = "#000"
+menu-background-hover = "@rainbow:{color-accent}-1000"
+menu-border = "{color-border}"
 
-# chrome-background-hover = "#111"
-#
-chrome-foreground = "oklch(0.8 0 0)"
-chrome-foreground-hover = "oklch(1 0 0)"
-chrome-foreground-alt = "oklch(0.6 0 0)"
-chrome-foreground-alt-hover = "oklch(1 0 0)"
-chrome-foreground-dim = "oklch(0.5 0 0)"
-chrome-foreground-dim-hover = "oklch(0.6 0 0)"
+
+chrome-foreground = "{color-fg}"
+chrome-foreground-hover = "{color-fg-hover}"
+chrome-foreground-alt = "{color-fg-alt}"
+chrome-foreground-alt-hover = "{color-fg-alt-hover}"
+chrome-foreground-dim = "{color-fg-dim}"
+chrome-foreground-dim-hover = "{color-fg-dim-hover}"
 
 foreground = "#fff"
 foreground-hover = "#fff"
-foreground-alt = "oklch(0.6 0 0)"
-foreground-alt-hover = "oklch(0.7 0 0)"
-foreground-dim = "oklch(0.5 0 0)"
-foreground-dim-hover = "oklch(0.6 0 0)"
+foreground-alt = "{color-fg-alt}"
+foreground-alt-hover = "{color-fg-alt-hover}"
+foreground-dim = "{color-fg-dim}"
+foreground-dim-hover = "{color-fg-dim-hover}"
 
+chrome-background = "#000"
 chrome-background-active = "#000"
-
 chrome-background-hover = "@rainbow:{color-accent}-1000"
-background-hover = "@rainbow:{color-accent}-1000"

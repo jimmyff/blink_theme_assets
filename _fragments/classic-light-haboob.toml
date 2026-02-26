@@ -59,3 +59,8 @@ chrome-foreground-dim-hover = "@rainbow:neutralWarm-800"
 
 menu-background = "@rainbow:neutralWarm-100"
 menu-border = "@rainbow:neutralWarm-200"
+menu-background-hover = "@rainbow:neutralWarm-50"
+
+
+cursor = "@rainbow:neutralWarm-950"
+cursor-fg = "#ffffff"

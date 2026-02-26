@@ -158,6 +158,7 @@ tone-badge-text-alt = "50"
 # Application chrome
 #
 "ui.chrome.background" = { bg = "$chrome-background", border = { fg = "$chrome-border-fg" } }
+
 "ui.chrome.background-splash" = {  bg = "$chrome-background-splash"  }
 #"ui.chrome.background" = { bg = "#181818", border = { fg = "#ff0000" } }
 #"ui.background" = { border = { fg = "#00ff00" } }
@@ -171,6 +172,7 @@ tone-badge-text-alt = "50"
 
 "ui.overlay.background" = { bg = "$background-overlay" }
 "ui.chrome.menu.background" = { bg = "$menu-background", border = { fg = "$menu-border", width = 1 }  }
+"ui.chrome.menu.item.background:hover" = { bg = "$menu-background-hover"  }
 
 # Dialog (paged dialogs, settings overlays)
 "ui.dialog.background" = { bg = "$background", border = { fg = "$chrome-border-fg" } }
@@ -432,6 +434,7 @@ chrome-foreground-dim-hover = "oklch(0.6 0.06 272.95)"
 
 # Menus
 menu-background = "oklch(0.3 0.03 272.95)"
+menu-background-hover = "oklch(0.35 0.03 272.95)"
 menu-border = "oklch(0.4 0.03 272.95)"
 
 border-fg = "oklch(0.25 0.03 272.95)"

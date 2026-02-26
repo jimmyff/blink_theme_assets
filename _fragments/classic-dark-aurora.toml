@@ -10,39 +10,41 @@ tone-syntax-accent = "50"
 color-badge = "azure"
 [scopes]
 
-"ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "@rainbow:blue-600" } }
+# "ui.chrome.navbar.item.background:hover" = { bg = "$chrome-background-hover", border = { width = 3, fg = "@rainbow:blue-600" } }
 
-"ui.chrome.navbar.item.icon:hover" = { fg = "$foreground-hover" }
+# "ui.chrome.navbar.item.icon:hover" = { fg = "oklch(0.68 0.1 210)" }
+# "ui.chrome.navbar.item.icon" = { fg =" oklch(0.62 0.1 210)" }
 
 [palette]
-background = "oklch(0.3019 0.011 156.51)"
-background-alt = "oklch(0.3019 0.011 156.51)"
-background-hover = "oklch(0.3019 0.011 156.51)" # Row hover
+background = "oklch(0.24 0.04 181)"
+background-alt = "oklch(0.247 0.05 181)"
+background-hover = "oklch(0.225 0.0 179)" # Row hover
 
-background-overlay = "@rainbow:azure-1000"
+background-overlay = "oklch(0.24 0.04 181)"
 
-border-fg = "@rainbow:azure-900"
-chrome-border-fg = "@rainbow:azure-900"
+border-fg = "oklch(0.35 0.06 204)"
+chrome-border-fg = "oklch(0.35 0.06 204)"
 
-chrome-background = "@rainbow:azure-1000"
-chrome-background-hover = "@rainbow:azure-950"
-chrome-background-active = "@rainbow:azure-950"
+chrome-background = "oklch(0.27 0.05 179)"
+chrome-background-hover = "oklch(0.23 0.05 179)"
+chrome-background-active = "oklch(0.23 0.05 179)"
 
 
 # # Light mode text colors
-foreground = "#fff"
-foreground-hover = "@rainbow:yellow-100"
-foreground-alt = "@rainbow:neutralCool-200"
-foreground-alt-hover = "@rainbow:neutralCool-100"
-foreground-dim = "@rainbow:blue-300"
-foreground-dim-hover= "@rainbow:azure-200"
+foreground = "#ffffff" #"oklch(0.88 0.07 189)"
+foreground-hover = "@rainbow:neutralWarm-100"
+foreground-alt = "oklch(0.59 0.07 189)"
+foreground-alt-hover = "oklch(0.59 0.07 189)"
+foreground-dim = "oklch(0.4 0.07 189)"
+foreground-dim-hover= "oklch(0.4 0.07 189)"
 
-chrome-foreground = "@rainbow:blue-100"
-chrome-foreground-hover = "@rainbow:blue-50"
-chrome-foreground-alt = "@rainbow:blue-300"
-chrome-foreground-alt-hover = "@rainbow:blue-100"
-chrome-foreground-dim = "@rainbow:blue-600"
-chrome-foreground-dim-hover = "@rainbow:blue-300"
+chrome-foreground = "oklch(0.68 0.07 189)"
+chrome-foreground-hover = "oklch(0.75 0.07 189)"
+chrome-foreground-alt = "oklch(0.59 0.07 189)"
+chrome-foreground-alt-hover = "oklch(0.67 0.07 189)"
+chrome-foreground-dim = "oklch(0.4 0.07 189)"
+chrome-foreground-dim-hover = "oklch(0.48 0.07 189)"
 
-menu-background = "@rainbow:azure-900"
-menu-border = "@rainbow:azure-700"
+menu-background = "oklch(0.3 0.05 199)"
+menu-background-hover = "oklch(0.3476 0.0642 199)"
+menu-border = "oklch(0.36 0.05 199)"

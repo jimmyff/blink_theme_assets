@@ -9,11 +9,15 @@
 [palette]
 background = "#FFF"
 background-alt = "#FFF"
-background-hover = "#FFF" # Row hover
-background-dim = "#FFF"
+background-hover = "@rainbow:{color-accent}-0" # Row hover
+background-overlay = "#FFF"
 
 border-fg = "#DDDDDD"
 chrome-border-fg = "#DDDDDD"
 chrome-background = "#FFF"
-chrome-background-hover = "#EEE"
+chrome-background-hover = "@rainbow:{color-accent}-0"
 chrome-background-active = "#FFF"
+
+menu-background = "#FFF"
+menu-background-hover = "@rainbow:{color-accent}-0"
+menu-border =  "#DDDDDD"

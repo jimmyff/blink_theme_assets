@@ -1,0 +1,6 @@
+[metadata]
+name = "Sandstone Aurora"
+author = "jimmyff"
+brightness = "dark"
+inherits = "twilight-sandstone"
+imports = ["classic-dark-aurora"]

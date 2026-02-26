@@ -46,4 +46,5 @@ chrome-foreground-dim = "@rainbow:blue-600"
 chrome-foreground-dim-hover = "@rainbow:blue-300"
 
 menu-background = "@rainbow:azure-900"
+menu-background-hover = "@rainbow:azure-950"
 menu-border = "@rainbow:azure-700"
