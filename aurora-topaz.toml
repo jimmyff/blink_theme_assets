@@ -1,0 +1,6 @@
+[metadata]
+name = "Topaz Aurora"
+author = "jimmyff"
+brightness = "dark"
+inherits = "twilight-topaz"
+imports = ["classic-dark-aurora"]

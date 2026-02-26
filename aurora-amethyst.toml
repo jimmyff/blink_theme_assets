@@ -1,0 +1,6 @@
+[metadata]
+name = "Amethyst Aurora"
+author = "jimmyff"
+brightness = "dark"
+inherits = "twilight-amethyst"
+imports = ["classic-dark-aurora"]

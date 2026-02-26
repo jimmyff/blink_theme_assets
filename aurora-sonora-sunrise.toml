@@ -1,0 +1,6 @@
+[metadata]
+name = "Sonora Sunrise Aurora"
+author = "jimmyff"
+brightness = "dark"
+inherits = "twilight-sonora-sunrise"
+imports = ["classic-dark-aurora"]
