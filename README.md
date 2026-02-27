@@ -5,7 +5,7 @@ Bundled TOML theme definitions for Blink applications. Contains the default dark
 ## Included Themes
 
 - **twilight-sandstone.toml** - Default dark theme with muted colors optimized for low-light environments
-- **mist-sandstone.toml** - Default light theme with high contrast for bright environments
+- **hoarfrost-sandstone.toml** - Default light theme with high contrast for bright environments
 
 ## File Structure
 
@@ -40,7 +40,7 @@ const notesDefaults = AppDefaults(
   theme: ThemeDefaults(
     mode: 'system',
     dark: 'twilight-sandstone.toml',
-    light: 'mist-sandstone.toml',
+    light: 'hoarfrost-sandstone.toml',
   ),
 );
 ```
