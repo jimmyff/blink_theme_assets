@@ -1,0 +1,6 @@
+[metadata]
+name = "Topaz Nebula"
+author = "jimmyff"
+brightness = "dark"
+inherits = "twilight-topaz"
+imports = ["classic-dark-nebula"]

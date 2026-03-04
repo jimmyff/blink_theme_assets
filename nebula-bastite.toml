@@ -1,0 +1,6 @@
+[metadata]
+name = "Bastite Nebula"
+author = "jimmyff"
+brightness = "dark"
+inherits = "twilight-bastite"
+imports = ["classic-dark-nebula"]
