@@ -244,6 +244,8 @@ tone-badge-text-alt = "50"
 
 "ui.input.checkbox.button-text" = { fg = "$chrome-foreground" }
 "ui.input.checkbox.button-text:hover" = { fg = "$chrome-foreground-hover" }
+"ui.input.checkbox.icon" = { fg = "$foreground-alt" }
+"ui.input.checkbox.icon:hover" = { fg = "$foreground-alt-hover" }
 "ui.input.checkbox.selected.button-text" = { fg = "$accent-bg" }
 "ui.input.checkbox.selected.button-text:hover" = { fg = "$accent-bg" }
 
