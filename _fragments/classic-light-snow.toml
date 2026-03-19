@@ -2,6 +2,17 @@
 # Apply this fragment to a dark theme to create a light variant.
 # This overrides UI scopes while preserving syntax highlighting from the parent.
 
+[variables]
+
+color-border = "oklch(0.9 0.03 239)"
+
+color-fg = "oklch(0.25 0.05 239)"
+color-fg-hover = "oklch(0.15 0.05 239)"
+color-fg-alt = "oklch(0.55 0.05 239)"
+color-fg-alt-hover = "oklch(0.45 0.05 239)"
+color-fg-dim = "oklch(0.75 0.05 239)"
+color-fg-dim-hover = "oklch(0.65 0.05 239)"
+
 [scopes]
 
 "ui.chrome.navbar.item.background:hover" = { bg = "@rainbow:{color-accent}-0", border = { width = 3, fg = "@rainbow:{color-accent}-100" } }
@@ -12,12 +23,28 @@ background-alt = "#FFF"
 background-hover = "@rainbow:{color-accent}-0" # Row hover
 background-overlay = "#FFF"
 
-border-fg = "#DDDDDD"
-chrome-border-fg = "#DDDDDD"
+border-fg = "{color-border}"
+chrome-border-fg = "{color-border}"
+
 chrome-background = "#FFF"
 chrome-background-hover = "@rainbow:{color-accent}-0"
 chrome-background-active = "#FFF"
 
+
+foreground = "#000"
+foreground-hover = "#000"
+foreground-alt = "{color-fg-alt}"
+foreground-alt-hover = "{color-fg-alt-hover}"
+foreground-dim = "{color-fg-dim}"
+foreground-dim-hover = "{color-fg-dim-hover}"
+
+chrome-foreground = "{color-fg}"
+chrome-foreground-hover = "{color-fg-hover}"
+chrome-foreground-alt = "{color-fg-alt}"
+chrome-foreground-alt-hover = "{color-fg-alt-hover}"
+chrome-foreground-dim = "{color-fg-dim}"
+chrome-foreground-dim-hover = "{color-fg-dim-hover}"
+
 menu-background = "#FFF"
 menu-background-hover = "@rainbow:{color-accent}-0"
-menu-border =  "#DDDDDD"
+menu-border =  "{color-border}"

@@ -108,10 +108,14 @@ tone-badge-text-alt = "50"
 "syntax.rule" = { fg = "$syntax-rule" }
 
 "syntax.task.marker" = { bg = "$background-alt", fg = "$syntax-checkbox" }
-"syntax.task.pending" = { bg = "$background-alt" }
-"syntax.task.done" = { bg = "$background-alt", fg = "@rainbow:{color-accent}-{tone-syntax-medium}", modifiers = ["bold"] }
-"syntax.task.active" = { bg = "$background-alt", fg = "@rainbow:{color-accent}-{tone-syntax-medium}", modifiers = ["bold"] }
-"syntax.task.cancelled" = { bg = "$background-alt", fg = "$foreground-dim", modifiers = ["bold"] }
+"syntax.task.text" = { fg = "$foreground" }
+"syntax.task.pending.value" = { bg = "$background-alt" }
+"syntax.task.done.value" = { bg = "$background-alt", fg = "@rainbow:{color-accent}-{tone-syntax-medium}", modifiers = ["bold"] }
+"syntax.task.done.text" = { fg = "$foreground-alt" }
+
+"syntax.task.active.value" = { bg = "$background-alt", fg = "@rainbow:{color-accent}-{tone-syntax-medium}", modifiers = ["bold"] }
+"syntax.task.cancelled.value" = { bg = "$background-alt", fg = "$foreground-dim", modifiers = ["bold"] }
+"syntax.task.cancelled.text" = { fg = "$foreground-alt" }
 
 "syntax.strikethrough" = { fg = "$foreground-dim", modifiers = ["strikethrough"] }
 "syntax.frontmatter" = { fg = "$syntax-code" }
@@ -124,6 +128,8 @@ tone-badge-text-alt = "50"
 # Root UI text default
 "ui.text" = { fg = "$foreground" }
 "ui.text-alt" = { fg = "$foreground-alt" }
+"ui.text-dim" = { fg = "$foreground-dim" }
+"ui.text-dim:hover" = { fg = "$foreground-dim-hover" }
 
 # ==== WORKSPACE SCOPES ====
 # Primary workspace (editor, settings, main content areas)
@@ -258,8 +264,8 @@ tone-badge-text-alt = "50"
 "ui.list.text:hover" = { fg = "$foreground-hover" }
 "ui.list.text-alt" = { fg = "$foreground-alt" }
 "ui.list.text-alt:hover" = { fg = "$foreground-alt-hover" }
-"ui.list.icon" = { fg = "$foreground-alt" }
-"ui.list.icon:hover" = { fg = "$foreground-alt-hover" }
+"ui.list.icon" = { fg = "$foreground-dim" }
+"ui.list.icon:hover" = { fg = "$foreground-dim-hover" }
 "ui.list.icon-alt" = { fg = "$foreground-dim" }
 "ui.list.icon-alt:hover" = { fg = "$foreground-dim-hover" }
 "ui.list.divider" = { border = { fg = "$border-fg" } }
@@ -454,10 +460,10 @@ background-hover = "oklch(0.15 0.02 272.95)" # Row hover
 
 foreground = "#fff"
 foreground-hover = "#fff"
-foreground-alt = "oklch(0.6 0.0611 274.76)"
-foreground-alt-hover = "oklch(0.7 0.0611 274.76)"
-foreground-dim = "oklch(0.4 0.0611 274.76)"
-foreground-dim-hover = "oklch(0.5 0.0611 274.76)"
+foreground-alt = "oklch(0.75 0.0611 274.76)"
+foreground-alt-hover = "oklch(0.85 0.0611 274.76)"
+foreground-dim = "oklch(0.5 0.0611 274.76)"
+foreground-dim-hover = "oklch(0.6 0.0611 274.76)"
 
 
 cursor = "#ff66ff"
