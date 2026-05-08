@@ -38,6 +38,11 @@ tone-badge-text-alt = "50"
 # Global default (fallback for all scopes)
 "*" = { fg = "$foreground" }
 
+# Continuation-assist transient text — subtle bg tint indicates "not committed yet".
+# Inherited by all bundled themes via the `inherits` chain; each theme's own
+# $background-alt resolves per-palette (light themes get a light tint, dark a dark tint).
+"*:suggested" = { bg = "$background-alt" }
+
 # ==== SYNTAX HIGHLIGHTING ====
 # All syntax scopes now prefixed with "syntax."
 
