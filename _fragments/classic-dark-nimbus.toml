@@ -19,6 +19,7 @@ background = "@rainbow:azure-950"
 background-alt = "@rainbow:azure-1000"
 background-hover = "@rainbow:azure-1000" # Row hover
 background-dim = "@rainbow:azure-700"
+background-suggested = "@rainbow:azure-900"
 
 background-overlay = "@rainbow:azure-1000"
 

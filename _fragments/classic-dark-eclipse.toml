@@ -5,6 +5,7 @@
 [variables]
 
 color-border = "oklch(0.3 0.0381 292.76)"
+color-bg-suggested = "oklch(0.23 0.025 292.76)"
 
 color-fg = "oklch(0.8 0.0381 292.76)"
 color-fg-hover = "oklch(0.9 0.0381 292.76)"
@@ -22,6 +23,7 @@ background = "#000"
 background-alt = "#000"
 background-hover = "@rainbow:{color-accent}-1000"
 background-overlay = "#000"
+background-suggested = "{color-bg-suggested}"
 
 border-fg = "{color-border}"
 chrome-border-fg = "{color-border}"

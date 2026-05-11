@@ -29,6 +29,7 @@ background-alt = "oklch(0.98 0.005 280)"
 background-hover = "oklch(0.99 0.015 280)"
 background-dim = "#E8E8E8"
 background-overlay = "oklch(0.9 0.02 280)"
+background-suggested = "oklch(0.97 0.019 276)"
 
 # Light mode text colors
 foreground = "#000"

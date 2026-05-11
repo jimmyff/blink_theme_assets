@@ -41,7 +41,7 @@ tone-badge-text-alt = "50"
 # Continuation-assist transient text — subtle bg tint indicates "not committed yet".
 # Inherited by all bundled themes via the `inherits` chain; each theme's own
 # $background-alt resolves per-palette (light themes get a light tint, dark a dark tint).
-"*:suggested" = { bg = "$background-alt" }
+"*:suggested" = { bg = "$background-suggested" }
 
 # ==== SYNTAX HIGHLIGHTING ====
 # All syntax scopes now prefixed with "syntax."
@@ -459,6 +459,7 @@ background-splash = "@rainbow:{color-accent}-{tone-accent}"
 
 
 background-alt = "oklch(0.17 0.012 272.95)" # Gutter
+background-suggested = "oklch(0.25 0.023 272.95)" # Gutter
 # background-hover = "@rainbow:{color-accent}-1000" # Row hover
 
 background-hover = "oklch(0.15 0.02 272.95)" # Row hover

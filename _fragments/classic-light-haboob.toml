@@ -31,6 +31,7 @@ background = "@rainbow:neutralWarm-200"
 background-alt = "@rainbow:neutralWarm-300"
 background-hover = "@rainbow:neutralWarm-300" # Row hover
 background-dim = "@rainbow:neutralWarm-200"
+background-suggested = "@rainbow:neutralWarm-300"
 
 background-overlay = "@rainbow:neutralWarm-400"
 

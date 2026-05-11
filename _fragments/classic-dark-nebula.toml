@@ -16,9 +16,10 @@ color-badge = "azure"
 # "ui.chrome.navbar.item.icon" = { fg =" oklch(0.62 0.1 210)" }
 
 [palette]
-background = "oklch(0.24 0.077 312.43)"
+background = "oklch(0.25 0.079 312.43)"
 background-alt = "oklch(0.22 0.077 312.43)"
 background-hover = "oklch(0.21 0.077 312.43)" # Row hover
+background-suggested = "oklch(0.32 0.08 312.43)"
 
 background-overlay = "oklch(0.19 0.077 312.43)"
 
